@@ -1,0 +1,38 @@
+# Emily Protests
+# from __future__ import unicode_literals
+from collections import Counter #import counter file
+# import spacy
+import json
+# nlp = spacy.load('en')
+text = open("dickinson.txt").read() #read this file as a string
+words = text.split() #split into words
+count = Counter(words)
+# for word, number in count.most_common(10): ##This would create a list of common words
+#     print word
+stopwords = ["i","me","my","myself","we","our","ours","ourselves","you","your","yours","yourself","yourselves",
+    "he","him","his","himself","she","her","hers","herself","it","its","itself","they","them","their",
+    "theirs","themselves","what","which","who","whom","this","that","these","those","am","is","are",
+    "was","were","be","been","being","have","has","had","having","do","does","did","doing","a","an",
+    "the","and","but","if","or","because","as","until","while","of","at","by","for","with","about",
+    "against","between","into","through","during","before","after","above","below","to","from","up",
+    "down","in","out","on","off","over","under","again","further","then","once","here","there","when",
+    "where","why","how","all","any","both","each","few","more","most","other","some","such","no","nor",
+    "not","only","own","same","so","than","too","very","s","t","'t","can","will","just","don","should","now"
+    ]
+clean_words = [] # creates an array where punctuation is removed
+for item in words:
+    cleaned = item.lower().strip(",.;:")
+    if cleaned not in stopwords and cleaned not in clean_words:
+        clean_words.append(cleaned)
+
+# need to create another loop to remove duplicate words
+
+# count = Counter(clean_words) ## this is to test and will be remove
+# print count.most_common(100) ## this is just to test
+#
+# print clean_words
+
+# print clean_words[0]
+
+file = open("emilywords2.txt","w")
+json.dump(clean_words,file)
