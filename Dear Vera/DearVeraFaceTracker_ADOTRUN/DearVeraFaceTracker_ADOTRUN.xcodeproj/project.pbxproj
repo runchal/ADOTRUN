@@ -13,7 +13,7 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>67AF0E794FA186DD25454CC9</string>
+					<string>FE5730E10D1610F4BD04E988</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -22,7 +22,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>67AF0E794FA186DD25454CC9</key>
+			<key>FE5730E10D1610F4BD04E988</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -33,11 +33,11 @@
 				<key>name</key>
 				<string>calib3d.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d/calib3d.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d/calib3d.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>CCFB64CDA537F2B5A54CDC13</key>
+			<key>C7271CE1697A5C4209D05E46</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -48,7 +48,7 @@
 				<key>name</key>
 				<string>photo.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo/photo.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo/photo.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -56,8 +56,8 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>56ED74AD5FC73867F5E046F0</string>
-					<string>CCFB64CDA537F2B5A54CDC13</string>
+					<string>CE9505A439D4669D23BBD6EF</string>
+					<string>C7271CE1697A5C4209D05E46</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -66,7 +66,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>56ED74AD5FC73867F5E046F0</key>
+			<key>CE9505A439D4669D23BBD6EF</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -77,11 +77,11 @@
 				<key>name</key>
 				<string>photo_c.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo/photo_c.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo/photo_c.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>9ABD8CF34D37FADFEB352B88</key>
+			<key>23A88666C24F3EA60899FA20</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -92,11 +92,11 @@
 				<key>name</key>
 				<string>opencv_modules.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/opencv_modules.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/opencv_modules.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>1054B4574F75C1F693C147C6</key>
+			<key>69FD8166EC61191E217334A4</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -107,11 +107,11 @@
 				<key>name</key>
 				<string>optical_flow.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/optical_flow.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/optical_flow.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>0CEC1FE946DBDBAB82AF6FE3</key>
+			<key>41574D0BCE5E2E95C06F8660</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -122,11 +122,11 @@
 				<key>name</key>
 				<string>global_motion.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/global_motion.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/global_motion.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>7279658ADA9582251CB1D783</key>
+			<key>BB1894F1C8F228021408FE85</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -137,11 +137,11 @@
 				<key>name</key>
 				<string>log.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/log.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/log.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>D9613459E2788BF99E572ED1</key>
+			<key>AF9BB8CB95C2BE04839A7AF7</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -152,11 +152,11 @@
 				<key>name</key>
 				<string>deblurring.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/deblurring.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/deblurring.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>075597E52E99BDE94F8036B2</key>
+			<key>35E0377BFBD7627D4B80FE80</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -167,11 +167,11 @@
 				<key>name</key>
 				<string>fast_marching_inl.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/fast_marching_inl.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/fast_marching_inl.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>59570D160E1EDD6EB832826A</key>
+			<key>2374AA4201977EB29F7DDCB0</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -182,11 +182,11 @@
 				<key>name</key>
 				<string>frame_source.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/frame_source.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/frame_source.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>17CE5A4068930946980DE788</key>
+			<key>45B7847B99AB91B2317FF28A</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -197,11 +197,11 @@
 				<key>name</key>
 				<string>stabilizer.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/stabilizer.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/stabilizer.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>EEEA907F4732A9D8875ABB9C</key>
+			<key>CB05D6F8375184561F369368</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -212,11 +212,11 @@
 				<key>name</key>
 				<string>motion_stabilizing.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/motion_stabilizing.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/motion_stabilizing.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>9A807ED85FFB53D3638FCBE0</key>
+			<key>B8CF0F2E16A81142A76357FA</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -227,11 +227,11 @@
 				<key>name</key>
 				<string>videostab.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/videostab.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/videostab.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>D2991184C57509808BF041C8</key>
+			<key>88FF3BF4BF9D9F304F13551C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -242,7 +242,7 @@
 				<key>name</key>
 				<string>inpainting.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/inpainting.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/inpainting.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -250,17 +250,17 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>A3411731962D0402217F182B</string>
-					<string>D2991184C57509808BF041C8</string>
-					<string>9A807ED85FFB53D3638FCBE0</string>
-					<string>EEEA907F4732A9D8875ABB9C</string>
-					<string>17CE5A4068930946980DE788</string>
-					<string>59570D160E1EDD6EB832826A</string>
-					<string>075597E52E99BDE94F8036B2</string>
-					<string>D9613459E2788BF99E572ED1</string>
-					<string>7279658ADA9582251CB1D783</string>
-					<string>0CEC1FE946DBDBAB82AF6FE3</string>
-					<string>1054B4574F75C1F693C147C6</string>
+					<string>0DBC2BDAF05C2C587BBD30A6</string>
+					<string>88FF3BF4BF9D9F304F13551C</string>
+					<string>B8CF0F2E16A81142A76357FA</string>
+					<string>CB05D6F8375184561F369368</string>
+					<string>45B7847B99AB91B2317FF28A</string>
+					<string>2374AA4201977EB29F7DDCB0</string>
+					<string>35E0377BFBD7627D4B80FE80</string>
+					<string>AF9BB8CB95C2BE04839A7AF7</string>
+					<string>BB1894F1C8F228021408FE85</string>
+					<string>41574D0BCE5E2E95C06F8660</string>
+					<string>69FD8166EC61191E217334A4</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -269,7 +269,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>A3411731962D0402217F182B</key>
+			<key>0DBC2BDAF05C2C587BBD30A6</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -280,11 +280,11 @@
 				<key>name</key>
 				<string>fast_marching.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/fast_marching.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab/fast_marching.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>C4FB85020773DA0F09B8B6CE</key>
+			<key>59499529A9703277EB7208BC</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -295,11 +295,11 @@
 				<key>name</key>
 				<string>ts_gtest.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts/ts_gtest.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts/ts_gtest.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>A770C8D74DA82B9944013381</key>
+			<key>4D1712D32549ACE537FAAABF</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -310,11 +310,11 @@
 				<key>name</key>
 				<string>gpu_perf.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts/gpu_perf.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts/gpu_perf.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>8FB4573CDB2FB9658ACF87AA</key>
+			<key>343AFBFBA348016C30951DF0</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -325,11 +325,11 @@
 				<key>name</key>
 				<string>gpu_test.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts/gpu_test.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts/gpu_test.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>45E004D1064EC5B8C5C40A83</key>
+			<key>692357CC58A318006986C717</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -340,7 +340,7 @@
 				<key>name</key>
 				<string>ts_perf.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts/ts_perf.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts/ts_perf.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -348,11 +348,11 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>7673F0AA19794A4C9517CF14</string>
-					<string>45E004D1064EC5B8C5C40A83</string>
-					<string>8FB4573CDB2FB9658ACF87AA</string>
-					<string>A770C8D74DA82B9944013381</string>
-					<string>C4FB85020773DA0F09B8B6CE</string>
+					<string>01663175969F20A6905313BD</string>
+					<string>692357CC58A318006986C717</string>
+					<string>343AFBFBA348016C30951DF0</string>
+					<string>4D1712D32549ACE537FAAABF</string>
+					<string>59499529A9703277EB7208BC</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -361,7 +361,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>7673F0AA19794A4C9517CF14</key>
+			<key>01663175969F20A6905313BD</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -372,7 +372,7 @@
 				<key>name</key>
 				<string>ts.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts/ts.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts/ts.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -380,7 +380,7 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>61339778C58D921474B5729E</string>
+					<string>838EDA44364C0F0FA30B31F7</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -389,7 +389,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>61339778C58D921474B5729E</key>
+			<key>838EDA44364C0F0FA30B31F7</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -400,11 +400,11 @@
 				<key>name</key>
 				<string>features2d.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d/features2d.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d/features2d.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>AE433383D6CA170C418C8A9E</key>
+			<key>9BC3A33DDAC043C69A13567C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -415,11 +415,11 @@
 				<key>name</key>
 				<string>highgui_c.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui/highgui_c.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui/highgui_c.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>293D553B5067FBB8DEFA84D9</key>
+			<key>4CDA939D08A9EF97A0033259</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -430,11 +430,11 @@
 				<key>name</key>
 				<string>cap_ios.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui/cap_ios.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui/cap_ios.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>C61D3DACE506E4A1C3A6D782</key>
+			<key>960EC5285F69D95DDC308732</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -445,7 +445,7 @@
 				<key>name</key>
 				<string>highgui.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui/highgui.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui/highgui.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -453,10 +453,10 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>0B87BF43E5302005FEF650B6</string>
-					<string>C61D3DACE506E4A1C3A6D782</string>
-					<string>293D553B5067FBB8DEFA84D9</string>
-					<string>AE433383D6CA170C418C8A9E</string>
+					<string>AD347A33DF9B23B2DF161B77</string>
+					<string>960EC5285F69D95DDC308732</string>
+					<string>4CDA939D08A9EF97A0033259</string>
+					<string>9BC3A33DDAC043C69A13567C</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -465,7 +465,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>0B87BF43E5302005FEF650B6</key>
+			<key>AD347A33DF9B23B2DF161B77</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -476,7 +476,7 @@
 				<key>name</key>
 				<string>ios.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui/ios.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui/ios.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -484,7 +484,7 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>59626D03C690200AD4E8B3A6</string>
+					<string>4293FEA79D91A425F7CD7284</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -493,7 +493,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>59626D03C690200AD4E8B3A6</key>
+			<key>4293FEA79D91A425F7CD7284</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -504,11 +504,11 @@
 				<key>name</key>
 				<string>ml.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml/ml.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml/ml.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>5A59183C98FC5E69FC90F138</key>
+			<key>2A609CCC99733236CA99F9CB</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -519,11 +519,11 @@
 				<key>name</key>
 				<string>contrib.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/contrib.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/contrib.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>BA2345C0AC2330B6CF370764</key>
+			<key>E779ED7CD96325F1DF8643D4</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -534,11 +534,11 @@
 				<key>name</key>
 				<string>detection_based_tracker.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/detection_based_tracker.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/detection_based_tracker.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>87DBF560FF25F1CD2E737825</key>
+			<key>DEAEA30E1FE9DDD27B6F3ED3</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -549,11 +549,11 @@
 				<key>name</key>
 				<string>openfabmap.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/openfabmap.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/openfabmap.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>A0399084868E7CAFB7E3D8E9</key>
+			<key>A09FB6E7741FE442A965DFB9</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -564,7 +564,7 @@
 				<key>name</key>
 				<string>retina.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/retina.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/retina.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -572,11 +572,11 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>BBAF9D981351C596CA67CAF9</string>
-					<string>A0399084868E7CAFB7E3D8E9</string>
-					<string>87DBF560FF25F1CD2E737825</string>
-					<string>BA2345C0AC2330B6CF370764</string>
-					<string>5A59183C98FC5E69FC90F138</string>
+					<string>63D5E738C1964A8900B98969</string>
+					<string>A09FB6E7741FE442A965DFB9</string>
+					<string>DEAEA30E1FE9DDD27B6F3ED3</string>
+					<string>E779ED7CD96325F1DF8643D4</string>
+					<string>2A609CCC99733236CA99F9CB</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -585,7 +585,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>BBAF9D981351C596CA67CAF9</key>
+			<key>63D5E738C1964A8900B98969</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -596,11 +596,11 @@
 				<key>name</key>
 				<string>hybridtracker.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/hybridtracker.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/hybridtracker.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>8530EAD600CD792B81B2E79D</key>
+			<key>0489A6DA69F2BE2E2567CEFD</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -611,11 +611,11 @@
 				<key>name</key>
 				<string>legacy.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy/legacy.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy/legacy.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>665780A3005496E3A4A0D9EF</key>
+			<key>3D95D1838763494176D3A581</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -626,11 +626,11 @@
 				<key>name</key>
 				<string>compat.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy/compat.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy/compat.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>60179A75A6C5F9A54DA3A64C</key>
+			<key>36309805C6451B01194DE2B0</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -641,7 +641,7 @@
 				<key>name</key>
 				<string>streams.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy/streams.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy/streams.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -649,10 +649,10 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>5D966EA1AA66E2D55D047733</string>
-					<string>60179A75A6C5F9A54DA3A64C</string>
-					<string>665780A3005496E3A4A0D9EF</string>
-					<string>8530EAD600CD792B81B2E79D</string>
+					<string>375098B2A51FE59B8699CFA4</string>
+					<string>36309805C6451B01194DE2B0</string>
+					<string>3D95D1838763494176D3A581</string>
+					<string>0489A6DA69F2BE2E2567CEFD</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -661,7 +661,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>5D966EA1AA66E2D55D047733</key>
+			<key>375098B2A51FE59B8699CFA4</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -672,7 +672,7 @@
 				<key>name</key>
 				<string>blobtrack.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy/blobtrack.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy/blobtrack.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -680,7 +680,7 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>97CFAD0B2F2DB004A8A3BC0B</string>
+					<string>4AE56AE8B2FE1D9B90C77E44</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -689,7 +689,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>97CFAD0B2F2DB004A8A3BC0B</key>
+			<key>4AE56AE8B2FE1D9B90C77E44</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -700,11 +700,11 @@
 				<key>name</key>
 				<string>objdetect.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect/objdetect.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect/objdetect.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>9B90B3EE60497170AA00BFE8</key>
+			<key>40352CF8B28371F1D67EEC41</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -715,11 +715,11 @@
 				<key>name</key>
 				<string>types_c.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc/types_c.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc/types_c.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>9B55998E41388AD8704E4F9A</key>
+			<key>75CC20165C9B7D2D6BE68AA9</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -730,7 +730,7 @@
 				<key>name</key>
 				<string>imgproc_c.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc/imgproc_c.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc/imgproc_c.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -738,9 +738,9 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>114B872696817CC33990FC83</string>
-					<string>9B55998E41388AD8704E4F9A</string>
-					<string>9B90B3EE60497170AA00BFE8</string>
+					<string>0BF61C6D492FC715A92A2D77</string>
+					<string>75CC20165C9B7D2D6BE68AA9</string>
+					<string>40352CF8B28371F1D67EEC41</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -749,7 +749,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>114B872696817CC33990FC83</key>
+			<key>0BF61C6D492FC715A92A2D77</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -760,11 +760,11 @@
 				<key>name</key>
 				<string>imgproc.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc/imgproc.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc/imgproc.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>9B7D592E7AB311451A27C46E</key>
+			<key>7D5571E60DEB08241D06512D</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -775,11 +775,11 @@
 				<key>name</key>
 				<string>opencv.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/opencv.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/opencv.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>D2E468A43F6E981DD9B460B5</key>
+			<key>6359E49ABAC30E29E99A27D9</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -790,11 +790,11 @@
 				<key>name</key>
 				<string>stitcher.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/stitcher.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/stitcher.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>057D8E7580EA21E2254ADDDA</key>
+			<key>A97DC677FB89C6D3E6F7D21C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -805,11 +805,11 @@
 				<key>name</key>
 				<string>camera.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/camera.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/camera.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>2411F6B35DAAAE5083D51167</key>
+			<key>08F79DE2D08B2D12EEA3158E</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -820,11 +820,11 @@
 				<key>name</key>
 				<string>motion_estimators.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/motion_estimators.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/motion_estimators.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>31BE73BA37686CA4E4904323</key>
+			<key>5CA4B8584F29A4C163B77797</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -835,11 +835,11 @@
 				<key>name</key>
 				<string>matchers.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/matchers.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/matchers.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>B1579F602B98D48A6937B341</key>
+			<key>79BEF9695826EB9D0A796DDB</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -850,11 +850,11 @@
 				<key>name</key>
 				<string>util.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/util.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/util.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>CE5203B78839A661DA972B33</key>
+			<key>8E92F6652AD9C5B6A188E5B9</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -865,11 +865,11 @@
 				<key>name</key>
 				<string>warpers_inl.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/warpers_inl.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/warpers_inl.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>79E285EDBBEA89226444A4D0</key>
+			<key>C665EFF452A6AA9FC749EFCD</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -880,11 +880,11 @@
 				<key>name</key>
 				<string>blenders.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/blenders.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/blenders.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>1F9D46D19614774956DFE362</key>
+			<key>840B201CEE7ECBD8006023B6</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -895,11 +895,11 @@
 				<key>name</key>
 				<string>seam_finders.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/seam_finders.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/seam_finders.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>1335F3F49E8A72CB04FA873D</key>
+			<key>689DF66CF15504AEFDBB717D</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -910,11 +910,11 @@
 				<key>name</key>
 				<string>util_inl.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/util_inl.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/util_inl.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>D6426FE9886FD3B4A831A446</key>
+			<key>86DB9263293A83AA07DEFE8A</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -925,11 +925,11 @@
 				<key>name</key>
 				<string>exposure_compensate.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/exposure_compensate.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/exposure_compensate.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>26E4EEE253C8A6EFC3B3A639</key>
+			<key>FB272C5A8C8E286D22969FB9</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -940,7 +940,7 @@
 				<key>name</key>
 				<string>warpers.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/warpers.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/warpers.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -948,17 +948,17 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>44A8175B7C8A100B5BEF5DE4</string>
-					<string>26E4EEE253C8A6EFC3B3A639</string>
-					<string>D6426FE9886FD3B4A831A446</string>
-					<string>1335F3F49E8A72CB04FA873D</string>
-					<string>1F9D46D19614774956DFE362</string>
-					<string>79E285EDBBEA89226444A4D0</string>
-					<string>CE5203B78839A661DA972B33</string>
-					<string>B1579F602B98D48A6937B341</string>
-					<string>31BE73BA37686CA4E4904323</string>
-					<string>2411F6B35DAAAE5083D51167</string>
-					<string>057D8E7580EA21E2254ADDDA</string>
+					<string>50A40ECB58FDDD6D63AAE45C</string>
+					<string>FB272C5A8C8E286D22969FB9</string>
+					<string>86DB9263293A83AA07DEFE8A</string>
+					<string>689DF66CF15504AEFDBB717D</string>
+					<string>840B201CEE7ECBD8006023B6</string>
+					<string>C665EFF452A6AA9FC749EFCD</string>
+					<string>8E92F6652AD9C5B6A188E5B9</string>
+					<string>79BEF9695826EB9D0A796DDB</string>
+					<string>5CA4B8584F29A4C163B77797</string>
+					<string>08F79DE2D08B2D12EEA3158E</string>
+					<string>A97DC677FB89C6D3E6F7D21C</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -967,7 +967,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>44A8175B7C8A100B5BEF5DE4</key>
+			<key>50A40ECB58FDDD6D63AAE45C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -978,7 +978,7 @@
 				<key>name</key>
 				<string>autocalib.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/autocalib.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail/autocalib.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -986,9 +986,9 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>F2F75C2513DDF24A79A894DF</string>
+					<string>548CDEFBD1AA8B4F6A8CE084</string>
 					<string>303E2D4AF80E80BD1FD5E5F6</string>
-					<string>D2E468A43F6E981DD9B460B5</string>
+					<string>6359E49ABAC30E29E99A27D9</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -997,7 +997,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>F2F75C2513DDF24A79A894DF</key>
+			<key>548CDEFBD1AA8B4F6A8CE084</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1008,11 +1008,11 @@
 				<key>name</key>
 				<string>warpers.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/warpers.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/warpers.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>A9C85208C7E45FB9D1926789</key>
+			<key>41E266C6F6924DD2E38F6628</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1023,11 +1023,11 @@
 				<key>name</key>
 				<string>wimage.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/wimage.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/wimage.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>C66C6414C8B86FDB99ED3B70</key>
+			<key>3072CF64038F784B0DA03C3D</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1038,11 +1038,11 @@
 				<key>name</key>
 				<string>core.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/core.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/core.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>311F65A208008448840A0A42</key>
+			<key>327113895F7CFE63CD8A08B8</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1053,11 +1053,11 @@
 				<key>name</key>
 				<string>opengl_interop_deprecated.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/opengl_interop_deprecated.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/opengl_interop_deprecated.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>087522EA37A32B8D902CAB64</key>
+			<key>514B80F26ADAA11D306BF999</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1068,11 +1068,11 @@
 				<key>name</key>
 				<string>core_c.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/core_c.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/core_c.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>CD8565F2F122EECA0C095526</key>
+			<key>73580A8DF898F8E40E813A23</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1083,11 +1083,11 @@
 				<key>name</key>
 				<string>types_c.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/types_c.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/types_c.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>E4385429A1E63ACEDC39A612</key>
+			<key>0319642DBFE0C2D93F18D467</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1098,11 +1098,11 @@
 				<key>name</key>
 				<string>operations.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/operations.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/operations.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>E8AF1E9150AD818FA9D9195D</key>
+			<key>2BD8AE3005B29735AA3F7B5F</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1113,11 +1113,11 @@
 				<key>name</key>
 				<string>version.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/version.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/version.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>4CD2228F2C8116D51179E3A3</key>
+			<key>614758A4E6BD5D22F8E5A464</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1128,11 +1128,11 @@
 				<key>name</key>
 				<string>devmem2d.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/devmem2d.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/devmem2d.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>AB2AE477F82ACF17D0121166</key>
+			<key>6E0D8E45C53BE25AE12FEFD3</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1143,11 +1143,11 @@
 				<key>name</key>
 				<string>mat.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/mat.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/mat.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>C1A2E81B4FD0713346D7E806</key>
+			<key>86D6731F26300D41286C2BA1</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1158,11 +1158,11 @@
 				<key>name</key>
 				<string>affine.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/affine.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/affine.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>4CFA8A81B93736DE82F0090A</key>
+			<key>77DFE128A6EE9BFBBA9A535E</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1173,11 +1173,11 @@
 				<key>name</key>
 				<string>gpumat.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/gpumat.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/gpumat.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>452417865E4BFB10C9CBF8A2</key>
+			<key>908A12089054C72DF990E1C2</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1188,11 +1188,11 @@
 				<key>name</key>
 				<string>internal.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/internal.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/internal.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>A2EE5E80B134EA52A8B369D2</key>
+			<key>9B86F4D4398C591C1D448E86</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1203,11 +1203,11 @@
 				<key>name</key>
 				<string>eigen.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/eigen.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/eigen.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>73CB9E4F6812598081C2FE01</key>
+			<key>60EB16F55F7ED07F3BFABFFE</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1218,7 +1218,7 @@
 				<key>name</key>
 				<string>opengl_interop.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/opengl_interop.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/opengl_interop.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -1226,21 +1226,21 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>E798C88F1A0E2511E1756CE0</string>
-					<string>73CB9E4F6812598081C2FE01</string>
-					<string>A2EE5E80B134EA52A8B369D2</string>
-					<string>452417865E4BFB10C9CBF8A2</string>
-					<string>4CFA8A81B93736DE82F0090A</string>
-					<string>C1A2E81B4FD0713346D7E806</string>
-					<string>AB2AE477F82ACF17D0121166</string>
-					<string>4CD2228F2C8116D51179E3A3</string>
-					<string>E8AF1E9150AD818FA9D9195D</string>
-					<string>E4385429A1E63ACEDC39A612</string>
-					<string>CD8565F2F122EECA0C095526</string>
-					<string>087522EA37A32B8D902CAB64</string>
-					<string>311F65A208008448840A0A42</string>
-					<string>C66C6414C8B86FDB99ED3B70</string>
-					<string>A9C85208C7E45FB9D1926789</string>
+					<string>4FEC68DCDDF46807A686546B</string>
+					<string>60EB16F55F7ED07F3BFABFFE</string>
+					<string>9B86F4D4398C591C1D448E86</string>
+					<string>908A12089054C72DF990E1C2</string>
+					<string>77DFE128A6EE9BFBBA9A535E</string>
+					<string>86D6731F26300D41286C2BA1</string>
+					<string>6E0D8E45C53BE25AE12FEFD3</string>
+					<string>614758A4E6BD5D22F8E5A464</string>
+					<string>2BD8AE3005B29735AA3F7B5F</string>
+					<string>0319642DBFE0C2D93F18D467</string>
+					<string>73580A8DF898F8E40E813A23</string>
+					<string>514B80F26ADAA11D306BF999</string>
+					<string>327113895F7CFE63CD8A08B8</string>
+					<string>3072CF64038F784B0DA03C3D</string>
+					<string>41E266C6F6924DD2E38F6628</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -1249,7 +1249,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>E798C88F1A0E2511E1756CE0</key>
+			<key>4FEC68DCDDF46807A686546B</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1260,11 +1260,11 @@
 				<key>name</key>
 				<string>cuda_devptrs.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/cuda_devptrs.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core/cuda_devptrs.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>8DB45DE3BD6BB97E34BDB411</key>
+			<key>BDA499159407A31B0D3481F7</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1275,11 +1275,11 @@
 				<key>name</key>
 				<string>nn_index.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/nn_index.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/nn_index.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>ECC34C470C60F0A2AE2761B1</key>
+			<key>A19926950C6F43B1E5B35215</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1290,11 +1290,11 @@
 				<key>name</key>
 				<string>random.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/random.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/random.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>45410DD818BB205166E67E89</key>
+			<key>D7B5EE8A8B7E3D53A1E2DD3B</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1305,11 +1305,11 @@
 				<key>name</key>
 				<string>any.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/any.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/any.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>36F0FF7F8D7342D220CC6319</key>
+			<key>C5D1107ECBFB14E8AC123CF6</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1320,11 +1320,11 @@
 				<key>name</key>
 				<string>dummy.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/dummy.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/dummy.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>946187321200AC04E570E6EC</key>
+			<key>B5640E3836AEA84E0E07ED84</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1335,11 +1335,11 @@
 				<key>name</key>
 				<string>hierarchical_clustering_index.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/hierarchical_clustering_index.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/hierarchical_clustering_index.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>0173A3F435DECD5A4DDE0B8E</key>
+			<key>A7C1651149ECDE8BBE641F76</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1350,11 +1350,11 @@
 				<key>name</key>
 				<string>logger.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/logger.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/logger.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>9DA0CBD43DA38386EB04C9AE</key>
+			<key>5345F2676265B771BE52B5FA</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1365,11 +1365,11 @@
 				<key>name</key>
 				<string>miniflann.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/miniflann.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/miniflann.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>7E57AAE3FAB29F87D19451BC</key>
+			<key>AD3950DFDB20D7D7893E855E</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1380,11 +1380,11 @@
 				<key>name</key>
 				<string>sampling.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/sampling.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/sampling.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>9B076DCB5B800BE9AF1B71A6</key>
+			<key>A8BFEE6289D49679D3C1ABEA</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1395,11 +1395,11 @@
 				<key>name</key>
 				<string>flann_base.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/flann_base.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/flann_base.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>6B907CFBB1B0FEDE76C41AA0</key>
+			<key>84CDC2643B15FE5AF531D5FE</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1410,11 +1410,11 @@
 				<key>name</key>
 				<string>heap.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/heap.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/heap.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>011E372AEA4DFBC1A32C2851</key>
+			<key>500A2FF9EB17AB31E6D2FD5B</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1425,11 +1425,11 @@
 				<key>name</key>
 				<string>all_indices.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/all_indices.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/all_indices.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>974AACF856A0A1B7D8F259E0</key>
+			<key>EA03B07F0C65EF74DBB5C757</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1440,11 +1440,11 @@
 				<key>name</key>
 				<string>result_set.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/result_set.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/result_set.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>F9EC3DDC0E9F85C34B21C760</key>
+			<key>2DF8C1B50CB95E6CBBE2525C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1455,11 +1455,11 @@
 				<key>name</key>
 				<string>object_factory.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/object_factory.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/object_factory.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>6DD5A3CBB6D5BBA1C1354F1B</key>
+			<key>9DD8EA775A59329C3024E386</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1470,11 +1470,11 @@
 				<key>name</key>
 				<string>flann.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/flann.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/flann.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>758F19335D4E46A5E0DE449F</key>
+			<key>A68E855441F2BDDA74AA4BAB</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1485,11 +1485,11 @@
 				<key>name</key>
 				<string>kdtree_single_index.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/kdtree_single_index.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/kdtree_single_index.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>E5F6E381641665852B997FC4</key>
+			<key>DCB713C361DB5B555CDA8727</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1500,11 +1500,11 @@
 				<key>name</key>
 				<string>allocator.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/allocator.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/allocator.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>0CF0AA3895D28E97D8A1E4A9</key>
+			<key>24191B8AB71758C1213225CA</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1515,11 +1515,11 @@
 				<key>name</key>
 				<string>ground_truth.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/ground_truth.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/ground_truth.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>096CB33CAD6C5A446E7026E9</key>
+			<key>71CAFD24C3D24A42EAFB9345</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1530,11 +1530,11 @@
 				<key>name</key>
 				<string>dynamic_bitset.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/dynamic_bitset.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/dynamic_bitset.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>FEDA0B6056089762F5FA11CA</key>
+			<key>DAF9A3084671F422A4728A92</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1545,11 +1545,11 @@
 				<key>name</key>
 				<string>lsh_table.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/lsh_table.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/lsh_table.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>1E95EFD35ED9C5D97F2F015E</key>
+			<key>8D81C7655767206FFE885B97</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1560,11 +1560,11 @@
 				<key>name</key>
 				<string>timer.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/timer.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/timer.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>01DAE5C2E3E0A74207B2BE49</key>
+			<key>62715729653A084DAD42C640</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1575,11 +1575,11 @@
 				<key>name</key>
 				<string>saving.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/saving.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/saving.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>722542BCDC94162B6A8B9B72</key>
+			<key>0BBEE3184EE96F1BB07407E1</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1590,11 +1590,11 @@
 				<key>name</key>
 				<string>defines.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/defines.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/defines.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>DCB56F4E9F44E31D571BC9C4</key>
+			<key>FC2535D4C4A96EC590A4D097</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1605,11 +1605,11 @@
 				<key>name</key>
 				<string>index_testing.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/index_testing.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/index_testing.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>A15E0125B8C9B7F01DED5695</key>
+			<key>4119AAEF888A28249BC88D90</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1620,11 +1620,11 @@
 				<key>name</key>
 				<string>matrix.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/matrix.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/matrix.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>CBDE84185E2969BA4AB209FC</key>
+			<key>3DC3110D58F7DDC9FD8ED66C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1635,11 +1635,11 @@
 				<key>name</key>
 				<string>general.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/general.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/general.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>E7DDB716B5AE0DEA82DFFEDA</key>
+			<key>620DBC625B9553485005CFF8</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1650,11 +1650,11 @@
 				<key>name</key>
 				<string>autotuned_index.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/autotuned_index.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/autotuned_index.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>2E411F99E3AB7154484B4F96</key>
+			<key>77924684EB4E194F7D5AEB34</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1665,11 +1665,11 @@
 				<key>name</key>
 				<string>kmeans_index.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/kmeans_index.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/kmeans_index.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>586A8EC141BDFA82B3B0518C</key>
+			<key>E135AF87ADE60480CC25042F</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1680,11 +1680,11 @@
 				<key>name</key>
 				<string>config.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/config.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/config.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>B7BF51E8E757FF8A162D3662</key>
+			<key>2C32AA67EFB719DD5E2A82A5</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1695,11 +1695,11 @@
 				<key>name</key>
 				<string>lsh_index.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/lsh_index.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/lsh_index.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>FB213FF0567D1B312DDBD05D</key>
+			<key>25AE05BBFD0FC4AEC23958AA</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1710,11 +1710,11 @@
 				<key>name</key>
 				<string>linear_index.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/linear_index.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/linear_index.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>45F38573A0B0DEEC8BBC7A2C</key>
+			<key>15ABD763D30FFE5EFBB30630</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1725,11 +1725,11 @@
 				<key>name</key>
 				<string>simplex_downhill.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/simplex_downhill.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/simplex_downhill.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>F070AF5E3926EB2CB7A15D1B</key>
+			<key>969B1EC199C13767F0E8A567</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1740,11 +1740,11 @@
 				<key>name</key>
 				<string>params.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/params.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/params.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>49EFFCF36CF194CCE0E1FAAB</key>
+			<key>26E139CF88AC334A010BFD67</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1755,11 +1755,11 @@
 				<key>name</key>
 				<string>kdtree_index.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/kdtree_index.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/kdtree_index.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>FF58A50E588D6A64EE206840</key>
+			<key>DFE8958FFCFB21B4BCDFD12D</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1770,11 +1770,11 @@
 				<key>name</key>
 				<string>hdf5.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/hdf5.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/hdf5.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>FD609E2EC17FCE181DFE635F</key>
+			<key>4EA3517E853734C875B61BA9</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1785,7 +1785,7 @@
 				<key>name</key>
 				<string>dist.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/dist.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/dist.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -1793,42 +1793,42 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>D5A3AFF36064B2CACAD31716</string>
-					<string>FD609E2EC17FCE181DFE635F</string>
-					<string>FF58A50E588D6A64EE206840</string>
-					<string>49EFFCF36CF194CCE0E1FAAB</string>
-					<string>F070AF5E3926EB2CB7A15D1B</string>
-					<string>45F38573A0B0DEEC8BBC7A2C</string>
-					<string>FB213FF0567D1B312DDBD05D</string>
-					<string>B7BF51E8E757FF8A162D3662</string>
-					<string>586A8EC141BDFA82B3B0518C</string>
-					<string>2E411F99E3AB7154484B4F96</string>
-					<string>E7DDB716B5AE0DEA82DFFEDA</string>
-					<string>CBDE84185E2969BA4AB209FC</string>
-					<string>A15E0125B8C9B7F01DED5695</string>
-					<string>DCB56F4E9F44E31D571BC9C4</string>
-					<string>722542BCDC94162B6A8B9B72</string>
-					<string>01DAE5C2E3E0A74207B2BE49</string>
-					<string>1E95EFD35ED9C5D97F2F015E</string>
-					<string>FEDA0B6056089762F5FA11CA</string>
-					<string>096CB33CAD6C5A446E7026E9</string>
-					<string>0CF0AA3895D28E97D8A1E4A9</string>
-					<string>E5F6E381641665852B997FC4</string>
-					<string>758F19335D4E46A5E0DE449F</string>
-					<string>6DD5A3CBB6D5BBA1C1354F1B</string>
-					<string>F9EC3DDC0E9F85C34B21C760</string>
-					<string>974AACF856A0A1B7D8F259E0</string>
-					<string>011E372AEA4DFBC1A32C2851</string>
-					<string>6B907CFBB1B0FEDE76C41AA0</string>
-					<string>9B076DCB5B800BE9AF1B71A6</string>
-					<string>7E57AAE3FAB29F87D19451BC</string>
-					<string>9DA0CBD43DA38386EB04C9AE</string>
-					<string>0173A3F435DECD5A4DDE0B8E</string>
-					<string>946187321200AC04E570E6EC</string>
-					<string>36F0FF7F8D7342D220CC6319</string>
-					<string>45410DD818BB205166E67E89</string>
-					<string>ECC34C470C60F0A2AE2761B1</string>
-					<string>8DB45DE3BD6BB97E34BDB411</string>
+					<string>7798E79566AB663542F62524</string>
+					<string>4EA3517E853734C875B61BA9</string>
+					<string>DFE8958FFCFB21B4BCDFD12D</string>
+					<string>26E139CF88AC334A010BFD67</string>
+					<string>969B1EC199C13767F0E8A567</string>
+					<string>15ABD763D30FFE5EFBB30630</string>
+					<string>25AE05BBFD0FC4AEC23958AA</string>
+					<string>2C32AA67EFB719DD5E2A82A5</string>
+					<string>E135AF87ADE60480CC25042F</string>
+					<string>77924684EB4E194F7D5AEB34</string>
+					<string>620DBC625B9553485005CFF8</string>
+					<string>3DC3110D58F7DDC9FD8ED66C</string>
+					<string>4119AAEF888A28249BC88D90</string>
+					<string>FC2535D4C4A96EC590A4D097</string>
+					<string>0BBEE3184EE96F1BB07407E1</string>
+					<string>62715729653A084DAD42C640</string>
+					<string>8D81C7655767206FFE885B97</string>
+					<string>DAF9A3084671F422A4728A92</string>
+					<string>71CAFD24C3D24A42EAFB9345</string>
+					<string>24191B8AB71758C1213225CA</string>
+					<string>DCB713C361DB5B555CDA8727</string>
+					<string>A68E855441F2BDDA74AA4BAB</string>
+					<string>9DD8EA775A59329C3024E386</string>
+					<string>2DF8C1B50CB95E6CBBE2525C</string>
+					<string>EA03B07F0C65EF74DBB5C757</string>
+					<string>500A2FF9EB17AB31E6D2FD5B</string>
+					<string>84CDC2643B15FE5AF531D5FE</string>
+					<string>A8BFEE6289D49679D3C1ABEA</string>
+					<string>AD3950DFDB20D7D7893E855E</string>
+					<string>5345F2676265B771BE52B5FA</string>
+					<string>A7C1651149ECDE8BBE641F76</string>
+					<string>B5640E3836AEA84E0E07ED84</string>
+					<string>C5D1107ECBFB14E8AC123CF6</string>
+					<string>D7B5EE8A8B7E3D53A1E2DD3B</string>
+					<string>A19926950C6F43B1E5B35215</string>
+					<string>BDA499159407A31B0D3481F7</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -1837,7 +1837,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>D5A3AFF36064B2CACAD31716</key>
+			<key>7798E79566AB663542F62524</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1848,11 +1848,11 @@
 				<key>name</key>
 				<string>composite_index.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/composite_index.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann/composite_index.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>FB2852BC651C91987A1C26FB</key>
+			<key>2BDC2BE553898AAD2DE46370</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1863,11 +1863,11 @@
 				<key>name</key>
 				<string>scan.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/scan.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/scan.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>41E9090E543FC2D51BFD312C</key>
+			<key>D26DBE9204388F8C1707CC4F</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1878,11 +1878,11 @@
 				<key>name</key>
 				<string>warp_reduce.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/warp_reduce.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/warp_reduce.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>5105862F1606831E9239FEAF</key>
+			<key>24EB848068746C51381183F8</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1893,11 +1893,11 @@
 				<key>name</key>
 				<string>simd_functions.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/simd_functions.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/simd_functions.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>18E16A7CA55F6761C64833F7</key>
+			<key>3FD991D8A74FB9D6FEBFF2E3</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1908,11 +1908,11 @@
 				<key>name</key>
 				<string>vec_traits.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/vec_traits.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/vec_traits.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>5A5CDEE1BFF097614562CD88</key>
+			<key>642921593A44F294841B8490</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1923,11 +1923,11 @@
 				<key>name</key>
 				<string>common.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/common.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/common.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>0ADD044A3066779F3673F1FE</key>
+			<key>A26181B73A0D446184E820DF</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1938,11 +1938,11 @@
 				<key>name</key>
 				<string>static_check.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/static_check.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/static_check.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>EBBA82550412B77EFA70AE87</key>
+			<key>A8627268CCE3AD388424D1E3</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1953,11 +1953,11 @@
 				<key>name</key>
 				<string>funcattrib.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/funcattrib.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/funcattrib.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>960BD311ABBA7D3299D7FE1F</key>
+			<key>E2AF05E6FF83D0747AE2146A</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1968,11 +1968,11 @@
 				<key>name</key>
 				<string>datamov_utils.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/datamov_utils.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/datamov_utils.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>FD2373742F56BFA0EF7FBF09</key>
+			<key>1EAC84FEBC9DB85F657662D4</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1983,11 +1983,11 @@
 				<key>name</key>
 				<string>color.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/color.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/color.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>6940F9A28CDC85ED7D1847C1</key>
+			<key>61E73CA29B3C9CB319770545</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -1998,11 +1998,11 @@
 				<key>name</key>
 				<string>emulation.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/emulation.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/emulation.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>C4BA8097B54C90163F99F5C1</key>
+			<key>8358D7AFAF9BE35864BBE940</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2013,11 +2013,11 @@
 				<key>name</key>
 				<string>transform_detail.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/transform_detail.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/transform_detail.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>E21FF871B93E31DA43FE7E42</key>
+			<key>2DB14A52C71E61BD6319CEF5</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2028,11 +2028,11 @@
 				<key>name</key>
 				<string>vec_distance_detail.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/vec_distance_detail.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/vec_distance_detail.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>2B75A06D9EF1817256BA26F6</key>
+			<key>890EAB0D01AD8F6CAF08D9D4</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2043,11 +2043,11 @@
 				<key>name</key>
 				<string>type_traits_detail.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/type_traits_detail.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/type_traits_detail.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>37D155721DCC51F3D1DC2E02</key>
+			<key>BE8EB1824680E8051B5C7692</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2058,11 +2058,11 @@
 				<key>name</key>
 				<string>color_detail.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/color_detail.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/color_detail.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>417A0B7154103C22ECC253E8</key>
+			<key>D0C0C9F69E53601EA0BFC184</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2073,7 +2073,7 @@
 				<key>name</key>
 				<string>reduce_key_val.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/reduce_key_val.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/reduce_key_val.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -2081,12 +2081,12 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>1C490B8705672F1410388922</string>
-					<string>417A0B7154103C22ECC253E8</string>
-					<string>37D155721DCC51F3D1DC2E02</string>
-					<string>2B75A06D9EF1817256BA26F6</string>
-					<string>E21FF871B93E31DA43FE7E42</string>
-					<string>C4BA8097B54C90163F99F5C1</string>
+					<string>2F2B832AB5F22FE49CD38EB9</string>
+					<string>D0C0C9F69E53601EA0BFC184</string>
+					<string>BE8EB1824680E8051B5C7692</string>
+					<string>890EAB0D01AD8F6CAF08D9D4</string>
+					<string>2DB14A52C71E61BD6319CEF5</string>
+					<string>8358D7AFAF9BE35864BBE940</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -2095,7 +2095,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>1C490B8705672F1410388922</key>
+			<key>2F2B832AB5F22FE49CD38EB9</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2106,11 +2106,11 @@
 				<key>name</key>
 				<string>reduce.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/reduce.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail/reduce.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>A1E5C3C977BF213B183ABC28</key>
+			<key>317E86E299B9096BCC777619</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2121,11 +2121,11 @@
 				<key>name</key>
 				<string>block.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/block.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/block.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>7D86D41170A02B361853AB73</key>
+			<key>2AE84B76CB0C3E7491E627C8</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2136,11 +2136,11 @@
 				<key>name</key>
 				<string>vec_distance.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/vec_distance.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/vec_distance.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>AF7C3C8465AD112E066C67A7</key>
+			<key>CC49D6363BE04BB30B4A332C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2151,11 +2151,11 @@
 				<key>name</key>
 				<string>type_traits.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/type_traits.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/type_traits.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>84238297E460936905B92D16</key>
+			<key>4C43AFDE0C0C6E40FEB4A5D8</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2166,11 +2166,11 @@
 				<key>name</key>
 				<string>limits.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/limits.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/limits.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>3ADB4E06C4EDB97E020A778D</key>
+			<key>577B9C1F6CA7FF4CA81C1A65</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2181,11 +2181,11 @@
 				<key>name</key>
 				<string>functional.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/functional.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/functional.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>1AD5FD8CB7EA240501080287</key>
+			<key>68E9C91BBBBE49FB8F6B6259</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2196,11 +2196,11 @@
 				<key>name</key>
 				<string>vec_math.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/vec_math.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/vec_math.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>35EEEA3F57EFB3D7DE4C0DED</key>
+			<key>9D7A6D8F4A9E540F5DBE8484</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2211,11 +2211,11 @@
 				<key>name</key>
 				<string>saturate_cast.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/saturate_cast.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/saturate_cast.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>A2C86A44C1FD1CB1DD189DFA</key>
+			<key>C88E91CFF050D368E43CF51A</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2226,11 +2226,11 @@
 				<key>name</key>
 				<string>transform.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/transform.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/transform.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>F38AB91361456BF84AB04DD1</key>
+			<key>87429C9AA3EDE6098D37B3DD</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2241,11 +2241,11 @@
 				<key>name</key>
 				<string>border_interpolate.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/border_interpolate.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/border_interpolate.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>0339099A1F7B84040D88AD3C</key>
+			<key>91131016CA83B06CCE5C7AE4</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2256,11 +2256,11 @@
 				<key>name</key>
 				<string>warp_shuffle.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/warp_shuffle.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/warp_shuffle.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>63152EF07846DECD2854B62C</key>
+			<key>8CA237D261B0486C68473436</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2271,11 +2271,11 @@
 				<key>name</key>
 				<string>utility.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/utility.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/utility.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>B1DCC53B17C50537AACC8DF0</key>
+			<key>82D1A22E61972ACAC1D89655</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2286,11 +2286,11 @@
 				<key>name</key>
 				<string>reduce.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/reduce.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/reduce.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>C362FD421E9C5E4962E410EB</key>
+			<key>ADE984876D56BD012AF1A7AB</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2301,11 +2301,11 @@
 				<key>name</key>
 				<string>dynamic_smem.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/dynamic_smem.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/dynamic_smem.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>F0FCA82EC2A69AEB3BA6AF38</key>
+			<key>70F4975DFB58864E910F8CE3</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2316,7 +2316,7 @@
 				<key>name</key>
 				<string>filters.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/filters.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/filters.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -2324,32 +2324,32 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>74889E354F64911B56A1CAD1</string>
-					<string>F0FCA82EC2A69AEB3BA6AF38</string>
-					<string>C362FD421E9C5E4962E410EB</string>
-					<string>B1DCC53B17C50537AACC8DF0</string>
-					<string>63152EF07846DECD2854B62C</string>
-					<string>0339099A1F7B84040D88AD3C</string>
-					<string>F38AB91361456BF84AB04DD1</string>
-					<string>A2C86A44C1FD1CB1DD189DFA</string>
-					<string>35EEEA3F57EFB3D7DE4C0DED</string>
-					<string>1AD5FD8CB7EA240501080287</string>
-					<string>3ADB4E06C4EDB97E020A778D</string>
-					<string>84238297E460936905B92D16</string>
-					<string>AF7C3C8465AD112E066C67A7</string>
-					<string>7D86D41170A02B361853AB73</string>
-					<string>A1E5C3C977BF213B183ABC28</string>
+					<string>D30F454443752CC63F2A5A7A</string>
+					<string>70F4975DFB58864E910F8CE3</string>
+					<string>ADE984876D56BD012AF1A7AB</string>
+					<string>82D1A22E61972ACAC1D89655</string>
+					<string>8CA237D261B0486C68473436</string>
+					<string>91131016CA83B06CCE5C7AE4</string>
+					<string>87429C9AA3EDE6098D37B3DD</string>
+					<string>C88E91CFF050D368E43CF51A</string>
+					<string>9D7A6D8F4A9E540F5DBE8484</string>
+					<string>68E9C91BBBBE49FB8F6B6259</string>
+					<string>577B9C1F6CA7FF4CA81C1A65</string>
+					<string>4C43AFDE0C0C6E40FEB4A5D8</string>
+					<string>CC49D6363BE04BB30B4A332C</string>
+					<string>2AE84B76CB0C3E7491E627C8</string>
+					<string>317E86E299B9096BCC777619</string>
 					<string>DF5D380A1A4583A1636503A6</string>
-					<string>6940F9A28CDC85ED7D1847C1</string>
-					<string>FD2373742F56BFA0EF7FBF09</string>
-					<string>960BD311ABBA7D3299D7FE1F</string>
-					<string>EBBA82550412B77EFA70AE87</string>
-					<string>0ADD044A3066779F3673F1FE</string>
-					<string>5A5CDEE1BFF097614562CD88</string>
-					<string>18E16A7CA55F6761C64833F7</string>
-					<string>5105862F1606831E9239FEAF</string>
-					<string>41E9090E543FC2D51BFD312C</string>
-					<string>FB2852BC651C91987A1C26FB</string>
+					<string>61E73CA29B3C9CB319770545</string>
+					<string>1EAC84FEBC9DB85F657662D4</string>
+					<string>E2AF05E6FF83D0747AE2146A</string>
+					<string>A8627268CCE3AD388424D1E3</string>
+					<string>A26181B73A0D446184E820DF</string>
+					<string>642921593A44F294841B8490</string>
+					<string>3FD991D8A74FB9D6FEBFF2E3</string>
+					<string>24EB848068746C51381183F8</string>
+					<string>D26DBE9204388F8C1707CC4F</string>
+					<string>2BDC2BE553898AAD2DE46370</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -2358,7 +2358,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>74889E354F64911B56A1CAD1</key>
+			<key>D30F454443752CC63F2A5A7A</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2369,11 +2369,11 @@
 				<key>name</key>
 				<string>warp.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/warp.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/warp.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>D902EB2409214285BCF5F191</key>
+			<key>2D5FD97437A34B0A8AAF9AF1</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2384,11 +2384,11 @@
 				<key>name</key>
 				<string>stream_accessor.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/stream_accessor.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/stream_accessor.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>F886EBA3F8F05C7F74633933</key>
+			<key>9AA37E8C5AFBC0E9F5898C31</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2399,11 +2399,11 @@
 				<key>name</key>
 				<string>devmem2d.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/devmem2d.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/devmem2d.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>E354468911BA093791076DD7</key>
+			<key>9F7CEF2070456BD44FF7B790</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2414,7 +2414,7 @@
 				<key>name</key>
 				<string>gpumat.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/gpumat.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/gpumat.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -2422,10 +2422,10 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>AF9A155219FEDFA6E95454EA</string>
-					<string>E354468911BA093791076DD7</string>
-					<string>F886EBA3F8F05C7F74633933</string>
-					<string>D902EB2409214285BCF5F191</string>
+					<string>97BEA6FA9EFBBE6BCA49D948</string>
+					<string>9F7CEF2070456BD44FF7B790</string>
+					<string>9AA37E8C5AFBC0E9F5898C31</string>
+					<string>2D5FD97437A34B0A8AAF9AF1</string>
 					<string>C830064088936DB0F1158554</string>
 				</array>
 				<key>isa</key>
@@ -2435,7 +2435,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>AF9A155219FEDFA6E95454EA</key>
+			<key>97BEA6FA9EFBBE6BCA49D948</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2446,11 +2446,11 @@
 				<key>name</key>
 				<string>gpu.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/gpu.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/gpu.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>97FBD89E6180673035AD1083</key>
+			<key>75414ECF31440A6DA5B2F180</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2461,11 +2461,11 @@
 				<key>name</key>
 				<string>video.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video/video.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video/video.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>71C98C3F44D63B39F1482A54</key>
+			<key>E9B45AA2524EF54C9C8E1399</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2476,7 +2476,7 @@
 				<key>name</key>
 				<string>background_segm.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video/background_segm.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video/background_segm.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -2484,9 +2484,9 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>E14D3EF03E140F5604900412</string>
-					<string>71C98C3F44D63B39F1482A54</string>
-					<string>97FBD89E6180673035AD1083</string>
+					<string>8AE760EACA86FBFC622CF75F</string>
+					<string>E9B45AA2524EF54C9C8E1399</string>
+					<string>75414ECF31440A6DA5B2F180</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -2495,7 +2495,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>E14D3EF03E140F5604900412</key>
+			<key>8AE760EACA86FBFC622CF75F</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2506,11 +2506,11 @@
 				<key>name</key>
 				<string>tracking.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video/tracking.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video/tracking.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>B09FCFF976DCEACB7C7C8D4E</key>
+			<key>F9364FB64CAEB396A58AAFA4</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2521,7 +2521,7 @@
 				<key>name</key>
 				<string>optical_flow.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres/optical_flow.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres/optical_flow.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -2529,8 +2529,8 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>C65A89034372885C3F7259F5</string>
-					<string>B09FCFF976DCEACB7C7C8D4E</string>
+					<string>396442E3F3C1ACA3075AC1BF</string>
+					<string>F9364FB64CAEB396A58AAFA4</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -2539,7 +2539,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>C65A89034372885C3F7259F5</key>
+			<key>396442E3F3C1ACA3075AC1BF</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2550,11 +2550,11 @@
 				<key>name</key>
 				<string>superres.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres/superres.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres/superres.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>D078C50BFCDE342496B5D1F3</key>
+			<key>81E229FD99EDCFC1EE9AE3AF</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2565,11 +2565,11 @@
 				<key>name</key>
 				<string>nonfree.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree/nonfree.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree/nonfree.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>B353080168DCA97D7DF8732F</key>
+			<key>F1B7A1055BCEF8CC013865F7</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2580,11 +2580,11 @@
 				<key>name</key>
 				<string>ocl.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree/ocl.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree/ocl.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>C7178EBE5A9A3912E58D1F0F</key>
+			<key>651889E7CBD7E219544973BD</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2595,7 +2595,7 @@
 				<key>name</key>
 				<string>features2d.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree/features2d.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree/features2d.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -2603,10 +2603,10 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>DA71BD3D5EB1A1F5E64B6751</string>
-					<string>C7178EBE5A9A3912E58D1F0F</string>
-					<string>B353080168DCA97D7DF8732F</string>
-					<string>D078C50BFCDE342496B5D1F3</string>
+					<string>673C7770D08FF376F70BFED7</string>
+					<string>651889E7CBD7E219544973BD</string>
+					<string>F1B7A1055BCEF8CC013865F7</string>
+					<string>81E229FD99EDCFC1EE9AE3AF</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -2626,7 +2626,7 @@
 					<string>1E45F8C3CCFF6847BFF957AA</string>
 					<string>A5A3A2F98919E2243C73199C</string>
 					<string>AF43D9569510BEB0E2DFB944</string>
-					<string>9B7D592E7AB311451A27C46E</string>
+					<string>7D5571E60DEB08241D06512D</string>
 					<string>3E44059DCBC2444D65660B9C</string>
 					<string>D0CAFE48EE488EEED9149670</string>
 					<string>961A625BD21068033782887C</string>
@@ -2636,7 +2636,7 @@
 					<string>86FEC009E2721D0FB23338D7</string>
 					<string>0478E60892BF4C0731AE0763</string>
 					<string>38D119387412EF71F9FAA033</string>
-					<string>9ABD8CF34D37FADFEB352B88</string>
+					<string>23A88666C24F3EA60899FA20</string>
 					<string>3B8F70BFDA30BBA2A5A060FC</string>
 					<string>428EB732FD42504F37BCA78A</string>
 				</array>
@@ -2647,7 +2647,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>DA71BD3D5EB1A1F5E64B6751</key>
+			<key>673C7770D08FF376F70BFED7</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2658,11 +2658,11 @@
 				<key>name</key>
 				<string>gpu.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree/gpu.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree/gpu.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>319268D200F1BA567E4CCFF9</key>
+			<key>F17A0D694240BE581CC20065</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2673,11 +2673,11 @@
 				<key>name</key>
 				<string>cxeigen.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv/cxeigen.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv/cxeigen.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>30884ECD9C171AB1B1BDFC3F</key>
+			<key>2ECD723244C50A0B0B788AA9</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2688,11 +2688,11 @@
 				<key>name</key>
 				<string>cv.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv/cv.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv/cv.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>7C3D9C0EAC738ED2624D264B</key>
+			<key>324208382DB6B62127FBB8F5</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2703,11 +2703,11 @@
 				<key>name</key>
 				<string>ml.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv/ml.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv/ml.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>7101CF2125B8B2BF46AA2662</key>
+			<key>711D235C75E058A22A07520B</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2718,11 +2718,11 @@
 				<key>name</key>
 				<string>cxcore.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv/cxcore.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv/cxcore.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>CF29BFB3FD3CAA54F336E6FD</key>
+			<key>77EFFAD5BAEBF32DB956F7AD</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2733,11 +2733,11 @@
 				<key>name</key>
 				<string>cvaux.hpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv/cvaux.hpp</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv/cvaux.hpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>DB8653D6433E14BF06F3EFAF</key>
+			<key>091BD9F852B54F224CE55C83</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2748,11 +2748,11 @@
 				<key>name</key>
 				<string>cvwimage.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv/cvwimage.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv/cvwimage.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>D76A59E7B3601E76351C9BDB</key>
+			<key>A216FA75041F258DA78F65A8</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2763,11 +2763,11 @@
 				<key>name</key>
 				<string>cvaux.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv/cvaux.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv/cvaux.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>B8427966039B53A0FE69C1F0</key>
+			<key>B0D6A0835C30E450BD9DB02D</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2778,11 +2778,11 @@
 				<key>name</key>
 				<string>cxcore.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv/cxcore.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv/cxcore.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>E90542C149C83316678AB011</key>
+			<key>3D7A70F87D1069709F634032</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2793,11 +2793,11 @@
 				<key>name</key>
 				<string>cxmisc.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv/cxmisc.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv/cxmisc.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>33FF03222909C1A0ECE43753</key>
+			<key>46BA83AF0FD8711B03391C6C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2808,7 +2808,7 @@
 				<key>name</key>
 				<string>cv.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv/cv.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv/cv.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -2816,17 +2816,17 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>9FF9126184DFBDE8A912373E</string>
-					<string>33FF03222909C1A0ECE43753</string>
-					<string>E90542C149C83316678AB011</string>
-					<string>B8427966039B53A0FE69C1F0</string>
-					<string>D76A59E7B3601E76351C9BDB</string>
-					<string>DB8653D6433E14BF06F3EFAF</string>
-					<string>CF29BFB3FD3CAA54F336E6FD</string>
-					<string>7101CF2125B8B2BF46AA2662</string>
-					<string>7C3D9C0EAC738ED2624D264B</string>
-					<string>30884ECD9C171AB1B1BDFC3F</string>
-					<string>319268D200F1BA567E4CCFF9</string>
+					<string>995F42DA1D8A41FBAFC7C7E7</string>
+					<string>46BA83AF0FD8711B03391C6C</string>
+					<string>3D7A70F87D1069709F634032</string>
+					<string>B0D6A0835C30E450BD9DB02D</string>
+					<string>A216FA75041F258DA78F65A8</string>
+					<string>091BD9F852B54F224CE55C83</string>
+					<string>77EFFAD5BAEBF32DB956F7AD</string>
+					<string>711D235C75E058A22A07520B</string>
+					<string>324208382DB6B62127FBB8F5</string>
+					<string>2ECD723244C50A0B0B788AA9</string>
+					<string>F17A0D694240BE581CC20065</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -2875,7 +2875,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>9FF9126184DFBDE8A912373E</key>
+			<key>995F42DA1D8A41FBAFC7C7E7</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2886,11 +2886,11 @@
 				<key>name</key>
 				<string>highgui.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv/highgui.h</string>
+				<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv/highgui.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>516717F84C0146512C47A3EC</key>
+			<key>5A8474A9C78E39604622798E</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2901,11 +2901,11 @@
 				<key>name</key>
 				<string>ofxCvHaarFinder.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvHaarFinder.h</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvHaarFinder.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>D847EBE484F4F500F9CF2549</key>
+			<key>7DF491C1B1FACBA6A695D7FB</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2916,11 +2916,11 @@
 				<key>name</key>
 				<string>ofxCvImage.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvImage.h</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvImage.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>9A048549F08C6DFFA79E6DEF</key>
+			<key>78090C405D308CDB638AB19D</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2931,18 +2931,18 @@
 				<key>name</key>
 				<string>ofxCvGrayscaleImage.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.h</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>FB09C6B2A1DA0EA217240CB8</key>
+			<key>C727BF0E5E2633CADA72FCBC</key>
 			<dict>
 				<key>fileRef</key>
-				<string>057122A817D12571F8C0C7A4</string>
+				<string>6A1C4B66D3F8667AE633B12A</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>057122A817D12571F8C0C7A4</key>
+			<key>6A1C4B66D3F8667AE633B12A</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -2953,18 +2953,18 @@
 				<key>name</key>
 				<string>ofxCvGrayscaleImage.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>169D3C72FDE6C5590A1616F5</key>
+			<key>BC9D698DFFE25117A83A929B</key>
 			<dict>
 				<key>fileRef</key>
-				<string>7B6A03390302D5A2C9F0E4AB</string>
+				<string>DBC4C328B9D4211A1B3EED96</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>7B6A03390302D5A2C9F0E4AB</key>
+			<key>DBC4C328B9D4211A1B3EED96</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -2975,11 +2975,11 @@
 				<key>name</key>
 				<string>ofxCvFloatImage.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>F7269F96AC34A2B44A680D03</key>
+			<key>3AAF8E287CD16F4BDD4588E5</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -2990,18 +2990,18 @@
 				<key>name</key>
 				<string>ofxCvFloatImage.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvFloatImage.h</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvFloatImage.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>63020F16C7E8DED980111241</key>
+			<key>77399DCF819EAE2674D467DF</key>
 			<dict>
 				<key>fileRef</key>
-				<string>C6151136D101F857DAE12722</string>
+				<string>201244234EB9CF0C8DADBA63</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>C6151136D101F857DAE12722</key>
+			<key>201244234EB9CF0C8DADBA63</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3012,18 +3012,18 @@
 				<key>name</key>
 				<string>ofxCvImage.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvImage.cpp</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvImage.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>E212C821D1064B92DD953A42</key>
+			<key>688395DF3AD6C8570761DC08</key>
 			<dict>
 				<key>fileRef</key>
-				<string>9A16CBF2E8CFE43AF54FE6F5</string>
+				<string>5979B0032F72969C72BA96C2</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>9A16CBF2E8CFE43AF54FE6F5</key>
+			<key>5979B0032F72969C72BA96C2</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3034,18 +3034,18 @@
 				<key>name</key>
 				<string>ofxCvHaarFinder.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvHaarFinder.cpp</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvHaarFinder.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>1D5F3298C2FA073628012944</key>
+			<key>68FE25DEF56B90EDB6DF4EF8</key>
 			<dict>
 				<key>fileRef</key>
-				<string>C76DE5C29BDBD2CAA1DD0021</string>
+				<string>BD4D9A1B379E1E09E57786EF</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>C76DE5C29BDBD2CAA1DD0021</key>
+			<key>BD4D9A1B379E1E09E57786EF</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3056,11 +3056,11 @@
 				<key>name</key>
 				<string>ofxCvContourFinder.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>C1C56D20A1A57DC44096BFE7</key>
+			<key>85A04481D32536B6B6CFB1A6</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3071,11 +3071,11 @@
 				<key>name</key>
 				<string>ofxCvContourFinder.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvContourFinder.h</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvContourFinder.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>CE81A5E39EB3C871FDF3D4D5</key>
+			<key>FA3BC10F8A9B03ACB02732AC</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3086,11 +3086,11 @@
 				<key>name</key>
 				<string>ofxOpenCv.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxOpenCv.h</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxOpenCv.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>D5BB6F0357B6422E1B1656B4</key>
+			<key>DC194FE303EA0C88C94C75FE</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3101,11 +3101,11 @@
 				<key>name</key>
 				<string>ofxCvColorImage.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvColorImage.h</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvColorImage.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>603F2267D449084A4187A049</key>
+			<key>CADB3DC9BC56F30B983B15F2</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3116,11 +3116,11 @@
 				<key>name</key>
 				<string>ofxCvBlob.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvBlob.h</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvBlob.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>8E79CF8911DFABAFE23EA45B</key>
+			<key>CBD606C5B7B81AA162F03EE4</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3131,11 +3131,11 @@
 				<key>name</key>
 				<string>ofxCvConstants.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvConstants.h</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvConstants.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>DEA2EDC0AFD59176FDEDC222</key>
+			<key>4B812052E49179DB962FDD2F</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3146,18 +3146,18 @@
 				<key>name</key>
 				<string>ofxCvShortImage.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvShortImage.h</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvShortImage.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>D3301F6A0B43BB293ED97C1D</key>
+			<key>3354709252A5DC905E9FBA46</key>
 			<dict>
 				<key>fileRef</key>
-				<string>8A4DD23693DFAB8EC05FAA5D</string>
+				<string>352E9A5BD0759CFD7E473A81</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>8A4DD23693DFAB8EC05FAA5D</key>
+			<key>352E9A5BD0759CFD7E473A81</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3168,7 +3168,7 @@
 				<key>name</key>
 				<string>ofxCvShortImage.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -3176,23 +3176,23 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>CE9C7160245B19131DAE6128</string>
-					<string>8A4DD23693DFAB8EC05FAA5D</string>
-					<string>DEA2EDC0AFD59176FDEDC222</string>
-					<string>8E79CF8911DFABAFE23EA45B</string>
-					<string>603F2267D449084A4187A049</string>
-					<string>D5BB6F0357B6422E1B1656B4</string>
-					<string>CE81A5E39EB3C871FDF3D4D5</string>
-					<string>C1C56D20A1A57DC44096BFE7</string>
-					<string>C76DE5C29BDBD2CAA1DD0021</string>
-					<string>9A16CBF2E8CFE43AF54FE6F5</string>
-					<string>C6151136D101F857DAE12722</string>
-					<string>F7269F96AC34A2B44A680D03</string>
-					<string>7B6A03390302D5A2C9F0E4AB</string>
-					<string>057122A817D12571F8C0C7A4</string>
-					<string>9A048549F08C6DFFA79E6DEF</string>
-					<string>D847EBE484F4F500F9CF2549</string>
-					<string>516717F84C0146512C47A3EC</string>
+					<string>FDC938ECB6BDB8E319F89A40</string>
+					<string>352E9A5BD0759CFD7E473A81</string>
+					<string>4B812052E49179DB962FDD2F</string>
+					<string>CBD606C5B7B81AA162F03EE4</string>
+					<string>CADB3DC9BC56F30B983B15F2</string>
+					<string>DC194FE303EA0C88C94C75FE</string>
+					<string>FA3BC10F8A9B03ACB02732AC</string>
+					<string>85A04481D32536B6B6CFB1A6</string>
+					<string>BD4D9A1B379E1E09E57786EF</string>
+					<string>5979B0032F72969C72BA96C2</string>
+					<string>201244234EB9CF0C8DADBA63</string>
+					<string>3AAF8E287CD16F4BDD4588E5</string>
+					<string>DBC4C328B9D4211A1B3EED96</string>
+					<string>6A1C4B66D3F8667AE633B12A</string>
+					<string>78090C405D308CDB638AB19D</string>
+					<string>7DF491C1B1FACBA6A695D7FB</string>
+					<string>5A8474A9C78E39604622798E</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -3215,14 +3215,14 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>250A95BA26587BE85DB0A353</key>
+			<key>72CEEFF669D21538BA336662</key>
 			<dict>
 				<key>fileRef</key>
-				<string>CE9C7160245B19131DAE6128</string>
+				<string>FDC938ECB6BDB8E319F89A40</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>CE9C7160245B19131DAE6128</key>
+			<key>FDC938ECB6BDB8E319F89A40</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3233,18 +3233,18 @@
 				<key>name</key>
 				<string>ofxCvColorImage.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp</string>
+				<string>../../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>4DD96C70A1D94528E8366CBE</key>
+			<key>D8D436489219C6F1518BFACA</key>
 			<dict>
 				<key>fileRef</key>
-				<string>3088A3ABADD817D93580728C</string>
+				<string>C0CE7644BDE4028C984255FC</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>3088A3ABADD817D93580728C</key>
+			<key>C0CE7644BDE4028C984255FC</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3255,11 +3255,11 @@
 				<key>name</key>
 				<string>ofxFaceTracker2Instance.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxFaceTracker2/src/ofxFaceTracker2Instance.cpp</string>
+				<string>../../../../addons/ofxFaceTracker2/src/ofxFaceTracker2Instance.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>60D140975F4EEE2F4B2B1E39</key>
+			<key>DF4160F85C477328FCC18331</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3270,18 +3270,18 @@
 				<key>name</key>
 				<string>ofxFaceTracker2.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxFaceTracker2/src/ofxFaceTracker2.h</string>
+				<string>../../../../addons/ofxFaceTracker2/src/ofxFaceTracker2.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>0B1AB0BB6132B85346C794B9</key>
+			<key>C13249A1F91799344859D1F5</key>
 			<dict>
 				<key>fileRef</key>
-				<string>B5DA608E0F9EDDC983B4B8AA</string>
+				<string>1F7C8989EA3D275B9A7ED78F</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>B5DA608E0F9EDDC983B4B8AA</key>
+			<key>1F7C8989EA3D275B9A7ED78F</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3292,18 +3292,18 @@
 				<key>name</key>
 				<string>ofxFaceTracker2Landmarks.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxFaceTracker2/src/ofxFaceTracker2Landmarks.cpp</string>
+				<string>../../../../addons/ofxFaceTracker2/src/ofxFaceTracker2Landmarks.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>24B7468AD9B2F6878497D33D</key>
+			<key>1023C5DA61EABEF7D6AF293D</key>
 			<dict>
 				<key>fileRef</key>
-				<string>1A785D79278B77F67FBCC4EA</string>
+				<string>34F4676BC4FCD37B34C0D853</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>1A785D79278B77F67FBCC4EA</key>
+			<key>34F4676BC4FCD37B34C0D853</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3314,11 +3314,11 @@
 				<key>name</key>
 				<string>ofxFaceTracker2.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxFaceTracker2/src/ofxFaceTracker2.cpp</string>
+				<string>../../../../addons/ofxFaceTracker2/src/ofxFaceTracker2.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>98F366E8AEAC2511750192E4</key>
+			<key>2672BCADED37352179ECFC92</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3329,11 +3329,11 @@
 				<key>name</key>
 				<string>ofxFaceTracker2Landmarks.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxFaceTracker2/src/ofxFaceTracker2Landmarks.h</string>
+				<string>../../../../addons/ofxFaceTracker2/src/ofxFaceTracker2Landmarks.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>CFAFB4D5CD5F5AABC4CBC9E2</key>
+			<key>F0A5A2D41D86A1FE77567023</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3344,7 +3344,7 @@
 				<key>name</key>
 				<string>ofxFaceTracker2InputInfo.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxFaceTracker2/src/ofxFaceTracker2InputInfo.h</string>
+				<string>../../../../addons/ofxFaceTracker2/src/ofxFaceTracker2InputInfo.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -3352,13 +3352,13 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>45F621B55AA859EC8194382F</string>
-					<string>CFAFB4D5CD5F5AABC4CBC9E2</string>
-					<string>98F366E8AEAC2511750192E4</string>
-					<string>1A785D79278B77F67FBCC4EA</string>
-					<string>B5DA608E0F9EDDC983B4B8AA</string>
-					<string>60D140975F4EEE2F4B2B1E39</string>
-					<string>3088A3ABADD817D93580728C</string>
+					<string>A08AD0CF00743B71EF2BAB96</string>
+					<string>F0A5A2D41D86A1FE77567023</string>
+					<string>2672BCADED37352179ECFC92</string>
+					<string>34F4676BC4FCD37B34C0D853</string>
+					<string>1F7C8989EA3D275B9A7ED78F</string>
+					<string>DF4160F85C477328FCC18331</string>
+					<string>C0CE7644BDE4028C984255FC</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -3380,7 +3380,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>45F621B55AA859EC8194382F</key>
+			<key>A08AD0CF00743B71EF2BAB96</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3391,18 +3391,18 @@
 				<key>name</key>
 				<string>ofxFaceTracker2Instance.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxFaceTracker2/src/ofxFaceTracker2Instance.h</string>
+				<string>../../../../addons/ofxFaceTracker2/src/ofxFaceTracker2Instance.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>F76B4A79BD8DE4854141CB47</key>
+			<key>686392976C4750946294DB09</key>
 			<dict>
 				<key>fileRef</key>
-				<string>A2D8249D46647E3C51769CDE</string>
+				<string>B21B1AA6E2F8D3D7376E0492</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>A2D8249D46647E3C51769CDE</key>
+			<key>B21B1AA6E2F8D3D7376E0492</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3413,7 +3413,7 @@
 				<key>name</key>
 				<string>fdog.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/CLD/src/fdog.cpp</string>
+				<string>../../../../addons/ofxCv/libs/CLD/src/fdog.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -3421,8 +3421,8 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>B047FF96258DC01792B272DB</string>
-					<string>A2D8249D46647E3C51769CDE</string>
+					<string>48305DD40E14A6375533266C</string>
+					<string>B21B1AA6E2F8D3D7376E0492</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -3431,14 +3431,14 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>B6840996567E78436F7ECFAB</key>
+			<key>BAFD73127D5ACFF6DAEDF739</key>
 			<dict>
 				<key>fileRef</key>
-				<string>B047FF96258DC01792B272DB</string>
+				<string>48305DD40E14A6375533266C</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>B047FF96258DC01792B272DB</key>
+			<key>48305DD40E14A6375533266C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3449,11 +3449,11 @@
 				<key>name</key>
 				<string>ETF.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/CLD/src/ETF.cpp</string>
+				<string>../../../../addons/ofxCv/libs/CLD/src/ETF.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>CC455256CE0ECFE328853737</key>
+			<key>50B1336821AFFD083AC2B5E1</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3464,11 +3464,11 @@
 				<key>name</key>
 				<string>fdog.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/CLD/include/CLD/fdog.h</string>
+				<string>../../../../addons/ofxCv/libs/CLD/include/CLD/fdog.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>FE15469185A3A49FEC9D2292</key>
+			<key>31FE2335CEE013FDEDB9C6C1</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3479,11 +3479,11 @@
 				<key>name</key>
 				<string>myvec.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/CLD/include/CLD/myvec.h</string>
+				<string>../../../../addons/ofxCv/libs/CLD/include/CLD/myvec.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>DB0CD4C938C079DCD67222FE</key>
+			<key>0A18654D8AF0A49C7BE440B4</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3494,7 +3494,7 @@
 				<key>name</key>
 				<string>imatrix.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/CLD/include/CLD/imatrix.h</string>
+				<string>../../../../addons/ofxCv/libs/CLD/include/CLD/imatrix.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -3502,10 +3502,10 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>820102E51B125101D727B3CC</string>
-					<string>DB0CD4C938C079DCD67222FE</string>
-					<string>FE15469185A3A49FEC9D2292</string>
-					<string>CC455256CE0ECFE328853737</string>
+					<string>167EBF5164BBC4B6C218EF42</string>
+					<string>0A18654D8AF0A49C7BE440B4</string>
+					<string>31FE2335CEE013FDEDB9C6C1</string>
+					<string>50B1336821AFFD083AC2B5E1</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -3541,7 +3541,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>820102E51B125101D727B3CC</key>
+			<key>167EBF5164BBC4B6C218EF42</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3552,18 +3552,18 @@
 				<key>name</key>
 				<string>ETF.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/CLD/include/CLD/ETF.h</string>
+				<string>../../../../addons/ofxCv/libs/CLD/include/CLD/ETF.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>45CC483A999BF1065A6B926C</key>
+			<key>3668E01145A9CB67D0FFA209</key>
 			<dict>
 				<key>fileRef</key>
-				<string>9DBD717072C35D324E101669</string>
+				<string>7C6FADD60E012E1BC987CAF9</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>9DBD717072C35D324E101669</key>
+			<key>7C6FADD60E012E1BC987CAF9</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3574,18 +3574,18 @@
 				<key>name</key>
 				<string>Distance.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/src/Distance.cpp</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/src/Distance.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>311DF864378748129984EA1D</key>
+			<key>9055538CFCE52B80869244A1</key>
 			<dict>
 				<key>fileRef</key>
-				<string>77A1A692522820F935B58762</string>
+				<string>7EFA71F0E0E066523EB04CEB</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>77A1A692522820F935B58762</key>
+			<key>7EFA71F0E0E066523EB04CEB</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3596,18 +3596,18 @@
 				<key>name</key>
 				<string>Kalman.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/src/Kalman.cpp</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/src/Kalman.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>A6668C5B1272D7FCD5B5A16F</key>
+			<key>54BB620B364263786CB68DD4</key>
 			<dict>
 				<key>fileRef</key>
-				<string>6CEC50DB3D06414010233963</string>
+				<string>E746DC2548E9FCFDFA6E374F</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>6CEC50DB3D06414010233963</key>
+			<key>E746DC2548E9FCFDFA6E374F</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3618,18 +3618,18 @@
 				<key>name</key>
 				<string>Utilities.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/src/Utilities.cpp</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/src/Utilities.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>C602002DE761F9B52DB4400A</key>
+			<key>68E3A5079016D4E01F156AFE</key>
 			<dict>
 				<key>fileRef</key>
-				<string>AE75A3FBA2C2D87D14F06FE6</string>
+				<string>469D7DCC5A746DDE0B13FF7A</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>AE75A3FBA2C2D87D14F06FE6</key>
+			<key>469D7DCC5A746DDE0B13FF7A</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3640,18 +3640,18 @@
 				<key>name</key>
 				<string>ObjectFinder.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/src/ObjectFinder.cpp</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/src/ObjectFinder.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>6AABAB39E82AF5CFEA23A205</key>
+			<key>8DCF9706FEE973E12FFEAEC6</key>
 			<dict>
 				<key>fileRef</key>
-				<string>5FBB4A8427353AED09174BE5</string>
+				<string>02DBFAF5DFC20A124BBE038C</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>5FBB4A8427353AED09174BE5</key>
+			<key>02DBFAF5DFC20A124BBE038C</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3662,18 +3662,18 @@
 				<key>name</key>
 				<string>ContourFinder.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/src/ContourFinder.cpp</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/src/ContourFinder.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>5CC34D433F5806179935B89D</key>
+			<key>83D7BD713BC335A501B90C06</key>
 			<dict>
 				<key>fileRef</key>
-				<string>03A75A648BC4CF1D9DEDD0CE</string>
+				<string>90A4CA8BBB42CBD7231E5053</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>03A75A648BC4CF1D9DEDD0CE</key>
+			<key>90A4CA8BBB42CBD7231E5053</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3684,18 +3684,18 @@
 				<key>name</key>
 				<string>Flow.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/src/Flow.cpp</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/src/Flow.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>EBCDE831EFAE08274E799C97</key>
+			<key>A3840455824ED7EC4E78C743</key>
 			<dict>
 				<key>fileRef</key>
-				<string>402C8F4015542356D362AC88</string>
+				<string>430A3006B3CB1DCAD9602C9A</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>402C8F4015542356D362AC88</key>
+			<key>430A3006B3CB1DCAD9602C9A</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3706,18 +3706,18 @@
 				<key>name</key>
 				<string>Calibration.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/src/Calibration.cpp</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/src/Calibration.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>10B69DE456AED1288FC9316B</key>
+			<key>7A91CB6FED13B1B0EB7D718D</key>
 			<dict>
 				<key>fileRef</key>
-				<string>A810DF70319A10353588F5DB</string>
+				<string>7A70F0ED0CD9640627B2E830</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>A810DF70319A10353588F5DB</key>
+			<key>7A70F0ED0CD9640627B2E830</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3728,18 +3728,18 @@
 				<key>name</key>
 				<string>Tracker.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/src/Tracker.cpp</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/src/Tracker.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>7CDAD32BE4FA46701E3552C7</key>
+			<key>DEF9DC74D70006F9420B5C6E</key>
 			<dict>
 				<key>fileRef</key>
-				<string>5CBF6AED6A17AC0C17F63CC4</string>
+				<string>8B9E087677F4B4CD5DEF77BC</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>5CBF6AED6A17AC0C17F63CC4</key>
+			<key>8B9E087677F4B4CD5DEF77BC</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3750,18 +3750,18 @@
 				<key>name</key>
 				<string>RunningBackground.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/src/RunningBackground.cpp</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/src/RunningBackground.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>DBCB84A37F9AECC254870D79</key>
+			<key>AFF1895BA59C9A17328B1DAA</key>
 			<dict>
 				<key>fileRef</key>
-				<string>D347FB65D19015303863922A</string>
+				<string>EDC4F2A77B01F0AB603DD4AE</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>D347FB65D19015303863922A</key>
+			<key>EDC4F2A77B01F0AB603DD4AE</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3772,7 +3772,7 @@
 				<key>name</key>
 				<string>Wrappers.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/src/Wrappers.cpp</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/src/Wrappers.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -3780,17 +3780,17 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>B9076967F8C54A04362C04AA</string>
-					<string>D347FB65D19015303863922A</string>
-					<string>5CBF6AED6A17AC0C17F63CC4</string>
-					<string>A810DF70319A10353588F5DB</string>
-					<string>402C8F4015542356D362AC88</string>
-					<string>03A75A648BC4CF1D9DEDD0CE</string>
-					<string>5FBB4A8427353AED09174BE5</string>
-					<string>AE75A3FBA2C2D87D14F06FE6</string>
-					<string>6CEC50DB3D06414010233963</string>
-					<string>77A1A692522820F935B58762</string>
-					<string>9DBD717072C35D324E101669</string>
+					<string>9AE666196EEBE60BB86C47D6</string>
+					<string>EDC4F2A77B01F0AB603DD4AE</string>
+					<string>8B9E087677F4B4CD5DEF77BC</string>
+					<string>7A70F0ED0CD9640627B2E830</string>
+					<string>430A3006B3CB1DCAD9602C9A</string>
+					<string>90A4CA8BBB42CBD7231E5053</string>
+					<string>02DBFAF5DFC20A124BBE038C</string>
+					<string>469D7DCC5A746DDE0B13FF7A</string>
+					<string>E746DC2548E9FCFDFA6E374F</string>
+					<string>7EFA71F0E0E066523EB04CEB</string>
+					<string>7C6FADD60E012E1BC987CAF9</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -3799,14 +3799,14 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>2023EF517ED2D8B397511D4B</key>
+			<key>9CCDC2992B0D33839144F5CD</key>
 			<dict>
 				<key>fileRef</key>
-				<string>B9076967F8C54A04362C04AA</string>
+				<string>9AE666196EEBE60BB86C47D6</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>B9076967F8C54A04362C04AA</key>
+			<key>9AE666196EEBE60BB86C47D6</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -3817,11 +3817,11 @@
 				<key>name</key>
 				<string>Helpers.cpp</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/src/Helpers.cpp</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/src/Helpers.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>8738DE90218B1E9054A88B54</key>
+			<key>CDEC1091FAE4A1634CD2D432</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3832,11 +3832,11 @@
 				<key>name</key>
 				<string>Helpers.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Helpers.h</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Helpers.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>70046E043EDDB466ED625C3B</key>
+			<key>DC77A2B906263BF88B0594F0</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3847,11 +3847,11 @@
 				<key>name</key>
 				<string>Tracker.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Tracker.h</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Tracker.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>8326CDEDA153D242D924D2B6</key>
+			<key>7B8C737403A0CEBE1FA8D72D</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3862,11 +3862,11 @@
 				<key>name</key>
 				<string>Flow.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Flow.h</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Flow.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>178547E33CE398C7B59F08AB</key>
+			<key>272E0627D53CC943F13CF8C0</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3877,11 +3877,11 @@
 				<key>name</key>
 				<string>ContourFinder.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/include/ofxCv/ContourFinder.h</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/include/ofxCv/ContourFinder.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>F3C32677C12BD67CF9F8980E</key>
+			<key>995AC46A787805EEDD61DF08</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3892,11 +3892,11 @@
 				<key>name</key>
 				<string>Kalman.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Kalman.h</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Kalman.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>6B3CDFD1A15E92F074E7D5AE</key>
+			<key>14C7DC89B5EBECDA36366DFC</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3907,11 +3907,11 @@
 				<key>name</key>
 				<string>RunningBackground.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/include/ofxCv/RunningBackground.h</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/include/ofxCv/RunningBackground.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>84D3470A12DEE51F320224AC</key>
+			<key>8E8F0EBF23C322B0A8B78FBA</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3922,11 +3922,11 @@
 				<key>name</key>
 				<string>Utilities.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Utilities.h</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Utilities.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>73157AAE32787C63313C7D8E</key>
+			<key>CEA19983FE87318FFB2940EF</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3937,11 +3937,11 @@
 				<key>name</key>
 				<string>Wrappers.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Wrappers.h</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Wrappers.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>4524C0ED0C2DD3E085CE3350</key>
+			<key>E666102BC093FE6883C7E84E</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3952,11 +3952,11 @@
 				<key>name</key>
 				<string>ObjectFinder.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/include/ofxCv/ObjectFinder.h</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/include/ofxCv/ObjectFinder.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>58140E0F92D37844E9C8883D</key>
+			<key>DB5CA78C2AB5A679E6819AC2</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -3967,7 +3967,7 @@
 				<key>name</key>
 				<string>Calibration.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Calibration.h</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Calibration.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -3975,17 +3975,17 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>D29DD28C195CD81267F3C8A1</string>
-					<string>58140E0F92D37844E9C8883D</string>
-					<string>4524C0ED0C2DD3E085CE3350</string>
-					<string>73157AAE32787C63313C7D8E</string>
-					<string>84D3470A12DEE51F320224AC</string>
-					<string>6B3CDFD1A15E92F074E7D5AE</string>
-					<string>F3C32677C12BD67CF9F8980E</string>
-					<string>178547E33CE398C7B59F08AB</string>
-					<string>8326CDEDA153D242D924D2B6</string>
-					<string>70046E043EDDB466ED625C3B</string>
-					<string>8738DE90218B1E9054A88B54</string>
+					<string>B06DCA396E53C895245D3DA5</string>
+					<string>DB5CA78C2AB5A679E6819AC2</string>
+					<string>E666102BC093FE6883C7E84E</string>
+					<string>CEA19983FE87318FFB2940EF</string>
+					<string>8E8F0EBF23C322B0A8B78FBA</string>
+					<string>14C7DC89B5EBECDA36366DFC</string>
+					<string>995AC46A787805EEDD61DF08</string>
+					<string>272E0627D53CC943F13CF8C0</string>
+					<string>7B8C737403A0CEBE1FA8D72D</string>
+					<string>DC77A2B906263BF88B0594F0</string>
+					<string>CDEC1091FAE4A1634CD2D432</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -4035,7 +4035,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>D29DD28C195CD81267F3C8A1</key>
+			<key>B06DCA396E53C895245D3DA5</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -4046,7 +4046,7 @@
 				<key>name</key>
 				<string>Distance.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Distance.h</string>
+				<string>../../../../addons/ofxCv/libs/ofxCv/include/ofxCv/Distance.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -4054,7 +4054,7 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>325BD94FFB93161BBC68336E</string>
+					<string>B4FA7EFE1EBEF2DC40960195</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -4077,7 +4077,7 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>325BD94FFB93161BBC68336E</key>
+			<key>B4FA7EFE1EBEF2DC40960195</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -4088,7 +4088,7 @@
 				<key>name</key>
 				<string>ofxCv.h</string>
 				<key>path</key>
-				<string>../../../addons/ofxCv/src/ofxCv.h</string>
+				<string>../../../../addons/ofxCv/src/ofxCv.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -4127,7 +4127,7 @@
 				<key>name</key>
 				<string>openFrameworksLib.xcodeproj</string>
 				<key>path</key>
-				<string>../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj</string>
+				<string>../../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -4267,49 +4267,48 @@
 					<key>OTHER_LDFLAGS</key>
 					<array>
 						<string>$(OF_CORE_FRAMEWORKS) $(OF_CORE_LIBS)</string>
-						<string>../../../addons/ofxFaceTracker2/libs/dlib/lib/osx/libdlib.a</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a</string>
+						<string>../../../../addons/ofxFaceTracker2/libs/dlib/lib/osx/libdlib.a</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a</string>
 					</array>
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
-						<string>src</string>
-						<string>../../../addons/ofxCv/libs/ofxCv/include</string>
-						<string>../../../addons/ofxCv/libs/CLD/include/CLD</string>
-						<string>../../../addons/ofxCv/src</string>
-						<string>../../../addons/ofxFaceTracker2/libs/dlib/include</string>
-						<string>../../../addons/ofxFaceTracker2/src</string>
-						<string>../../../addons/ofxOpenCv/libs</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/emscripten</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/osx</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/license</string>
-						<string>../../../addons/ofxOpenCv/src</string>
+						<string>../../../../addons/ofxCv/libs/ofxCv/include</string>
+						<string>../../../../addons/ofxCv/libs/CLD/include/CLD</string>
+						<string>../../../../addons/ofxCv/src</string>
+						<string>../../../../addons/ofxFaceTracker2/libs/dlib/include</string>
+						<string>../../../../addons/ofxFaceTracker2/src</string>
+						<string>../../../../addons/ofxOpenCv/libs</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/emscripten</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/osx</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/license</string>
+						<string>../../../../addons/ofxOpenCv/src</string>
 					</array>
 					<key>CONFIGURATION_BUILD_DIR</key>
 					<string>$(SRCROOT)/bin/</string>
@@ -4371,49 +4370,48 @@
 					<key>OTHER_LDFLAGS</key>
 					<array>
 						<string>$(OF_CORE_FRAMEWORKS) $(OF_CORE_LIBS)</string>
-						<string>../../../addons/ofxFaceTracker2/libs/dlib/lib/osx/libdlib.a</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a</string>
+						<string>../../../../addons/ofxFaceTracker2/libs/dlib/lib/osx/libdlib.a</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a</string>
 					</array>
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
-						<string>src</string>
-						<string>../../../addons/ofxCv/libs/ofxCv/include</string>
-						<string>../../../addons/ofxCv/libs/CLD/include/CLD</string>
-						<string>../../../addons/ofxCv/src</string>
-						<string>../../../addons/ofxFaceTracker2/libs/dlib/include</string>
-						<string>../../../addons/ofxFaceTracker2/src</string>
-						<string>../../../addons/ofxOpenCv/libs</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/emscripten</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/osx</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/license</string>
-						<string>../../../addons/ofxOpenCv/src</string>
+						<string>../../../../addons/ofxCv/libs/ofxCv/include</string>
+						<string>../../../../addons/ofxCv/libs/CLD/include/CLD</string>
+						<string>../../../../addons/ofxCv/src</string>
+						<string>../../../../addons/ofxFaceTracker2/libs/dlib/include</string>
+						<string>../../../../addons/ofxFaceTracker2/src</string>
+						<string>../../../../addons/ofxOpenCv/libs</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/emscripten</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/osx</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/license</string>
+						<string>../../../../addons/ofxOpenCv/src</string>
 					</array>
 					<key>CONFIGURATION_BUILD_DIR</key>
 					<string>$(SRCROOT)/bin/</string>
@@ -4470,29 +4468,29 @@
 				<array>
 					<string>E4B69E200A3A1BDC003C02F2</string>
 					<string>E4B69E210A3A1BDC003C02F2</string>
-					<string>2023EF517ED2D8B397511D4B</string>
-					<string>DBCB84A37F9AECC254870D79</string>
-					<string>7CDAD32BE4FA46701E3552C7</string>
-					<string>10B69DE456AED1288FC9316B</string>
-					<string>EBCDE831EFAE08274E799C97</string>
-					<string>5CC34D433F5806179935B89D</string>
-					<string>6AABAB39E82AF5CFEA23A205</string>
-					<string>C602002DE761F9B52DB4400A</string>
-					<string>A6668C5B1272D7FCD5B5A16F</string>
-					<string>311DF864378748129984EA1D</string>
-					<string>45CC483A999BF1065A6B926C</string>
-					<string>B6840996567E78436F7ECFAB</string>
-					<string>F76B4A79BD8DE4854141CB47</string>
-					<string>24B7468AD9B2F6878497D33D</string>
-					<string>0B1AB0BB6132B85346C794B9</string>
-					<string>4DD96C70A1D94528E8366CBE</string>
-					<string>250A95BA26587BE85DB0A353</string>
-					<string>D3301F6A0B43BB293ED97C1D</string>
-					<string>1D5F3298C2FA073628012944</string>
-					<string>E212C821D1064B92DD953A42</string>
-					<string>63020F16C7E8DED980111241</string>
-					<string>169D3C72FDE6C5590A1616F5</string>
-					<string>FB09C6B2A1DA0EA217240CB8</string>
+					<string>9CCDC2992B0D33839144F5CD</string>
+					<string>AFF1895BA59C9A17328B1DAA</string>
+					<string>DEF9DC74D70006F9420B5C6E</string>
+					<string>7A91CB6FED13B1B0EB7D718D</string>
+					<string>A3840455824ED7EC4E78C743</string>
+					<string>83D7BD713BC335A501B90C06</string>
+					<string>8DCF9706FEE973E12FFEAEC6</string>
+					<string>68E3A5079016D4E01F156AFE</string>
+					<string>54BB620B364263786CB68DD4</string>
+					<string>9055538CFCE52B80869244A1</string>
+					<string>3668E01145A9CB67D0FFA209</string>
+					<string>BAFD73127D5ACFF6DAEDF739</string>
+					<string>686392976C4750946294DB09</string>
+					<string>1023C5DA61EABEF7D6AF293D</string>
+					<string>C13249A1F91799344859D1F5</string>
+					<string>D8D436489219C6F1518BFACA</string>
+					<string>72CEEFF669D21538BA336662</string>
+					<string>3354709252A5DC905E9FBA46</string>
+					<string>68FE25DEF56B90EDB6DF4EF8</string>
+					<string>688395DF3AD6C8570761DC08</string>
+					<string>77399DCF819EAE2674D467DF</string>
+					<string>BC9D698DFFE25117A83A929B</string>
+					<string>C727BF0E5E2633CADA72FCBC</string>
 				</array>
 				<key>isa</key>
 				<string>PBXSourcesBuildPhase</string>
@@ -4580,49 +4578,48 @@
 					<key>OTHER_LDFLAGS</key>
 					<array>
 						<string>$(OF_CORE_FRAMEWORKS) $(OF_CORE_LIBS)</string>
-						<string>../../../addons/ofxFaceTracker2/libs/dlib/lib/osx/libdlib.a</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a</string>
+						<string>../../../../addons/ofxFaceTracker2/libs/dlib/lib/osx/libdlib.a</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a</string>
 					</array>
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
-						<string>src</string>
-						<string>../../../addons/ofxCv/libs/ofxCv/include</string>
-						<string>../../../addons/ofxCv/libs/CLD/include/CLD</string>
-						<string>../../../addons/ofxCv/src</string>
-						<string>../../../addons/ofxFaceTracker2/libs/dlib/include</string>
-						<string>../../../addons/ofxFaceTracker2/src</string>
-						<string>../../../addons/ofxOpenCv/libs</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/emscripten</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/osx</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/license</string>
-						<string>../../../addons/ofxOpenCv/src</string>
+						<string>../../../../addons/ofxCv/libs/ofxCv/include</string>
+						<string>../../../../addons/ofxCv/libs/CLD/include/CLD</string>
+						<string>../../../../addons/ofxCv/src</string>
+						<string>../../../../addons/ofxFaceTracker2/libs/dlib/include</string>
+						<string>../../../../addons/ofxFaceTracker2/src</string>
+						<string>../../../../addons/ofxOpenCv/libs</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/emscripten</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/osx</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/license</string>
+						<string>../../../../addons/ofxOpenCv/src</string>
 					</array>
 					<key>COMBINE_HIDPI_IMAGES</key>
 					<string>YES</string>
@@ -4634,7 +4631,7 @@
 						<string>$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)</string>
 					</array>
 					<key>FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1</key>
-					<string>"$(SRCROOT)/../../../libs/glut/lib/osx"</string>
+					<string>"$(SRCROOT)/../../../../libs/glut/lib/osx"</string>
 					<key>GCC_DYNAMIC_NO_PIC</key>
 					<string>NO</string>
 					<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
@@ -4674,49 +4671,48 @@
 					<key>OTHER_LDFLAGS</key>
 					<array>
 						<string>$(OF_CORE_FRAMEWORKS) $(OF_CORE_LIBS)</string>
-						<string>../../../addons/ofxFaceTracker2/libs/dlib/lib/osx/libdlib.a</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a</string>
+						<string>../../../../addons/ofxFaceTracker2/libs/dlib/lib/osx/libdlib.a</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/osx/opencv.a</string>
 					</array>
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
-						<string>src</string>
-						<string>../../../addons/ofxCv/libs/ofxCv/include</string>
-						<string>../../../addons/ofxCv/libs/CLD/include/CLD</string>
-						<string>../../../addons/ofxCv/src</string>
-						<string>../../../addons/ofxFaceTracker2/libs/dlib/include</string>
-						<string>../../../addons/ofxFaceTracker2/src</string>
-						<string>../../../addons/ofxOpenCv/libs</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/emscripten</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/lib/osx</string>
-						<string>../../../addons/ofxOpenCv/libs/opencv/license</string>
-						<string>../../../addons/ofxOpenCv/src</string>
+						<string>../../../../addons/ofxCv/libs/ofxCv/include</string>
+						<string>../../../../addons/ofxCv/libs/CLD/include/CLD</string>
+						<string>../../../../addons/ofxCv/src</string>
+						<string>../../../../addons/ofxFaceTracker2/libs/dlib/include</string>
+						<string>../../../../addons/ofxFaceTracker2/src</string>
+						<string>../../../../addons/ofxOpenCv/libs</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/calib3d</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/core</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/features2d</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/flann</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/gpu/device/detail</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/highgui</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/imgproc</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ml</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/nonfree</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/objdetect</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/photo</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/stitching/detail</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/superres</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/video</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/include/opencv2/videostab</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/emscripten</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/lib/osx</string>
+						<string>../../../../addons/ofxOpenCv/libs/opencv/license</string>
+						<string>../../../../addons/ofxOpenCv/src</string>
 					</array>
 					<key>COMBINE_HIDPI_IMAGES</key>
 					<string>YES</string>
@@ -4728,7 +4724,7 @@
 						<string>$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)</string>
 					</array>
 					<key>FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1</key>
-					<string>"$(SRCROOT)/../../../libs/glut/lib/osx"</string>
+					<string>"$(SRCROOT)/../../../../libs/glut/lib/osx"</string>
 					<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
 					<string>YES</string>
 					<key>GCC_MODEL_TUNING</key>
@@ -4863,10 +4859,10 @@
 # Copy default icon file into App/Resources
 rsync -aved "$ICON_FILE" "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/"
 # Copy libfmod and change install directory for fmod to run
-rsync -aved ../../../libs/fmodex/lib/osx/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/";
+rsync -aved ../../../../libs/fmodex/lib/osx/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/";
 install_name_tool -change @executable_path/libfmodex.dylib @executable_path/../Frameworks/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";
 # Copy GLUT framework (must remove for AppStore submissions)
-rsync -aved ../../../libs/glut/lib/osx/GLUT.framework "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/"
+rsync -aved ../../../../libs/glut/lib/osx/GLUT.framework "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/"
 </string>
 			</dict>
 			<key>E4C2427710CC5ABF004149E2</key>
@@ -4895,7 +4891,7 @@ rsync -aved ../../../libs/glut/lib/osx/GLUT.framework "$TARGET_BUILD_DIR/$PRODUC
 				<key>name</key>
 				<string>CoreOF.xcconfig</string>
 				<key>path</key>
-				<string>../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig</string>
+				<string>../../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
