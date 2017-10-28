@@ -4,7 +4,7 @@
 void ofApp::setup(){
     // All examples share data files from example-data, so setting data path to this folder
     // This is only relevant for the example apps
-    ofSetDataPathRoot(ofFile(__BASE_FILE__).getEnclosingDirectory()+"../../model/");
+    ofSetDataPathRoot(ofFile(__BASE_FILE__).getEnclosingDirectory()+"../bin/data/model/");
     
     // Setup grabber
     grabber.setup(1280,720);
@@ -65,6 +65,7 @@ void ofApp::update(){
         ofPoint p = ofPoint(right_eye_boundingbox.x + right_eye_boundingbox.width / 2, right_eye_boundingbox.y + right_eye_boundingbox.height / 2);
         ofRectangle left_eye_boundingbox = tracker.getInstances()[i].getLandmarks().getImageFeature(ofxFaceTracker2Landmarks::LEFT_EYE).getBoundingBox();
         ofPoint q = ofPoint(left_eye_boundingbox.x + left_eye_boundingbox.width / 2, left_eye_boundingbox.y + left_eye_boundingbox.height / 2);
+       
         //this is attempting to only capture the first 100 objects
         
         eyeDistanceTotal += p.distance(q);  //Same as eyeDistanceTotal = eyeDistanceTotal + p.distance(q);
@@ -97,10 +98,10 @@ void ofApp::draw(){
         for (int i = 0; i < tracker.getInstances().size(); i++){
             ofRectangle right_eye_boundingbox = tracker.getInstances()[i].getLandmarks().getImageFeature(ofxFaceTracker2Landmarks::RIGHT_EYE).getBoundingBox();
             ofPoint p = ofPoint(right_eye_boundingbox.x + right_eye_boundingbox.width / 2, right_eye_boundingbox.y + right_eye_boundingbox.height / 2);
-            ofDrawCircle(p, 10);
+            ofDrawCircle(p, 70);
             ofRectangle left_eye_boundingbox = tracker.getInstances()[i].getLandmarks().getImageFeature(ofxFaceTracker2Landmarks::LEFT_EYE).getBoundingBox();
             ofPoint q = ofPoint(left_eye_boundingbox.x + left_eye_boundingbox.width / 2, left_eye_boundingbox.y + left_eye_boundingbox.height / 2);
-            ofDrawCircle(q, 10);
+            ofDrawCircle(q, 50);
         }
     }
 
