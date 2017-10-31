@@ -125,7 +125,7 @@ void ofApp::draw(){
 //    ofSeedRandom(0);
     
     ofSetColor(0);
-    float vertSpacer = 30;
+    float vertSpacer = 40;
     
     //color chooser
 //    ofBackground(255);
