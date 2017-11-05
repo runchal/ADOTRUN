@@ -134,87 +134,30 @@ void ofApp::draw(){
 //               ofMap(sin(ofGetElapsedTimef()) * 6, -1, 1, 30, 200));
 //
     
-    //line drawing
-    
-    for (int h = 0; h < 40; h++){
-        ofPolyline myLine;
-        for (int i = 0; i < 80; i++){
-            
-            //what this is does is take a percentage of the range to map and create more chaos later in the function. Is this linear?
-//            float pct = ofMap(i, 0, 20, 0, 1); //the more the second value is increased, the more controlled this gets
-            
-            float pct = ofMap(i*(h*mouseX*0.01), 0, 1000, 0, 1); //the more the second value is increased, the less jagged the line gets
-            
-            if (i % 2 == 0){
-                float x = 10 + i * 20 + ofRandom(-pct*10, pct*10);
-                float y = 40 + (i*0) + h * vertSpacer;
-                myLine.addVertex(x,y);
-            } else {
-                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10);
-                float y = 10 + (i*0) + h * vertSpacer;
-                myLine.addVertex(x,y);
-            }
-        myLine.draw();
-        }
-    }
-//}
-
-    
-    
-    
-    
-    //it looks like if i increase the x by 20 for every other point and the y by +/- 30 it
-    //it creates a sort of consistent line. I only actually have to increase the y by the same amount each time
-    //so what's the point of looping it? I don't really need to add anything to it
-    
-    //i'm going to try to create a line that is uniform using loops to try and understand how to quickly create
-    //a basic shape
-    
-    //this is to initialize the point where I start drawing. at some point i'm going to need to like
-    
-//    ofSetColor(10);
-//    ofPoint posA = ofPoint(10,40);
-//    ofPoint posB = ofPoint(60,10);
-//   
-//    //here i'm trying to get the code
+//    //line drawing
 //    
-//    for (int i = 0; i < 30; i++){
-//        //for (int j = 0; j < 30; j++){
-//            if (i % 2 == 0){
-//                posA = posA + ofPoint(20,0);
-//                posB = posB + ofPoint(30,0);
-//            } else {
-//                posA = posA - ofPoint(20,0);
-//                posB = posB - ofPoint(30,0);
-//            }
-////            if (j % 2 == 0){
-////                posA = posA + ofPoint(0,20);
-////            } else {
-////                posB = posB - ofPoint(0,40);
-////            }
-//            ofDrawLine (posA,posB);
-//        //}
-//    }
-    
-    
-    
-    
-//    for (int i = 0; i < 20; i++){
-//        for (int j = 0; j<20; j++){
-//            ofPoint pos = ofPoint (i*40+10, j*40+10);
+//    for (int h = 0; h < 40; h++){
+//        ofPolyline myLine;
+//        for (int i = 0; i < 80; i++){
 //            
-//            ofSetColor(i*j);
-//            ofPoint a = pos - ofPoint(0,0);
-//            ofPoint b = pos - ofPoint(0,20);
-//            ofPoint c = pos - ofPoint(20,0);
-//            ofPoint d = pos - ofPoint(20,20);
-//            ofDrawLine(a,b);
-//            ofDrawLine(b,d);
-//            ofDrawLine(d,c);
-//            ofDrawLine(c,a);
+//            //what this is does is take a percentage of the range to map and create more chaos later in the function. Is this linear?
+////            float pct = ofMap(i, 0, 20, 0, 1); //the more the second value is increased, the more controlled this gets
+//            
+//            float pct = ofMap(i*(h*mouseX*0.01), 0, 1000, 0, 1); //the more the second value is increased, the less jagged the line gets
+//            
+//            if (i % 2 == 0){
+//                float x = 10 + i * 20 + ofRandom(-pct*10, pct*10);
+//                float y = 40 + (i*0) + h * vertSpacer;
+//                myLine.addVertex(x,y);
+//            } else {
+//                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10);
+//                float y = 10 + (i*0) + h * vertSpacer;
+//                myLine.addVertex(x,y);
+//            }
+//        myLine.draw();
 //        }
-//        
 //    }
+////}
     
     
 }
