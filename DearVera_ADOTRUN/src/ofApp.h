@@ -25,6 +25,8 @@ class ofApp : public ofBaseApp{
     ofPolyline line;
     ofPolyline slopeLine;
     ofxFloatSlider emotion;
+    ofxFloatSlider height;
+    ofxFloatSlider width;
     ofxPanel gui;
 		
 };
