@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxGui.h"
 
 class ofApp : public ofBaseApp{
 
@@ -22,5 +23,8 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
     
     ofPolyline line;
+    ofPolyline slopeLine;
+    ofxFloatSlider emotion;
+    ofxPanel gui;
 		
 };
