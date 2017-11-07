@@ -1,6 +1,55 @@
 #include "ofApp.h"
+#include <CoreServices/CoreServices.h>
+#include <stdlib.h>
+
 
 //--------------------------------------------------------------
+
+void fileChangeCallback(ConstFSEventStreamRef streamRef,
+                        void *clientCallBackInfo,
+                        size_t numEvents,
+                        void *eventPaths,
+                        const FSEventStreamEventFlags eventFlags[],
+                        const FSEventStreamEventId eventIds[]) {
+    ifstream inFile;
+    inFile.open("/Users/wircho/Desktop/of_v0.9.8_osx_release/examples/ADOTRUN/DearVera_ADOTRUN/face_data/data.txt");
+    if (!inFile) {
+        return;
+    }
+    float values[128];
+    float value;
+    int counter = 0;
+    ostringstream str("");
+    while (inFile >> value) {
+        values[counter] = value;
+        counter += 1;
+        str << "/";
+        str << value;
+    }
+    printf("%s", str.str().c_str());
+}
+
+void startListeningToFile() {
+    CFStringRef mypath = CFSTR("/Users/wircho/Desktop/of_v0.9.8_osx_release/examples/ADOTRUN/DearVera_ADOTRUN/face_data");
+    CFArrayRef pathsToWatch = CFArrayCreate(NULL, (const void **)&mypath, 1, NULL);
+    void *callbackInfo = NULL; // could put stream-specific data here.
+    FSEventStreamRef stream;
+    CFAbsoluteTime latency = 3.0; /* Latency in seconds */
+    
+    stream = FSEventStreamCreate(NULL,
+                                 &fileChangeCallback,
+                                 (FSEventStreamContext *)callbackInfo,
+                                 pathsToWatch,
+                                 kFSEventStreamEventIdSinceNow, /* Or a previous event ID */
+                                 latency,
+                                 kFSEventStreamCreateFlagNone /* Flags explained in reference */
+                                 );
+    
+    FSEventStreamScheduleWithRunLoop(stream, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode);
+    
+    FSEventStreamStart(stream);
+}
+
 void ofApp::setup(){
     
     //it's in reproducing the art that I realize that I am about to get my ass kicked and that the work I need to focus on is my emotional state of being and how attempting to reproduce mastery makes me feel
@@ -12,20 +61,17 @@ void ofApp::setup(){
     gui.add(emotion.setup("emotion", 0.5,0,20));
     gui.add(height.setup("height",20,30,200));
     gui.add(width.setup("width",20,10,200));
+    
+    startListeningToFile();
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
     
-
-
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
-    
-    
     
     ofSeedRandom(0); // put this in to fix the emotional scale of response
     
