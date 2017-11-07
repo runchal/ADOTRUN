@@ -59,7 +59,7 @@ void ofApp::setup(){
     ofBackground(250);
     gui.setup();
     gui.add(emotion.setup("emotion", 0.5,0,20));
-    gui.add(height.setup("height",20,30,200));
+    gui.add(height.setup("height",5,1,20));
     gui.add(width.setup("width",20,10,200));
     
     startListeningToFile();
@@ -85,9 +85,9 @@ void ofApp::draw(){
         for (int i = 0; i < 80; i++){
             
 //            float yDown = ofRandom(20,40);
-            float yDown = height;
+            float yDown = ofRandom(height);
             float yUp = ofRandom(20);
-            float xForward = width;
+            float xForward = ofRandom(width);
             float xBack = ofRandom(10);
             
             //what this is does is take a percentage of the range to map and create more chaos later in the function. Is this linear?
@@ -97,13 +97,14 @@ void ofApp::draw(){
             
             if (i % 2 == 0){
 //                float x = 10 + i * 20 + ofRandom(-pct*10, pct*10);//                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10); // this is before i made a param for emotion. It created sort of an effect where the program got more emotional the more they were writing to you
-                float x = xBack + i * 20 + ofRandom(-emotion*10, emotion*10); // one thing with this param being coded in this way is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
-                float y = yDown + yUp + (i*0) + h * vertSpacer;
+                float x = xBack + i * 20 + ofRandom(-emotion*10, emotion*10);
+                // one thing with this param being coded in this way is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
+                float y = -yDown + (i*0) + h * vertSpacer;
                 myLine.addVertex(x,y);
             } else {
 //                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10); // this is before i made a param for emotion. It created sort of an effect where the program got more emotional the more they were writing to you
                 float x = xBack + xForward + i * 20 + ofRandom(-emotion*10, emotion*10); // one thing with this param is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
-                float y = yUp + (i*0) +  h * vertSpacer;
+                float y = yDown + (i*0) +  h * vertSpacer;
                 myLine.addVertex(x,y);
             }
         myLine.draw();
