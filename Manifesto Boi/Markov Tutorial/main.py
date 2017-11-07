@@ -1,10 +1,21 @@
 import markovify
-import shutil
-import glob
 import re
 import spacy
+import shutil
+import glob
+
 
 nlp = spacy.load('en')
+
+class POSifiedText(markovify.Text):
+    def word_split(self, sentence):
+        return ["::".join((word.orth_, word.pos_)) for word in nlp(sentence)]
+
+    def word_join(self, words):
+        print "workinggggg"
+        sentence = " @@@ ".join(word.split("::")[0] for word in words)
+        return sentence
+
 
 outfilename = 'Data/all_manifestos.txt' #this  will create
                                         #a storage file for manifestos
@@ -19,13 +30,8 @@ with open(outfilename, 'wb') as outfile:
         with open(filename, 'rb') as readfile:
             shutil.copyfileobj(readfile, outfile)
 
-class POSifiedText(markovify.Text):
-    def word_split(self, sentence):
-        return ["::".join((word.orth_, word.pos_)) for word in nlp(sentence)]
 
-    def word_join(self, words):
-        sentence = " ".join(word.split("::")[0] for word in words)
-        return sentence
+
 
 
 #STARTING TO USE SPACY TO IMPROVE RESULTS
@@ -36,6 +42,10 @@ text = open(outfilename, 'r').read()
 text_model = markovify.Text(text)
 
 text_output =open("test.txt", 'w')
+
+
+for i in range(3):
+    print(text_model.make_short_sentence(140))
 
 # mprint = print(text_model.make_sentence())
 
@@ -66,7 +76,7 @@ def m_writer(n = 5):
 
 m_writer()
 
-print man_list
+# print man_list
 
 # with open("test.txt", "w") as text_file:
 #     text_file.write("testing")
