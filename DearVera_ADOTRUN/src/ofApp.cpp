@@ -5,12 +5,17 @@
 
 //--------------------------------------------------------------
 
+ofApp *mainApp = NULL;
+
 void fileChangeCallback(ConstFSEventStreamRef streamRef,
                         void *clientCallBackInfo,
                         size_t numEvents,
                         void *eventPaths,
                         const FSEventStreamEventFlags eventFlags[],
                         const FSEventStreamEventId eventIds[]) {
+    
+    if (mainApp == NULL) { return; }
+    
     ifstream inFile;
     inFile.open("/Users/wircho/Desktop/of_v0.9.8_osx_release/examples/ADOTRUN/DearVera_ADOTRUN/face_data/data.txt");
     if (!inFile) {
@@ -26,7 +31,13 @@ void fileChangeCallback(ConstFSEventStreamRef streamRef,
         str << "/";
         str << value;
     }
-    printf("%s", str.str().c_str());
+//    printf("%s\n\n", str.str().c_str());
+    
+    float _emotion = values[0] * 20.0;
+    float _height = 30.0 + values[1] * (200.0 - 30.0);
+    float _width = 10.0 + values[2] * (200.0 - 10.0);
+    
+    mainApp->updateValues(_emotion, _height, _width);
 }
 
 void startListeningToFile() {
@@ -50,8 +61,15 @@ void startListeningToFile() {
     FSEventStreamStart(stream);
 }
 
+void ofApp::updateValues(float _emotion, float _height, float _width) {
+    emotion.setup("emotion", _emotion,0,20);
+    height.setup("height",_height,30,200);
+    width.setup("width",_width,10,200);
+}
+
 void ofApp::setup(){
     
+    mainApp = this;
     //it's in reproducing the art that I realize that I am about to get my ass kicked and that the work I need to focus on is my emotional state of being and how attempting to reproduce mastery makes me feel
     
     //how do I feel about the piece currently? Its still not human enough

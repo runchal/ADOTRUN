@@ -7,7 +7,8 @@ class ofApp : public ofBaseApp{
 
 	public:
 		void setup();
-		void update();
+        void update();
+        void updateValues(float _emotion, float _height, float _width);
 		void draw();
 
 		void keyPressed(int key);
