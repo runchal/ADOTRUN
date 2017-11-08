@@ -81,66 +81,6 @@ std::condition_variable rx_queue_nonempty;
 
 ofApp *mainApp = NULL;
 
-void fileChangeCallback(ConstFSEventStreamRef streamRef,
-                        void *clientCallBackInfo,
-                        size_t numEvents,
-                        void *eventPaths,
-                        const FSEventStreamEventFlags eventFlags[],
-                        const FSEventStreamEventId eventIds[]) {
-    
-    if (mainApp == NULL) { return; }
-    
-    ifstream inFile;
-    inFile.open("/Users/wircho/Desktop/of_v0.9.8_osx_release/examples/ADOTRUN/DearVera_ADOTRUN/face_data/data.txt");
-    if (!inFile) {
-        return;
-    }
-    float values[128];
-    float value;
-    int counter = 0;
-    ostringstream str("");
-    while (inFile >> value) {
-        values[counter] = value;
-        counter += 1;
-        str << "/";
-        str << value;
-    }
-//    printf("%s\n\n", str.str().c_str());
-    
-    float _emotion = values[0] * 20.0;
-    float _height = 30.0 + values[1] * (200.0 - 30.0);
-    float _width = 10.0 + values[2] * (200.0 - 10.0);
-    
-    mainApp->updateValues(_emotion, _height, _width);
-}
-
-void startListeningToFile() {
-    CFStringRef mypath = CFSTR("/Users/wircho/Desktop/of_v0.9.8_osx_release/examples/ADOTRUN/DearVera_ADOTRUN/face_data");
-    CFArrayRef pathsToWatch = CFArrayCreate(NULL, (const void **)&mypath, 1, NULL);
-    void *callbackInfo = NULL; // could put stream-specific data here.
-    FSEventStreamRef stream;
-    CFAbsoluteTime latency = 3.0; /* Latency in seconds */
-    
-    stream = FSEventStreamCreate(NULL,
-                                 &fileChangeCallback,
-                                 (FSEventStreamContext *)callbackInfo,
-                                 pathsToWatch,
-                                 kFSEventStreamEventIdSinceNow, /* Or a previous event ID */
-                                 latency,
-                                 kFSEventStreamCreateFlagNone /* Flags explained in reference */
-                                 );
-    
-    FSEventStreamScheduleWithRunLoop(stream, CFRunLoopGetCurrent(), kCFRunLoopDefaultMode);
-    
-    FSEventStreamStart(stream);
-}
-
-void ofApp::updateValues(float _emotion, float _height, float _width) {
-    emotion.setup("emotion", _emotion,0,20);
-    height.setup("height",_height,30,200);
-    width.setup("width",_width,10,200);
-}
-
 void ofApp::setup(){
     
     mainApp = this;
@@ -148,14 +88,289 @@ void ofApp::setup(){
     
     //how do I feel about the piece currently? Its still not human enough
 
+    // Drawing 0
     ofBackground(250);
     gui.setup();
     gui.add(emotion.setup("emotion", 0.5,0,20));
     gui.add(height.setup("height",5,1,20));
     gui.add(width.setup("width",20,10,200));
     
-//    startListeningToFile();
+    // Drawing 1
+    pen1.set(0,0);
+    nextPen1.set(0,0);
+    penSwitch1 = true;
+    emotion1 = 10;
+    startLength1 = 35;
+    startSlope1 = 0.5;
+    angle1 = 0;
+    margin1 = 0;
+    origin1.set(margin1,margin1*3);
     
+    // Drawing 2
+    gui.add(emotion2.setup("emotion2", 0.5,0,20));
+    gui.add(height2.setup("height2",5,1,20));
+    gui.add(width2.setup("width2",20,10,200));
+    
+    setUpServer();
+}
+
+//--------------------------------------------------------------
+void ofApp::update(){
+    reactToFaceValues();
+}
+
+//--------------------------------------------------------------
+void ofApp::draw(){
+    
+    int fullWidth = ofGetWidth();
+    int fullHeight = ofGetHeight();
+
+    // Spacing between canvases
+    int spacing = 50;
+    // Assuming the three of them have the same width and height
+    int canvasWidth = 200;
+    int canvasHeight = 200;
+    
+    // Calculations
+    int canvasY = (fullHeight - canvasHeight) / 2;
+    int canvas1X = (fullWidth - canvasWidth) / 2;
+    int canvas0X = canvas1X - canvasWidth - spacing;
+    int canvas2X = canvas1X + canvasWidth + spacing;
+    
+    // Placement
+    ofApp::draw0(canvas0X, canvasY, canvasWidth, canvasHeight);
+    ofApp::draw1(canvas1X, canvasY, canvasWidth, canvasHeight);
+    ofApp::draw2(canvas2X, canvasY, canvasWidth, canvasHeight);
+}
+
+void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
+    ofSeedRandom(0); // put this in to fix the emotional scale of response
+    
+    ofSetColor(0);
+    
+    float vertSpacer = 40;
+    float horStep = 20;
+    
+    //line drawing
+    
+    for (int h = 0; h * vertSpacer <= canvasHeight; h++){
+        ofPolyline myLine;
+        for (int i = 0; i * horStep <= canvasWidth; i++){
+            //            float yDown = ofRandom(20,40);
+            float yDown = ofRandom(height);
+            float yUp = ofRandom(20);
+            float xForward = ofRandom(width);
+            float xBack = ofRandom(10);
+            
+            //what this is does is take a percentage of the range to map and create more chaos later in the function. Is this linear?
+            //            float pct = ofMap(i, 0, 20, 0, 1); //the more the second value is increased, the more controlled this gets
+            
+            float pct = ofMap(i*(h*mouseX*0.01), 0, 1000, 0, 1); //the more the second value is increased, the less jagged the line gets
+            
+            if (i % 2 == 0){
+                //                float x = 10 + i * 20 + ofRandom(-pct*10, pct*10);//                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10); // this is before i made a param for emotion. It created sort of an effect where the program got more emotional the more they were writing to you
+                float x = canvasX + xBack + i * horStep + ofRandom(-emotion*10, emotion*10);
+                // one thing with this param being coded in this way is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
+                float y = canvasY - yDown + (i*0) + h * vertSpacer;
+                myLine.addVertex(x,y);
+            } else {
+                //                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10); // this is before i made a param for emotion. It created sort of an effect where the program got more emotional the more they were writing to you
+                float x = canvasX + xBack + xForward + i * 20 + ofRandom(-emotion*10, emotion*10); // one thing with this param is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
+                float y = canvasY + yDown + (i*0) +  h * vertSpacer;
+                myLine.addVertex(x,y);
+            }
+            myLine.draw();
+        }
+        
+        gui.draw();
+    }
+    //}
+}
+
+void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
+    
+    ofSetColor(0);
+    ofSeedRandom(1);
+    while (origin1.y < canvasHeight - margin1){
+        pen1.x = origin1.x;
+        pen1.y = origin1.y;
+        //  ofPolyline line;
+        
+        while (origin1.x < canvasWidth - margin1){
+            float length;
+            float slope;
+            if (!penSwitch1){
+                slope = startSlope1 - ofRandom(10)/20;
+            }
+            else {
+                slope = startSlope1 + ofRandom(10)/20;
+            }
+            angle1 = atan(slope);
+//            printf("%f,", angle1);
+            length = ofRandom(startLength1) + 5;
+            
+            if ((origin1.y - pen1.y) > 10){
+                if (!penSwitch1){
+                    length *= 2;
+                }
+                else {
+                    length *=0.5;
+                }
+            }
+            
+            if ((origin1.y - pen1.y) < -10) {
+                if (!penSwitch1){
+                    length *= 2;
+                }
+                else{
+                    length *=0.5;
+                }
+            }
+            
+            float xChange = 0;
+            float yChange = 0;
+            if (!penSwitch1){
+                xChange = cos(angle1)*length;
+            }
+            else{
+                xChange  = -cos(angle1)*length;
+            }
+            
+            if (!penSwitch1){
+                yChange = sin(angle1)*length * 0.5;
+            }
+            else{
+                yChange  = -sin(angle1)*length * 0.5;
+            }
+            
+            nextPen1.x = pen1.x + xChange;
+            nextPen1.y = pen1.y + yChange;
+            ofDrawLine(canvasX + pen1.x, canvasY + pen1.y, canvasX + nextPen1.x, canvasY + nextPen1.y);
+            // line.addVertex(pen.x, pen.y);
+            //line.addVertex(nextPen.x, nextPen.y);
+            
+            pen1.x = nextPen1.x;
+            pen1.y = nextPen1.y;
+            penSwitch1 = !penSwitch1;
+            origin1.x += xChange;
+            
+            
+        }
+        origin1.x = margin1;
+        origin1.y += 60;
+        // line.draw();
+    }
+    origin1.y = margin1*3;
+}
+
+void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
+    
+    ofSeedRandom(0); // put this in to fix the emotional scale of response
+    
+    ofSetColor(0);
+    float vertSpacer = 40;
+    float horStep = 20;
+    
+    //line drawing
+    
+    for (int h = 0; h * vertSpacer <= canvasHeight; h++){
+        ofPolyline myLine;
+        for (int i = 0; i * horStep <= canvasWidth; i++){
+            
+            //            float yDown = ofRandom(20,40);
+            float yDown = ofRandom(height2);
+            float yUp = ofRandom(20);
+            float xForward = ofRandom(width2);
+            float xBack = ofRandom(10);
+            
+            //what this is does is take a percentage of the range to map and create more chaos later in the function. Is this linear?
+            //            float pct = ofMap(i, 0, 20, 0, 1); //the more the second value is increased, the more controlled this gets
+            
+            float pct = ofMap(i*(h*500*0.01), 0, 1000, 0, 1); //the more the second value is increased, the less jagged the line gets
+            
+            if (i % 2 == 0){
+                //                float x = 10 + i * 20 + ofRandom(-pct*10, pct*10);//                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10); // this is before i made a param for emotion. It created sort of an effect where the program got more emotional the more they were writing to you
+                float x = canvasX + xBack + i * horStep + ofRandom(-emotion2*10, emotion2*10);
+                // one thing with this param being coded in this way is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
+                float y = canvasY - yDown + (i*0) + h * vertSpacer;
+                myLine.addVertex(x,y);
+            } else {
+                //                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10); // this is before i made a param for emotion. It created sort of an effect where the program got more emotional the more they were writing to you
+                float x = canvasX + xBack + xForward + i * 20 + ofRandom(-emotion2*10, emotion2*10); // one thing with this param is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
+                float y = canvasY + yDown + (i*0) +  h * vertSpacer;
+                myLine.addVertex(x,y);
+            }
+            myLine.draw();
+        }
+        
+        gui.draw();
+    }
+    //}
+    
+    
+}
+
+//--------------------------------------------------------------
+void ofApp::keyPressed(int key){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::keyReleased(int key){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseMoved(int x, int y ){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseDragged(int x, int y, int button){
+
+ 
+    
+}
+
+//--------------------------------------------------------------
+void ofApp::mousePressed(int x, int y, int button){
+    
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseReleased(int x, int y, int button){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseEntered(int x, int y){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseExited(int x, int y){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::windowResized(int w, int h){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::gotMessage(ofMessage msg){
+
+}
+
+//--------------------------------------------------------------
+void ofApp::dragEvent(ofDragInfo dragInfo){ 
+
+}
+
+//------------------------------------------------
+
+void ofApp::setUpServer() {
     server_thread = std::thread([] {
         socket_t server_sock{socket_domain_t::inet, socket_type_t::stream};
         sockaddr_in serv_addr;
@@ -249,9 +464,7 @@ static tlv try_recv_one() {
     return ret;
 }
 
-//--------------------------------------------------------------
-void ofApp::update(){
-    
+void ofApp::reactToFaceValues() {
     while (true) {
         auto rx = try_recv_one();
         if (!rx.data) break;
@@ -264,13 +477,20 @@ void ofApp::update(){
                 int n = rx.len / sizeof(float);
                 float array[n];
                 memcpy(&array, rx.data, sizeof(float) * n);
-//                std::cout << "Got face ID:" << array[0] << "," << array[1] << "," << array[2] << std::endl;
-            
+                //                std::cout << "Got face ID:" << array[0] << "," << array[1] << "," << array[2] << std::endl;
+                
                 float _emotion = array[0] * 20.0;
                 float _height = 30.0 + array[1] * (200.0 - 30.0);
                 float _width = 10.0 + array[2] * (200.0 - 10.0);
                 
-                mainApp->updateValues(_emotion, _height, _width);
+                float _startLength1 = 35 + array[3] * 10;
+                float _startSlope1 = 0.5 + array[3] * 0.5;
+                
+                float _emotion2 = array[6] * 20.0;
+                float _height2 = 30.0 + array[7] * (200.0 - 30.0);
+                float _width2 = 10.0 + array[8] * (200.0 - 10.0);
+                
+                mainApp->updateValues(_emotion, _height, _width, _startLength1, _startSlope1, _emotion2, _height2, _width2);
             }
                 break;
             default:
@@ -279,109 +499,18 @@ void ofApp::update(){
         }
         delete [] rx.data;
     }
+}
+
+void ofApp::updateValues(float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _emotion2, float _height2, float _width2) {
+    emotion.setup("emotion", _emotion,0,20);
+    height.setup("height",_height,30,200);
+    width.setup("width",_width,10,200);
     
-}
-
-//--------------------------------------------------------------
-void ofApp::draw(){
+    startLength1 = _startLength1;
+    startSlope1 = _startSlope1;
     
-    ofSeedRandom(0); // put this in to fix the emotional scale of response
+    emotion2.setup("emotion2", _emotion2,0,20);
+    height2.setup("height2",_height2,30,200);
+    width2.setup("width2",_width2,10,200);
     
-    ofSetColor(0);
-    float vertSpacer = 40;
-    
-    //line drawing
-    
-    for (int h = 0; h < 40; h++){
-        ofPolyline myLine;
-        for (int i = 0; i < 80; i++){
-            
-//            float yDown = ofRandom(20,40);
-            float yDown = ofRandom(height);
-            float yUp = ofRandom(20);
-            float xForward = ofRandom(width);
-            float xBack = ofRandom(10);
-            
-            //what this is does is take a percentage of the range to map and create more chaos later in the function. Is this linear?
-//            float pct = ofMap(i, 0, 20, 0, 1); //the more the second value is increased, the more controlled this gets
-            
-            float pct = ofMap(i*(h*mouseX*0.01), 0, 1000, 0, 1); //the more the second value is increased, the less jagged the line gets
-            
-            if (i % 2 == 0){
-//                float x = 10 + i * 20 + ofRandom(-pct*10, pct*10);//                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10); // this is before i made a param for emotion. It created sort of an effect where the program got more emotional the more they were writing to you
-                float x = xBack + i * 20 + ofRandom(-emotion*10, emotion*10);
-                // one thing with this param being coded in this way is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
-                float y = -yDown + (i*0) + h * vertSpacer;
-                myLine.addVertex(x,y);
-            } else {
-//                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10); // this is before i made a param for emotion. It created sort of an effect where the program got more emotional the more they were writing to you
-                float x = xBack + xForward + i * 20 + ofRandom(-emotion*10, emotion*10); // one thing with this param is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
-                float y = yDown + (i*0) +  h * vertSpacer;
-                myLine.addVertex(x,y);
-            }
-        myLine.draw();
-        }
-        
-        gui.draw();
-    }
-//}
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::keyPressed(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::keyReleased(int key){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseMoved(int x, int y ){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseDragged(int x, int y, int button){
-
- 
-    
-}
-
-//--------------------------------------------------------------
-void ofApp::mousePressed(int x, int y, int button){
-    
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseReleased(int x, int y, int button){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseEntered(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::mouseExited(int x, int y){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::windowResized(int w, int h){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::gotMessage(ofMessage msg){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::dragEvent(ofDragInfo dragInfo){ 
-
 }
