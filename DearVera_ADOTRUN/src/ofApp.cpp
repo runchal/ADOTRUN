@@ -73,7 +73,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-    ofSeedRandom(0); // put this in to fix the emotional scale of response
+//    ofSeedRandom(0); // put this in to fix the emotional scale of response
     
     ofSetColor(0);
     float vertSpacer = 40;
@@ -97,7 +97,7 @@ void ofApp::draw(){
             
             if (i % 2 == 0){
 //                float x = 10 + i * 20 + ofRandom(-pct*10, pct*10);//                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10); // this is before i made a param for emotion. It created sort of an effect where the program got more emotional the more they were writing to you
-                float x = xBack + i * 20 + ofRandom(-emotion*10, emotion*10);
+                float x = xBack + i * 20 + ofMap(ofNoise(1),0,1,-emotion*10, emotion*10)
                 // one thing with this param being coded in this way is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
                 float y = -yDown + (i*0) + h * vertSpacer;
                 myLine.addVertex(x,y);

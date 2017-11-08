@@ -16,10 +16,8 @@ void ofApp::setup(){
     
     emotion = 10;
     startLength = 35;
-    startSlope = 1;
+    startSlope = 0.5;
     angle = atan(slope) * 1;
-    length = ofRandom(length)+5;
-    slope = startSlope;
     margin = 30;
     origin.set(margin,margin*3);
     
@@ -35,17 +33,17 @@ void ofApp::update(){
 void ofApp::draw(){
 
     ofSetColor(0);
-    
-    while (origin.y < ofGetHeight() - margin)
-        {
+    ofSeedRandom(1);
+    while (origin.y < ofGetHeight() - margin){
         pen.x = origin.x;
         pen.y = origin.y;
+      //  ofPolyline line;
         
         while (origin.x < ofGetWidth() - margin){
             float length;
             float slope;
             if (!penSwitch){
-                slope = startSlope - ofRandom(18)/20;
+                slope = startSlope - ofRandom(10)/20;
             }
             else {
                 slope = startSlope + ofRandom(10)/20;
@@ -89,19 +87,22 @@ void ofApp::draw(){
             
             nextPen.x = pen.x + xChange;
             nextPen.y = pen.y + yChange;
-            line.addVertex(pen.x, pen.y);
-            line.addVertex(nextPen.x, nextPen.y);
+            ofDrawLine(pen.x, pen.y, nextPen.x, nextPen.y);
+           // line.addVertex(pen.x, pen.y);
+            //line.addVertex(nextPen.x, nextPen.y);
             
             pen.x = nextPen.x;
             pen.y = nextPen.y;
             penSwitch = !penSwitch;
             origin.x += xChange;
+        
+        
         }
         origin.x = margin;
         origin.y += 60;
+       // line.draw();
     }
-    line.draw();
-    
+    origin.y = margin*3;
 }
 
 //--------------------------------------------------------------

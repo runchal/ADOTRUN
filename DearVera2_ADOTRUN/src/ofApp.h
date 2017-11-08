@@ -30,9 +30,11 @@ class ofApp : public ofBaseApp{
     float angle;
     float margin;
     
+    vector <ofPolyline> vectorLine;
+    
     ofPoint origin;
  
-    ofPolyline line;
+//    ofPolyline line;
 //    ofxFloatSlider emotion;
 //    ofxFloatSlider length;
 //    ofxFloatSlider slope;
@@ -41,6 +43,7 @@ class ofApp : public ofBaseApp{
     ofPoint pen;
     ofPoint nextPen;
     bool penSwitch;
+    
   
     
     
