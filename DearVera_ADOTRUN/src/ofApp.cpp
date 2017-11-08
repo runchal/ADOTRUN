@@ -1,6 +1,80 @@
 #include "ofApp.h"
 #include <CoreServices/CoreServices.h>
-#include <stdlib.h>
+#include <cstdlib>
+#include <cstdio>
+#include <stdexcept>
+#include <iostream>
+#include <thread>
+#include <mutex>
+#include <vector>
+#include <condition_variable>
+
+#include <strings.h>
+#include <netinet/ip.h>
+#include <arpa/inet.h>
+
+#include "socket_t.h"
+
+static std::string run_cmd(const std::string& cmd) {
+    FILE* fd = popen(cmd.c_str(), "r");
+    if (!fd) throw std::runtime_error("Failed to popen");
+    std::string result;
+    while (true) {
+        char buf[1024];
+        buf[0] = 0;
+        if (!fgets(buf, sizeof(buf), fd)) {
+            break;
+        }
+        result += buf;
+    }
+    pclose(fd);
+    return result;
+}
+
+struct tlv {
+    uint8_t type;
+    uint32_t len;
+    uint8_t* data;
+    
+    void read(socket_t& socket) {
+        int n = ::read(socket.get(), (char*)&type, sizeof(type));
+        if (n != sizeof(type)) throw std::runtime_error("Unable to read type");
+        
+        n = ::read(socket.get(), (char*)&len, sizeof(len));
+        if (n != sizeof(len)) throw std::runtime_error("Unable to read length");
+        
+        n = 0;
+        while (n < len) {
+            int r = ::read(socket.get(), data + n, len - n);
+            if (r < 0) throw std::runtime_error("Unable to read value");
+            n += r;
+        }
+    }
+    
+    void write(socket_t& socket) {
+        int n = ::send(socket.get(), (char*)&type, sizeof(type), 0);
+        if (n != sizeof(type)) throw std::runtime_error("Unable to write");
+        
+        n = ::send(socket.get(), (char*)&len, sizeof(len), 0);
+        if (n != sizeof(len)) throw std::runtime_error("Unable to write");
+        
+        n = 0;
+        while (n < len) {
+            int w = ::send(socket.get(), data + n, len - n, 0);
+            if (w < 0) throw std::runtime_error("Unable to write");
+            n += w;
+        }
+    }
+    
+};
+
+std::thread server_thread;
+std::vector<tlv> tx_queue;
+std::mutex tx_queue_mtx;
+std::condition_variable tx_queue_nonempty;
+std::vector<tlv> rx_queue;
+std::mutex rx_queue_mtx;
+std::condition_variable rx_queue_nonempty;
 
 
 //--------------------------------------------------------------
@@ -80,11 +154,131 @@ void ofApp::setup(){
     gui.add(height.setup("height",5,1,20));
     gui.add(width.setup("width",20,10,200));
     
-    startListeningToFile();
+//    startListeningToFile();
+    
+    server_thread = std::thread([] {
+        socket_t server_sock{socket_domain_t::inet, socket_type_t::stream};
+        sockaddr_in serv_addr;
+        bzero(&serv_addr, sizeof(serv_addr));
+        
+        serv_addr.sin_family = AF_INET;
+        serv_addr.sin_addr.s_addr = INADDR_ANY;
+        serv_addr.sin_port = htons(12345);
+        
+        server_sock.bind((sockaddr*)&serv_addr, sizeof(serv_addr));//TODO catch address in use
+        server_sock.listen(5);
+        
+        sockaddr_in cli_addr;
+        socklen_t cli_addr_len = sizeof(cli_addr);
+        auto client_sock = server_sock.accept((sockaddr *) &cli_addr, &cli_addr_len);
+        
+        std::string cli_host = inet_ntoa(cli_addr.sin_addr);
+        int cli_port = ntohs(cli_addr.sin_port);
+        std::cout << "Connection from: " << cli_host << " port " << cli_port << std::endl;
+        
+        std::thread writer([&] {
+            while (true) {
+                std::vector<tlv> txq;
+                {
+                    std::unique_lock<std::mutex> lock{tx_queue_mtx};
+                    while (tx_queue.empty()) {
+                        tx_queue_nonempty.wait(lock);
+                    }
+                    txq = std::vector<tlv>{tx_queue};
+                    tx_queue.clear();
+                }
+                for (auto& tx : txq) {
+                    try {
+                        tx.write(client_sock);
+                        delete [] tx.data;
+                    } catch (...) {
+                        goto done_tx;
+                    }
+                }
+            }
+        done_tx:
+            std::cout << "TX closed" << std::endl;
+        });
+        
+        char rx_buf[1024 * 32];
+        tlv rx{0, 0, (uint8_t*)rx_buf};
+        while (true) {
+            try {
+                rx.read(client_sock);
+            } catch (std::runtime_error& e) {
+                std::cout << "Read error: " << e.what() << std::endl;
+                break;
+            }
+            rx.data = new uint8_t[rx.len];
+            memcpy(rx.data, rx_buf, rx.len);
+            std::unique_lock<std::mutex> lock{rx_queue_mtx};
+            rx_queue.push_back(rx);
+            rx.data = (uint8_t*)rx_buf;
+            rx_queue_nonempty.notify_all();
+        }
+        std::cout << "RX closed" << std::endl;
+        
+        writer.join();
+        
+        client_sock.close();
+        server_sock.close();
+    });
+}
+
+static void send(const tlv& data) {
+    std::unique_lock<std::mutex> lock{tx_queue_mtx};
+    tx_queue.push_back(data);
+    tx_queue_nonempty.notify_all();
+}
+
+static tlv recv_one() {
+    std::unique_lock<std::mutex> lock{rx_queue_mtx};
+    while (rx_queue.empty()) {
+        rx_queue_nonempty.wait(lock);
+    }
+    tlv ret = rx_queue.front();
+    rx_queue.erase(rx_queue.begin());
+    return ret;
+}
+
+static tlv try_recv_one() {
+    std::unique_lock<std::mutex> lock{rx_queue_mtx};
+    if (rx_queue.empty()) return {0, 0, nullptr};
+    tlv ret = rx_queue.front();
+    rx_queue.erase(rx_queue.begin());
+    return ret;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
+    
+    while (true) {
+        auto rx = try_recv_one();
+        if (!rx.data) break;
+        switch (rx.type) {
+            case 200:
+                std::cout << "Debug: " << std::string((char*)rx.data, rx.len) << std::endl;
+                break;
+            case 1:
+            {
+                int n = rx.len / sizeof(float);
+                float array[n];
+                memcpy(&array, rx.data, sizeof(float) * n);
+//                std::cout << "Got face ID:" << array[0] << "," << array[1] << "," << array[2] << std::endl;
+            
+                float _emotion = array[0] * 20.0;
+                float _height = 30.0 + array[1] * (200.0 - 30.0);
+                float _width = 10.0 + array[2] * (200.0 - 10.0);
+                
+                mainApp->updateValues(_emotion, _height, _width);
+            }
+                break;
+            default:
+                std::cout << "Unknown message ID: " << rx.type << std::endl;
+                break;
+        }
+        delete [] rx.data;
+    }
     
 }
 
@@ -131,7 +325,6 @@ void ofApp::draw(){
         gui.draw();
     }
 //}
-    
     
 }
 
