@@ -3,13 +3,17 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
-    mix.allocate(600, 800, OF_IMAGE_COLOR);
+    imgWidth = 1536;
+    imgHeight = 2049;
+    
+    mix.allocate(imgWidth, imgHeight, OF_IMAGE_COLOR);
     ofDirectory dir;
-    dir.listDir("everystop");
+    dir.listDir("everystopSM");
     
-    int pixelSum[ 600 * 800 * 3];
+    int * pixelSum;
+    pixelSum = new int[ imgWidth * imgHeight * 3];
     
-    for (int i = 0; i<600*800*3; i++){
+    for (int i = 0; i<imgWidth*imgHeight*3; i++){
         pixelSum[i]=0;
     }
     
@@ -29,10 +33,10 @@ void ofApp::setup(){
          that takes the red green and blue image, going to grab the data
          */
         
-        for (int j = 0; j<600; j++){
-            for (int k = 0; k < 800; k++){ //Zach wants to point out that this is where you can get a lot of bugs in your code, when you have a for loop inside of for loop
+        for (int j = 0; j<imgWidth; j++){
+            for (int k = 0; k < imgHeight; k++){ //Zach wants to point out that this is where you can get a lot of bugs in your code, when you have a for loop inside of for loop
                 ofColor c = temp.getColor(j, k); // this is going though every single pixel and getting the color from that pixel. j,k are the pixel coordinates and what it's doing is getting the file from the folder associated with temp, and then getting the pixel color
-                int index = (k * 600 + j)*3; // zach has this as funky math. As he explains, this is a one-dimensional array, we need to figure out where we are inside that one dimensional array, we are in a two dimensional for loop.
+                int index = (k * imgWidth + j)*3; // zach has this as funky math. As he explains, this is a one-dimensional array, we need to figure out where we are inside that one dimensional array, we are in a two dimensional for loop.
                 pixelSum[index] += c.r;
                 pixelSum[index+1] += c.g;
                 pixelSum[index+2] += c.b;
@@ -45,10 +49,10 @@ void ofApp::setup(){
         
     }
     
-    for (int i = 0; i<600; i++){
-        for (int j = 0; j < 800; j++){
+    for (int i = 0; i<imgWidth; i++){
+        for (int j = 0; j < imgHeight; j++){
             ofColor c; // this initializes this
-            int index = (j*600+i)*3;
+            int index = (j*imgWidth+i)*3;
             c.r = (float)pixelSum[index] / (float)dir.size();
             c.g = (float)pixelSum[index+1] / (float)dir.size();
             c.b = (float)pixelSum[index+2] / (float)dir.size();
@@ -60,6 +64,8 @@ void ofApp::setup(){
     }
     
     mix.update();
+    mix.save("EveryStopSM.png", OF_IMAGE_QUALITY_BEST);
+
 }
 
 //--------------------------------------------------------------
@@ -70,8 +76,7 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     
-    mix.draw(0,0);
-
+    
 }
 
 //--------------------------------------------------------------
