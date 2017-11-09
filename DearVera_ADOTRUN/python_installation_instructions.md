@@ -42,10 +42,16 @@ C. `./install.sh`
 
 17. Enter the OpenFace directory `cd openface` and install it `sudo python setup.py install` (you may need to enter your Mac password)
 
-18. In the openface folder you have a folder called models. You need to download the ML models there. Ask me how. There’s a script but it doesn’t work properly. You need to add the models in `https://www.dropbox.com/s/toaiiqkh1htmir0/openface.zip?dl=0` to `/openface/models/openface/`.
+18. In the openface folder you have a folder called models. You need to download the ML models there.There’s a script but it doesn’t work properly. You need to add the models in `https://www.dropbox.com/s/toaiiqkh1htmir0/openface.zip?dl=0` to `/openface/models/openface/`.
 
-19. In `/openface/demos` open `classifier.py` and replace the `from sklearn.lda import LDA` line from classifier.py with this: `from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA`
+19. Navigate back to the `openface/models` folder and go to `/models/dlib`. Download and extract the files from `https://www.dropbox.com/s/e8hah2exk1y56o5/dlib.zip?dl=0` and place the files in `/models/dlib`
 
-20. Once this is done, you can test `python classifier.py infer models/openface/celeb-classifier.nn4.small2.v1.pkl ./images/examples/carell.jpg` in `/openface/demos/`
+20. In `/openface/demos` open `classifier.py` and replace the `from sklearn.lda import LDA` line from classifier.py with this: `from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA`
 
-21. Almost done. You just need get the Python script from me. Replace your local IP into the code and run it after launching the app :)
+21. Go to `/openface/demos/`. Once this is done, you can test in  `python classifier.py infer ../models/openface/celeb-classifier.nn4.small2.v1.pkl ../images/examples/carell.jpg`. You should receive the following message:
+`Predict SteveCarell with 0.99 confidence.`
+
+22. Almost done. You just need get the Python script from me. Replace your local IP into the code and run it after launching the app :)
+  22* `https://www.dropbox.com/s/heyit4qwz2irgjw/openface_broadcast.py?dl=0` Link for code. Place it in `/openface/demos/`
+
+23. Launch Xcode project
