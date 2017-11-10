@@ -110,7 +110,7 @@ void ofApp::setup(){
 
     // Drawing 0
     ofBackground(250);
-    gui.setup();
+//    gui.setup();
     
     emotion = 0;
     height = 0;
@@ -314,7 +314,7 @@ void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
             myLine.draw();
         }
         
-        gui.draw();
+//        gui.draw();
     }
     //}
 }
@@ -449,7 +449,7 @@ void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
             myLine.draw();
         }
         
-        gui.draw();
+//        gui.draw();
     }
     //}
     

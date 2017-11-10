@@ -58,7 +58,7 @@ class ofApp : public ofBaseApp{
     float height2;
     float width2;
 
-    ofxPanel gui;
+//    ofxPanel gui;
     
     ofTrueTypeFont font;
     std::mutex wordsMtx;
