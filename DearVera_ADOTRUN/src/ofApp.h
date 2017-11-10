@@ -36,9 +36,9 @@ class ofApp : public ofBaseApp{
         void drawTextCentered(const std::string& text, float x, float y);
     
     // Drawing 0
-    ofxFloatSlider emotion;
-    ofxFloatSlider height;
-    ofxFloatSlider width;
+    float emotion;
+    float height;
+    float width;
     
     // Drawing 1
     ofPoint origin1;
@@ -53,9 +53,9 @@ class ofApp : public ofBaseApp{
     float margin1;
     
     // Drawing 2
-    ofxFloatSlider emotion2;
-    ofxFloatSlider height2;
-    ofxFloatSlider width2;
+    float emotion2;
+    float height2;
+    float width2;
 
     ofxPanel gui;
     

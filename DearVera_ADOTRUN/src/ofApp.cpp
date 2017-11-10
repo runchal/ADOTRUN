@@ -91,15 +91,15 @@ static const std::vector<std::string> words_list = {"Optimism", "Action", "Inact
 
 ofApp *mainApp = NULL;
 InterValue __emotion(0.1, 0.4, 0.3);
-InterValue __height(0.1, 0.4, 0.3);
-InterValue __width(0.1, 0.4, 0.3);
+InterValue __height(0.2, 0.4, 0.3);
+InterValue __width(0.2, 0.4, 0.3);
 
-InterValue __startLength1(0.1, 0.4, 0.3);
+InterValue __startLength1(1, 0.4, 0.3);
 InterValue __startSlope1(0.1, 0.4, 0.3);
 
 InterValue __emotion2(0.1, 0.4, 0.3);
-InterValue __height2(0.1, 0.4, 0.3);
-InterValue __width2(0.1, 0.4, 0.3);
+InterValue __height2(0.2, 0.4, 0.3);
+InterValue __width2(0.2, 0.4, 0.3);
 
 void ofApp::setup(){
     
@@ -111,25 +111,43 @@ void ofApp::setup(){
     // Drawing 0
     ofBackground(250);
     gui.setup();
-    gui.add(emotion.setup("emotion", 0.5,0,20));
-    gui.add(height.setup("height",5,1,20));
-    gui.add(width.setup("width",20,10,200));
+    
+    emotion = 0;
+    height = 0;
+    width = 0;
+//    gui.add(emotion.setup("emotion", 0.5,0,20));
+//    gui.add(height.setup("height",5,1,20));
+//    gui.add(width.setup("width",20,10,200));
     
     // Drawing 1
     pen1.set(0,0);
     nextPen1.set(0,0);
     penSwitch1 = true;
     emotion1 = 10;
-    startLength1 = 35;
-    startSlope1 = 0.5;
+    startLength1 = 0;
+    startSlope1 = 0.0;
     angle1 = 0;
     margin1 = 0;
     origin1.set(margin1,margin1*3);
     
     // Drawing 2
-    gui.add(emotion2.setup("emotion2", 0.5,0,20));
-    gui.add(height2.setup("height2",5,1,20));
-    gui.add(width2.setup("width2",20,10,200));
+    emotion2 = 0;
+    height2 = 0;
+    width2 = 0;
+//    gui.add(emotion2.setup("emotion2", 0.5,0,20));
+//    gui.add(height2.setup("height2",5,1,20));
+//    gui.add(width2.setup("width2",20,10,200));
+    
+    __emotion.setTarget(emotion);
+    __height.setTarget(height);
+    __width.setTarget(width);
+    
+    __startLength1.setTarget(startLength1);
+    __startSlope1.setTarget(startSlope1);
+    
+    __emotion2.setTarget(emotion2);
+    __height2.setTarget(height2);
+    __width2.setTarget(width2);
     
     font.load("Roboto-Regular.ttf", 14, true, true);
 
@@ -168,16 +186,22 @@ void ofApp::update(){
     __height2.approachTarget();
     __width2.approachTarget();
     
-    emotion.setup("emotion", __emotion.current,0,20);
-    height.setup("height",__height.current,30,200);
-    width.setup("width",__width.current,10,200);
+    emotion = __emotion.current;
+    height = __height.current;
+    width = __width.current;
+//    emotion.setup("emotion", __emotion.current,0,20);
+//    height.setup("height",__height.current,30,200);
+//    width.setup("width",__width.current,10,200);
     
     startLength1 = __startLength1.current;
     startSlope1 = __startSlope1.current;
     
-    emotion2.setup("emotion2", __emotion2.current,0,20);
-    height2.setup("height2",__height2.current,30,200);
-    width2.setup("width2",__width2.current,10,200);
+    emotion2 = __emotion2.current;
+    height2 = __height2.current;
+    width2 = __width2.current;
+//    emotion2.setup("emotion2", __emotion2.current,0,20);
+//    height2.setup("height2",__height2.current,30,200);
+//    width2.setup("width2",__width2.current,10,200);
 }
 
 //--------------------------------------------------------------
@@ -237,9 +261,14 @@ void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
     float vertSpacer = 40;
     float horStep = 20;
     
+    float centerSpace = 100;
+    float centerStart = (canvasHeight - centerSpace) / 2.0;
+    float centerEnd = (canvasHeight + centerSpace) / 2.0;
+    
     //line drawing
     
     for (int h = 0; h * vertSpacer <= canvasHeight; h++){
+        if (h * vertSpacer >= centerStart && h * vertSpacer <= centerEnd) { continue; }
         ofPolyline myLine;
         for (int i = 0; i * horStep <= canvasWidth; i++){
             //            float yDown = ofRandom(20,40);
@@ -275,9 +304,18 @@ void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
 
 void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
     
+    float centerSpace = 100;
+    float centerStart = (canvasHeight - centerSpace) / 2.0;
+    float centerEnd = (canvasHeight + centerSpace) / 2.0;
+    float vertSpace = 60;
+    
     ofSetColor(0);
     ofSeedRandom(1);
     while (origin1.y < canvasHeight - margin1){
+        if (origin1.y >= centerStart && origin1.y <= centerEnd) {
+            origin1.y += vertSpace;
+            continue;
+        }
         pen1.x = origin1.x;
         pen1.y = origin1.y;
         //  ofPolyline line;
@@ -343,13 +381,17 @@ void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
             
         }
         origin1.x = margin1;
-        origin1.y += 60;
+        origin1.y += vertSpace;
         // line.draw();
     }
     origin1.y = margin1*3;
 }
 
 void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
+    
+    float centerSpace = 100;
+    float centerStart = (canvasHeight - centerSpace) / 2.0;
+    float centerEnd = (canvasHeight + centerSpace) / 2.0;
     
     ofSeedRandom(0); // put this in to fix the emotional scale of response
     
@@ -360,6 +402,7 @@ void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
     //line drawing
     
     for (int h = 0; h * vertSpacer <= canvasHeight; h++){
+        if (h * vertSpacer >= centerStart && h * vertSpacer <= centerEnd) { continue; }
         ofPolyline myLine;
         for (int i = 0; i * horStep <= canvasWidth; i++){
             
@@ -604,6 +647,7 @@ void ofApp::reactToFaceValues() {
                 
                 if (n == 1) {
 //                    printf("No face!\n");
+                    mainApp->updateValues(0, 0, 0, 0, 0, 0, 0, 0);
                     return;
                 }
                 
