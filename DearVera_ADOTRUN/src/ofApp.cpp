@@ -561,12 +561,19 @@ void ofApp::reactToFaceValues() {
                 memcpy(&array, rx.data, sizeof(float) * n);
                 //                std::cout << "Got face ID:" << array[0] << "," << array[1] << "," << array[2] << std::endl;
                 
-                float _emotion = array[0] * 20.0;
-                float _height = 30.0 + array[1] * (200.0 - 30.0);
-                float _width = 10.0 + array[2] * (200.0 - 10.0);
+                if (n == 1) {
+//                    printf("No face!\n");
+                    return;
+                }
                 
-                float _startLength1 = 35 + array[3] * 10;
-                float _startSlope1 = 0.5 + array[3] * 0.5;
+//                printf("%f\n", array[0]);
+                
+                float _emotion = array[1] * 20.0;
+                float _height = 30.0 + array[2] * (200.0 - 30.0);
+                float _width = 10.0 + array[3] * (200.0 - 10.0);
+                
+                float _startLength1 = 35 + array[4] * 10;
+                float _startSlope1 = 0.5 + array[5] * 0.5;
                 
                 float _emotion2 = array[6] * 20.0;
                 float _height2 = 30.0 + array[7] * (200.0 - 30.0);
