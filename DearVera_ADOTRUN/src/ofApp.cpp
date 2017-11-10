@@ -96,6 +96,7 @@ InterValue __width(0.2, 0.4, 0.3);
 
 InterValue __startLength1(1, 0.4, 0.3);
 InterValue __startSlope1(0.1, 0.4, 0.3);
+InterValue __flattenY1(0.1, 0.4, 0.3);
 
 InterValue __emotion2(0.1, 0.4, 0.3);
 InterValue __height2(0.2, 0.4, 0.3);
@@ -109,7 +110,7 @@ void ofApp::setup(){
 
     // Drawing 0
     ofBackground(250);
-    gui.setup();
+//    gui.setup();
     
     emotion = 0;
     height = 0;
@@ -122,12 +123,13 @@ void ofApp::setup(){
     pen1.set(0,0);
     nextPen1.set(0,0);
     penSwitch1 = true;
-    emotion1 = 10;
+    emotion1 = 0;
     startLength1 = 0;
     startSlope1 = 0.0;
     angle1 = 0;
     margin1 = 0;
     origin1.set(margin1,margin1*3);
+    flattenY1 = 0;
     
     // Drawing 2
     emotion2 = 0;
@@ -143,6 +145,7 @@ void ofApp::setup(){
     
     __startLength1.setTarget(startLength1);
     __startSlope1.setTarget(startSlope1);
+    __flattenY1.setTarget(flattenY1);
     
     __emotion2.setTarget(emotion2);
     __height2.setTarget(height2);
@@ -193,6 +196,7 @@ void ofApp::update(){
     
     __startLength1.approachTarget();
     __startSlope1.approachTarget();
+    __flattenY1.approachTarget();
     
     __emotion2.approachTarget();
     __height2.approachTarget();
@@ -207,6 +211,7 @@ void ofApp::update(){
     
     startLength1 = __startLength1.current;
     startSlope1 = __startSlope1.current;
+    flattenY1 = __flattenY1.current;
     
     emotion2 = __emotion2.current;
     height2 = __height2.current;
@@ -310,7 +315,7 @@ void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
             myLine.draw();
         }
         
-        gui.draw();
+//        gui.draw();
     }
     //}
 }
@@ -367,17 +372,17 @@ void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
             float xChange = 0;
             float yChange = 0;
             if (!penSwitch1){
-                xChange = cos(angle1)*length;
+                xChange = cos(angle1)*length + 0.5;
             }
             else{
-                xChange  = -cos(angle1)*length;
+                xChange  = -cos(angle1)*length + 0.5;
             }
             
             if (!penSwitch1){
-                yChange = sin(angle1)*length * 0.5;
+                yChange = sin(angle1)*length * 0.5 * flattenY1;
             }
             else{
-                yChange  = -sin(angle1)*length * 0.5;
+                yChange  = -sin(angle1)*length * 0.5 * flattenY1;
             }
             
             nextPen1.x = pen1.x + xChange;
@@ -445,7 +450,7 @@ void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
             myLine.draw();
         }
         
-        gui.draw();
+//        gui.draw();
     }
     //}
     
@@ -660,7 +665,7 @@ void ofApp::reactToFaceValues() {
                 
                 if (n == 1) {
 //                    printf("No face!\n");
-                    mainApp->updateValues(-1, 0, 0, 0, 0, 0, 0, 0, 0);
+                    mainApp->updateValues(-1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                     return;
                 }
                 
@@ -672,12 +677,13 @@ void ofApp::reactToFaceValues() {
                 
                 float _startLength1 = 35 + array[4] * 10;
                 float _startSlope1 = 0.5 + array[5] * 0.5;
+                float _flattenY1 = 1.0 + array[9] * 0.3;
                 
                 float _emotion2 = array[6] * 20.0;
                 float _height2 = 30.0 + array[7] * (200.0 - 30.0);
                 float _width2 = 10.0 + array[8] * (200.0 - 10.0);
                 
-                mainApp->updateValues((int)floor(array[0]), _emotion, _height, _width, _startLength1, _startSlope1, _emotion2, _height2, _width2);
+                mainApp->updateValues((int)floor(array[0]), _emotion, _height, _width, _startLength1, _startSlope1, _flattenY1, _emotion2, _height2, _width2);
             }
                 break;
             default:
@@ -688,13 +694,16 @@ void ofApp::reactToFaceValues() {
     }
 }
 
-void ofApp::updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _emotion2, float _height2, float _width2) {
+bool wordsCanChange = true;
+
+void ofApp::updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _flattenY1, float _emotion2, float _height2, float _width2) {
     __emotion.setTarget(_emotion);
     __height.setTarget(_height);
     __width.setTarget(_width);
     
     __startLength1.setTarget(_startLength1);
     __startSlope1.setTarget(_startSlope1);
+    __flattenY1.setTarget(_flattenY1);
     
     __emotion2.setTarget(_emotion2);
     __height2.setTarget(_height2);
@@ -704,10 +713,12 @@ void ofApp::updateValues(int wordIndex, float _emotion, float _height, float _wi
         this->wordsSet[0] = "";
         this->wordsSet[1] = "";
         this->wordsSet[2] = "";
-    } else {
+        wordsCanChange = true;
+    } else if (wordsCanChange) {
         this->wordsSet[0] = words_list[wordIndex % words_list.size()];
         this->wordsSet[1] = words_list[wordIndex + 323 % words_list.size()];
         this->wordsSet[2] = words_list[wordIndex + 1428 % words_list.size()];
+        wordsCanChange = false;
     }
     
 }
