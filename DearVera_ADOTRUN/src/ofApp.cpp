@@ -149,7 +149,7 @@ void ofApp::setup(){
     __height2.setTarget(height2);
     __width2.setTarget(width2);
     
-    font.load("Roboto-Regular.ttf", 14, true, true);
+    font.load("Lucida-Blackletter.ttf", 20, true, true);
 
     //TODO: remove this word randomizer
     srand(time(nullptr));
