@@ -129,7 +129,7 @@ void ofApp::draw(){
     int spacing = 50;
     // Assuming the three of them have the same width and height
     int canvasWidth = 200;
-    int canvasHeight = 200;
+    int canvasHeight = ofGetHeight();
     
     // Calculations
     int canvasY = (fullHeight - canvasHeight) / 2;

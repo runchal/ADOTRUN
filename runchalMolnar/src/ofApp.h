@@ -27,6 +27,7 @@ class ofApp : public ofBaseApp{
     ofxFloatSlider emotion;
     ofxFloatSlider height;
     ofxFloatSlider width;
+    ofxFloatSlider length;
     ofxPanel gui;
 		
 };

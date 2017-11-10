@@ -3,12 +3,13 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
 
-    imgWidth = 1536;
-    imgHeight = 2049;
+    imgWidth = 3024;
+    imgHeight = 4032;
     
     mix.allocate(imgWidth, imgHeight, OF_IMAGE_COLOR);
     ofDirectory dir;
-    dir.listDir("everystopSM");
+    string dirName = "everystopSM.11.09";
+    dir.listDir(dirName);
     
     int * pixelSum;
     pixelSum = new int[ imgWidth * imgHeight * 3];
@@ -64,7 +65,7 @@ void ofApp::setup(){
     }
     
     mix.update();
-    mix.save("EveryStopSM.png", OF_IMAGE_QUALITY_BEST);
+    mix.save("EveryStopSM_reviesed_2.11.09.png", OF_IMAGE_QUALITY_BEST);
 
 }
 

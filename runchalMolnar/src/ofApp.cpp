@@ -7,16 +7,24 @@
 
 
 void ofApp::setup(){
+    /*TO DO
+     * MAKE THE WIDTH AND HEIGHT FOLLOW BETTER STROKE RULES
+     * TRY TO BOUND HOW MUCH EMOTION INTERFERES WITH THE PREVIOUS LETTERS?
+     * FIX STROKE LENGTH
+     */
     
     //it's in reproducing the art that I realize that I am about to get my ass kicked and that the work I need to focus on is my emotional state of being and how attempting to reproduce mastery makes me feel
     
     //how do I feel about the piece currently? Its still not human enough
+    
+    
 
     ofBackground(250);
     gui.setup();
     gui.add(emotion.setup("emotion", 0.5,0,20));
-    gui.add(height.setup("height",10,5,40));
-    gui.add(width.setup("width",50,10,200));
+    gui.add(height.setup("height",10,5,30));
+    gui.add(width.setup("width",50,10,100));
+    gui.add(length.setup("length",10,1,30));
     
 }
 
@@ -52,13 +60,13 @@ void ofApp::draw(){
             
             if (i % 2 == 0){
 //                float x = 10 + i * 20 + ofRandom(-pct*10, pct*10);//                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10); // this is before i made a param for emotion. It created sort of an effect where the program got more emotional the more they were writing to you
-                float x = xBack + i * 20 + ofRandom(-emotion*10*i, emotion*10*i);
+                float x = xBack + i * length + ofRandom(-emotion*10*h*0.3, emotion*10*h*0.3);
                 // one thing with this param being coded in this way is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
                 float y = -yDown + (i*0) + h * vertSpacer;
                 myLine.addVertex(x,y);
             } else {
 //                float x = 60 + i * 20 + ofRandom(-pct*10, pct*10); // this is before i made a param for emotion. It created sort of an effect where the program got more emotional the more they were writing to you
-                float x = xBack + xForward + i * 20 + ofRandom(-emotion*10*i, emotion*10*i); // one thing with this param is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
+                float x = xBack + xForward + i * length + ofRandom(-emotion*10*h*0.3, emotion*10*h*0.3); // one thing with this param is that it makes the emotional state of the piece constant — it is more a reflection of mental health than it is of an emotional response to a person which grows stronger over time
                 float y = yDown + (i*0) +  h * vertSpacer;
                 myLine.addVertex(x,y);
             }
