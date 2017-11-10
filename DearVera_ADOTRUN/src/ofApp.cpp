@@ -122,7 +122,7 @@ void ofApp::setup(){
     pen1.set(0,0);
     nextPen1.set(0,0);
     penSwitch1 = true;
-    emotion1 = 10;
+    emotion1 = 0;
     startLength1 = 0;
     startSlope1 = 0.0;
     angle1 = 0;
