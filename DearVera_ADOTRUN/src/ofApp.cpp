@@ -142,6 +142,24 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     
+    float wordsCurrentAlpha[3];
+    {
+        std::unique_lock<std::mutex> lock(wordsMtx);
+        for (int i = 0; i < 3; ++i) {
+            wordsTime[i] += ofGetLastFrameTime();
+            if (wordsTargetAlpha[i]) {
+                wordsCurrentAlpha[i] = ofLerp(0, 1, ofClamp(wordsTime[i], 0, fadeTime) / fadeTime);
+            } else {
+                wordsCurrentAlpha[i] = 1 - ofLerp(0, 1, ofClamp(wordsTime[i], 0, fadeTime) / fadeTime);
+                if (wordsCurrentAlpha[i] < 0.001f) {
+                    words[i] = wordsNext[i];
+                    wordsTargetAlpha[i] = true;
+                    wordsTime[i] = 0;
+                }
+            }
+        }
+    }
+    
     int fullWidth = ofGetWidth();
     int fullHeight = ofGetHeight();
 
@@ -157,9 +175,11 @@ void ofApp::draw(){
     int canvas0X = canvas1X - canvasWidth - spacing;
     int canvas2X = canvas1X + canvasWidth + spacing;
     
-    ofSetColor(10, 10, 10);
+    ofSetColor(0, 0, 0, (int)(wordsCurrentAlpha[0] * 255));
     drawTextCentered(getWord(0), canvas0X + canvasWidth / 2, canvasHeight / 2);
+    ofSetColor(0, 0, 0, (int)(wordsCurrentAlpha[1] * 255));
     drawTextCentered(getWord(1), canvas1X + canvasWidth / 2, canvasHeight / 2);
+    ofSetColor(0, 0, 0, (int)(wordsCurrentAlpha[2] * 255));
     drawTextCentered(getWord(2), canvas2X + canvasWidth / 2, canvasHeight / 2);
     
     // Placement
@@ -337,7 +357,10 @@ void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
 
 void ofApp::setWord(int i, const std::string& word) {
     std::unique_lock<std::mutex> lock{wordsMtx};
-    words[i] = word;
+    if (wordsNext[i] == word) return;
+    wordsNext[i] = word;
+    wordsTime[i] = 0;
+    wordsTargetAlpha[i] = false;
 }
 
 std::string ofApp::getWord(int i) {
