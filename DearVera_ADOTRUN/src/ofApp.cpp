@@ -15,6 +15,10 @@
 
 #include "socket_t.h"
 
+#include <ctime>
+
+#include "InterValue.h"
+
 static std::string run_cmd(const std::string& cmd) {
     FILE* fd = popen(cmd.c_str(), "r");
     if (!fd) throw std::runtime_error("Failed to popen");
@@ -86,6 +90,16 @@ static const std::vector<std::string> words_list = {"Optimism", "Action", "Inact
 //--------------------------------------------------------------
 
 ofApp *mainApp = NULL;
+InterValue __emotion(0.1, 0.4, 0.3);
+InterValue __height(0.1, 0.4, 0.3);
+InterValue __width(0.1, 0.4, 0.3);
+
+InterValue __startLength1(0.1, 0.4, 0.3);
+InterValue __startSlope1(0.1, 0.4, 0.3);
+
+InterValue __emotion2(0.1, 0.4, 0.3);
+InterValue __height2(0.1, 0.4, 0.3);
+InterValue __width2(0.1, 0.4, 0.3);
 
 void ofApp::setup(){
     
@@ -136,7 +150,34 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
+//    printf("frame time %d\n", time(0));
+//    clock_t begin = clock();
     reactToFaceValues();
+//    clock_t end = clock();
+//    double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+//    printf("reacted in %f seconds\n", elapsed_secs);
+    
+    __emotion.approachTarget();
+    __height.approachTarget();
+    __width.approachTarget();
+    
+    __startLength1.approachTarget();
+    __startSlope1.approachTarget();
+    
+    __emotion2.approachTarget();
+    __height2.approachTarget();
+    __width2.approachTarget();
+    
+    emotion.setup("emotion", __emotion.current,0,20);
+    height.setup("height",__height.current,30,200);
+    width.setup("width",__width.current,10,200);
+    
+    startLength1 = __startLength1.current;
+    startSlope1 = __startSlope1.current;
+    
+    emotion2.setup("emotion2", __emotion2.current,0,20);
+    height2.setup("height2",__height2.current,30,200);
+    width2.setup("width2",__width2.current,10,200);
 }
 
 //--------------------------------------------------------------
@@ -568,15 +609,15 @@ void ofApp::reactToFaceValues() {
 }
 
 void ofApp::updateValues(float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _emotion2, float _height2, float _width2) {
-    emotion.setup("emotion", _emotion,0,20);
-    height.setup("height",_height,30,200);
-    width.setup("width",_width,10,200);
+    __emotion.setTarget(_emotion);
+    __height.setTarget(_height);
+    __width.setTarget(_width);
     
-    startLength1 = _startLength1;
-    startSlope1 = _startSlope1;
+    __startLength1.setTarget(_startLength1);
+    __startSlope1.setTarget(_startSlope1);
     
-    emotion2.setup("emotion2", _emotion2,0,20);
-    height2.setup("height2",_height2,30,200);
-    width2.setup("width2",_width2,10,200);
+    __emotion2.setTarget(_emotion2);
+    __height2.setTarget(_height2);
+    __width2.setTarget(_width2);
     
 }
