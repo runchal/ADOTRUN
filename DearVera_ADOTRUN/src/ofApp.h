@@ -62,5 +62,10 @@ class ofApp : public ofBaseApp{
     ofTrueTypeFont font;
     std::mutex wordsMtx;
     std::string words[3];
+    std::string wordsNext[3];
+    bool wordsTargetAlpha[3] {true, true, true};
+    float wordsTime[3] {0, 0, 0};
+    
+    static constexpr float fadeTime = 0.5f;
 		
 };
