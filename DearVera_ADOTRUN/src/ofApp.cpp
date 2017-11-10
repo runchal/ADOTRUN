@@ -5,9 +5,9 @@
 #include <stdexcept>
 #include <iostream>
 #include <thread>
-#include <mutex>
 #include <vector>
 #include <condition_variable>
+#include <atomic>
 
 #include <strings.h>
 #include <netinet/ip.h>
@@ -68,14 +68,20 @@ struct tlv {
     
 };
 
+socket_t server_sock;
+socket_t client_sock;
 std::thread server_thread;
 std::vector<tlv> tx_queue;
 std::mutex tx_queue_mtx;
 std::condition_variable tx_queue_nonempty;
+std::atomic<bool> tx_queue_alive{true};
 std::vector<tlv> rx_queue;
 std::mutex rx_queue_mtx;
 std::condition_variable rx_queue_nonempty;
+std::atomic<bool> run_randomizer;//TODO remove
+std::thread randomizer_thread;//TODO remove
 
+static const std::vector<std::string> words_list = {"Optimism", "Action", "Inaction", "Abundance", "Structure", "Sexuality", "Movement", "Courage", "Meditation", "Cycles", "Fairness", "Surrender", "Endings", "Balance", "Destructive", "Collapse", "Hope", "Mystery", "Success", "Rebirth", "Completion", "Serious", "Intelligent", "Fierce", "Unstable", "Clarity", "Indecision", "Heartbreak", "Meditation", "Hostility", "Leaving", "Abandon", "Stuck", "Anxiety", "Sabotage", "Repression", "Intuitive", "Romantic", "Creative", "Joy", "Partnership", "Celebration", "Boredom", "Self-pity", "Kindness", "Indecision", "Abandon", "Indulgence", "Attainment", "Passionate", "Confidant", "Adventurous", "Inspired", "Fertile", "Contemplation", "Reward", "Celebration", "Competition", "Success", "Defensive", "Speedy", "Pessimism", "Exhaustion", "Secure", "Healthy", "Cautious", "Student", "Clarity", "Balance", "Work", "Hoarding", "Petty", "Charity", "Patience", "Focused", "Luxury", "Success"};
 
 //--------------------------------------------------------------
 
@@ -111,6 +117,20 @@ void ofApp::setup(){
     gui.add(height2.setup("height2",5,1,20));
     gui.add(width2.setup("width2",20,10,200));
     
+    font.load("Roboto-Regular.ttf", 14, true, true);
+
+    //TODO: remove this word randomizer
+    srand(time(nullptr));
+    ofApp& thiz = *this;
+    run_randomizer = true;
+    randomizer_thread = std::thread([&]{
+        while (run_randomizer == true) {
+            thiz.setWord(rand() % 3, words_list[rand() % words_list.size()]);
+            sleep(1);
+        }
+    });
+    ////////////
+    
     setUpServer();
 }
 
@@ -136,6 +156,11 @@ void ofApp::draw(){
     int canvas1X = (fullWidth - canvasWidth) / 2;
     int canvas0X = canvas1X - canvasWidth - spacing;
     int canvas2X = canvas1X + canvasWidth + spacing;
+    
+    ofSetColor(10, 10, 10);
+    drawTextCentered(getWord(0), canvas0X + canvasWidth / 2, canvasHeight / 2);
+    drawTextCentered(getWord(1), canvas1X + canvasWidth / 2, canvasHeight / 2);
+    drawTextCentered(getWord(2), canvas2X + canvasWidth / 2, canvasHeight / 2);
     
     // Placement
     ofApp::draw0(canvas0X, canvasY, canvasWidth, canvasHeight);
@@ -310,6 +335,34 @@ void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
     
 }
 
+void ofApp::setWord(int i, const std::string& word) {
+    std::unique_lock<std::mutex> lock{wordsMtx};
+    words[i] = word;
+}
+
+std::string ofApp::getWord(int i) {
+    std::unique_lock<std::mutex> lock{wordsMtx};
+    return words[i];
+}
+
+void ofApp::drawTextCentered(const std::string& text, float x, float y) {
+    auto bbox = font.getStringBoundingBox(text, 0, 0);
+    font.drawString(text, x - bbox.getCenter().x, y);
+}
+
+void ofApp::exit(){
+    {
+        std::unique_lock<std::mutex> lock{tx_queue_mtx};
+        tx_queue_alive = false;
+        tx_queue_nonempty.notify_all();
+    }
+    client_sock.close();
+    server_sock.close();
+    server_thread.join();
+    run_randomizer = false;
+    randomizer_thread.join();
+}
+
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
 
@@ -372,7 +425,7 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 
 void ofApp::setUpServer() {
     server_thread = std::thread([] {
-        socket_t server_sock{socket_domain_t::inet, socket_type_t::stream};
+        server_sock = socket_t{socket_domain_t::inet, socket_type_t::stream};
         sockaddr_in serv_addr;
         bzero(&serv_addr, sizeof(serv_addr));
         
@@ -385,20 +438,24 @@ void ofApp::setUpServer() {
         
         sockaddr_in cli_addr;
         socklen_t cli_addr_len = sizeof(cli_addr);
-        auto client_sock = server_sock.accept((sockaddr *) &cli_addr, &cli_addr_len);
-        
+        try {
+            client_sock = server_sock.accept((sockaddr *) &cli_addr, &cli_addr_len);
+        } catch (std::runtime_error& e) {
+            std::cout << "Accept error: " << e.what() << std::endl;
+        }
         std::string cli_host = inet_ntoa(cli_addr.sin_addr);
         int cli_port = ntohs(cli_addr.sin_port);
         std::cout << "Connection from: " << cli_host << " port " << cli_port << std::endl;
         
         std::thread writer([&] {
-            while (true) {
+            while (tx_queue_alive) {
                 std::vector<tlv> txq;
                 {
                     std::unique_lock<std::mutex> lock{tx_queue_mtx};
-                    while (tx_queue.empty()) {
+                    while (tx_queue.empty() && tx_queue_alive) {
                         tx_queue_nonempty.wait(lock);
                     }
+                    if (!tx_queue_alive) goto done_tx;
                     txq = std::vector<tlv>{tx_queue};
                     tx_queue.clear();
                 }
@@ -437,6 +494,8 @@ void ofApp::setUpServer() {
         
         client_sock.close();
         server_sock.close();
+        
+        std::cout << "Sockets closed" << std::endl;
     });
 }
 
