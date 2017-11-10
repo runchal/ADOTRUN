@@ -26,7 +26,7 @@ class ofApp : public ofBaseApp{
     
     private:
         void setUpServer();
-        void updateValues(float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _emotion2, float _height2, float _width2);
+        void updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _emotion2, float _height2, float _width2);
         void reactToFaceValues();
         void draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight);
         void draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight);
@@ -63,6 +63,7 @@ class ofApp : public ofBaseApp{
     std::mutex wordsMtx;
     std::string words[3];
     std::string wordsNext[3];
+    std::string wordsSet[3];
     bool wordsTargetAlpha[3] {true, true, true};
     float wordsTime[3] {0, 0, 0};
     

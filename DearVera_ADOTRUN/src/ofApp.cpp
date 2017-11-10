@@ -102,7 +102,6 @@ InterValue __height2(0.2, 0.4, 0.3);
 InterValue __width2(0.2, 0.4, 0.3);
 
 void ofApp::setup(){
-    
     mainApp = this;
     //it's in reproducing the art that I realize that I am about to get my ass kicked and that the work I need to focus on is my emotional state of being and how attempting to reproduce mastery makes me feel
     
@@ -150,6 +149,10 @@ void ofApp::setup(){
     __width2.setTarget(width2);
     
     font.load("Roboto-Regular.ttf", 14, true, true);
+    
+    this->wordsSet[0] = "";
+    this->wordsSet[1] = "";
+    this->wordsSet[2] = "";
 
     //TODO: remove this word randomizer
     srand(time(nullptr));
@@ -157,7 +160,16 @@ void ofApp::setup(){
     run_randomizer = true;
     randomizer_thread = std::thread([&]{
         while (run_randomizer == true) {
-            thiz.setWord(rand() % 3, words_list[rand() % words_list.size()]);
+//            srand(time(NULL));
+//            int r0 = rand();
+//            int r1 = rand();
+//            int r2 = rand();
+            auto w0 = thiz.wordsSet[0];//words_list[r0 % words_list.size()];
+            auto w1 = thiz.wordsSet[1];//words_list[r1 % words_list.size()];
+            auto w2 = thiz.wordsSet[2];//words_list[r2 % words_list.size()];
+            thiz.setWord(0, w0);
+            thiz.setWord(1, w1);
+            thiz.setWord(2, w2);
             sleep(1);
         }
     });
@@ -647,7 +659,7 @@ void ofApp::reactToFaceValues() {
                 
                 if (n == 1) {
 //                    printf("No face!\n");
-                    mainApp->updateValues(0, 0, 0, 0, 0, 0, 0, 0);
+                    mainApp->updateValues(-1, 0, 0, 0, 0, 0, 0, 0, 0);
                     return;
                 }
                 
@@ -664,7 +676,7 @@ void ofApp::reactToFaceValues() {
                 float _height2 = 30.0 + array[7] * (200.0 - 30.0);
                 float _width2 = 10.0 + array[8] * (200.0 - 10.0);
                 
-                mainApp->updateValues(_emotion, _height, _width, _startLength1, _startSlope1, _emotion2, _height2, _width2);
+                mainApp->updateValues((int)floor(array[0]), _emotion, _height, _width, _startLength1, _startSlope1, _emotion2, _height2, _width2);
             }
                 break;
             default:
@@ -675,7 +687,7 @@ void ofApp::reactToFaceValues() {
     }
 }
 
-void ofApp::updateValues(float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _emotion2, float _height2, float _width2) {
+void ofApp::updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _emotion2, float _height2, float _width2) {
     __emotion.setTarget(_emotion);
     __height.setTarget(_height);
     __width.setTarget(_width);
@@ -686,5 +698,15 @@ void ofApp::updateValues(float _emotion, float _height, float _width, float _sta
     __emotion2.setTarget(_emotion2);
     __height2.setTarget(_height2);
     __width2.setTarget(_width2);
+    
+    if (wordIndex < 0) {
+        this->wordsSet[0] = "";
+        this->wordsSet[1] = "";
+        this->wordsSet[2] = "";
+    } else {
+        this->wordsSet[0] = words_list[wordIndex % words_list.size()];
+        this->wordsSet[1] = words_list[wordIndex + 323 % words_list.size()];
+        this->wordsSet[2] = words_list[wordIndex + 1428 % words_list.size()];
+    }
     
 }
