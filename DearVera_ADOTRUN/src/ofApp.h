@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxGui.h"
+#include <mutex>
 
 class ofApp : public ofBaseApp{
 
@@ -29,6 +30,9 @@ class ofApp : public ofBaseApp{
         void draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight);
         void draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight);
         void draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight);
+        void setWord(int i, const std::string& word);
+        std::string getWord(int i);
+        void drawTextCentered(const std::string& text, float x, float y);
     
     // Drawing 0
     ofxFloatSlider emotion;
@@ -52,8 +56,10 @@ class ofApp : public ofBaseApp{
     ofxFloatSlider height2;
     ofxFloatSlider width2;
 
-    
-    
     ofxPanel gui;
+    
+    ofTrueTypeFont font;
+    std::mutex wordsMtx;
+    std::string words[3];
 		
 };

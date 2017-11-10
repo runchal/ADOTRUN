@@ -5,7 +5,6 @@
 #include <stdexcept>
 #include <iostream>
 #include <thread>
-#include <mutex>
 #include <vector>
 #include <condition_variable>
 
@@ -76,6 +75,7 @@ std::vector<tlv> rx_queue;
 std::mutex rx_queue_mtx;
 std::condition_variable rx_queue_nonempty;
 
+static const std::vector<std::string> words_list = {"Optimism", "Action", "Inaction", "Abundance", "Structure", "Sexuality", "Movement", "Courage", "Meditation", "Cycles", "Fairness", "Surrender", "Endings", "Balance", "Destructive", "Collapse", "Hope", "Mystery", "Success", "Rebirth", "Completion", "Serious", "Intelligent", "Fierce", "Unstable", "Clarity", "Indecision", "Heartbreak", "Meditation", "Hostility", "Leaving", "Abandon", "Stuck", "Anxiety", "Sabotage", "Repression", "Intuitive", "Romantic", "Creative", "Joy", "Partnership", "Celebration", "Boredom", "Self-pity", "Kindness", "Indecision", "Abandon", "Indulgence", "Attainment", "Passionate", "Confidant", "Adventurous", "Inspired", "Fertile", "Contemplation", "Reward", "Celebration", "Competition", "Success", "Defensive", "Speedy", "Pessimism", "Exhaustion", "Secure", "Healthy", "Cautious", "Student", "Clarity", "Balance", "Work", "Hoarding", "Petty", "Charity", "Patience", "Focused", "Luxury", "Success"};
 
 //--------------------------------------------------------------
 
@@ -111,6 +111,19 @@ void ofApp::setup(){
     gui.add(height2.setup("height2",5,1,20));
     gui.add(width2.setup("width2",20,10,200));
     
+    font.load("Roboto-Regular.ttf", 14, true, true);
+
+    //TODO: remove this word randomizer
+    srand(time(nullptr));
+    ofApp& thiz = *this;
+    new std::thread([&]{
+        while (true) {
+            thiz.setWord(rand() % 3, words_list[rand() % words_list.size()]);
+            sleep(1);
+        }
+    });
+    ////////////
+    
     setUpServer();
 }
 
@@ -136,6 +149,11 @@ void ofApp::draw(){
     int canvas1X = (fullWidth - canvasWidth) / 2;
     int canvas0X = canvas1X - canvasWidth - spacing;
     int canvas2X = canvas1X + canvasWidth + spacing;
+    
+    ofSetColor(10, 10, 10);
+    drawTextCentered(getWord(0), canvas0X + canvasWidth / 2, canvasHeight / 2);
+    drawTextCentered(getWord(1), canvas1X + canvasWidth / 2, canvasHeight / 2);
+    drawTextCentered(getWord(2), canvas2X + canvasWidth / 2, canvasHeight / 2);
     
     // Placement
     ofApp::draw0(canvas0X, canvasY, canvasWidth, canvasHeight);
@@ -308,6 +326,21 @@ void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
     //}
     
     
+}
+
+void ofApp::setWord(int i, const std::string& word) {
+    std::unique_lock<std::mutex> lock{wordsMtx};
+    words[i] = word;
+}
+
+std::string ofApp::getWord(int i) {
+    std::unique_lock<std::mutex> lock{wordsMtx};
+    return words[i];
+}
+
+void ofApp::drawTextCentered(const std::string& text, float x, float y) {
+    auto bbox = font.getStringBoundingBox(text, 0, 0);
+    font.drawString(text, x - bbox.getCenter().x, y);
 }
 
 //--------------------------------------------------------------
