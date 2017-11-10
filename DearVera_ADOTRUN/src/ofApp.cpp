@@ -687,6 +687,8 @@ void ofApp::reactToFaceValues() {
     }
 }
 
+bool wordsCanChange = true;
+
 void ofApp::updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _emotion2, float _height2, float _width2) {
     __emotion.setTarget(_emotion);
     __height.setTarget(_height);
@@ -703,10 +705,12 @@ void ofApp::updateValues(int wordIndex, float _emotion, float _height, float _wi
         this->wordsSet[0] = "";
         this->wordsSet[1] = "";
         this->wordsSet[2] = "";
-    } else {
+        wordsCanChange = true;
+    } else if (wordsCanChange) {
         this->wordsSet[0] = words_list[wordIndex % words_list.size()];
         this->wordsSet[1] = words_list[wordIndex + 323 % words_list.size()];
         this->wordsSet[2] = words_list[wordIndex + 1428 % words_list.size()];
+        wordsCanChange = false;
     }
     
 }
