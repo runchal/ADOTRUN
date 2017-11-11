@@ -328,6 +328,8 @@ void ofApp::draw(){
 void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
     ofSeedRandom(0); // put this in to fix the emotional scale of response
     
+    printf("r0=%f", g0);
+    
     ofSetColor((int)(r0 * 255), (int)(g0 * 255), (int)(b0 * 255));
     
     float vertSpacer = 40;
@@ -476,7 +478,7 @@ void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
     
     ofSeedRandom(0); // put this in to fix the emotional scale of response
     
-    printf("colors: %f, %f, %f", r1, g2, b2);
+//    printf("colors: %f, %f, %f", r1, g2, b2);
     ofSetColor((int)(r2 * 255), (int)(g2 * 255), (int)(b2 * 255));
     float vertSpacer = 40;
     float horStep = 20;
@@ -738,8 +740,8 @@ void ofApp::reactToFaceValues() {
                 float _emotion = array[1] * 30.0;
                 float _height = (array[2] + 1) * 30.0;
                 float _width = 10.0 + array[3] * (200.0 - 10.0);
-                float _r0 = (array[11] * 5 + 1.0) / 2.0;
-                float _g0 = (array[12] * 5 + 1.0) / 2.0;
+                float _r0 = (array[12] * 5 + 1.0) / 2.0;
+                float _g0 = (array[42] * 5 + 1.0) / 2.0;
                 float _b0 = (array[13] * 5 + 1.0) / 2.0;
                 
                 if (_r0 < 0) { _r0 = 0; }
@@ -750,18 +752,18 @@ void ofApp::reactToFaceValues() {
                 if (_b0 > 1) { _b0 = 1; }
                 
                 if (_r0 + _g0 + _b0 > 1.5) {
-                    _r0 = 1 - _r0;
-                    _g0 = 1 - _g0;
-                    _b0 = 1 - _b0;
+                    _r0 *= 1.5 / (_r0 + _g0 + _b0);
+                    _g0 *= 1.5 / (_r0 + _g0 + _b0);
+                    _b0 *= 1.5 / (_r0 + _g0 + _b0);
                 }
                 
                 float _startLength1 = 35 + array[4] * 10;
                 float _startSlope1 = 0.5 + array[5] * 0.5;
                 float _lengthMult1 = array[10];
                 float _flattenY1 = 3.0 + array[9];
-                float _r1 = (array[14] * 5 + 1.0) / 2.0;
-                float _g1 = (array[15] * 5 + 1.0) / 2.0;
-                float _b1 = (array[16] * 5 + 1.0) / 2.0;
+                float _r1 = (array[114] * 5 + 1.0) / 2.0;
+                float _g1 = (array[115] * 5 + 1.0) / 2.0;
+                float _b1 = (array[116] * 5 + 1.0) / 2.0;
                 
                 if (_r1 < 0) { _r1 = 0; }
                 if (_g1 < 0) { _g1 = 0; }
@@ -771,17 +773,17 @@ void ofApp::reactToFaceValues() {
                 if (_b1 > 1) { _b1 = 1; }
                 
                 if (_r1 + _g1 + _b1 > 1.5) {
-                    _r1 = 1 - _r1;
-                    _g1 = 1 - _g1;
-                    _b1 = 1 - _b1;
+                    _r1 *= 1.5 / (_r1 + _g1 + _b1);
+                    _g1 *= 1.5 / (_r1 + _g1 + _b1);
+                    _b1 *= 1.5 / (_r1 + _g1 + _b1);
                 }
                 
                 float _emotion2 = array[6] * 30.0;
                 float _height2 = (array[7] - 1) * 30.0;
                 float _width2 = 10.0 + array[8] * (200.0 - 10.0);
-                float _r2 = (array[17] * 5 + 1.0) / 2.0;
-                float _g2 = (array[18] * 5 + 1.0) / 2.0;
-                float _b2 = (array[19] * 5 + 1.0) / 2.0;
+                float _r2 = (array[117] * 5 + 1.0) / 2.0;
+                float _g2 = (array[118] * 5 + 1.0) / 2.0;
+                float _b2 = (array[119] * 5 + 1.0) / 2.0;
                 
                 if (_r2 < 0) { _r2 = 0; }
                 if (_g2 < 0) { _g2 = 0; }
@@ -790,10 +792,10 @@ void ofApp::reactToFaceValues() {
                 if (_g2 > 1) { _g2 = 1; }
                 if (_b2 > 1) { _b2 = 1; }
                 
-                if (_r1 + _g1 + _b1 > 1.5) {
-                    _r1 = 1 - _r1;
-                    _g1 = 1 - _g1;
-                    _b1 = 1 - _b1;
+                if (_r2 + _g2 + _b2 > 1.5) {
+                    _r2 *= 1.5 / (_r2 + _g2 + _b2);
+                    _g2 *= 1.5 / (_r2 + _g2 + _b2);
+                    _b2 *= 1.5 / (_r2 + _g2 + _b2);
                 }
                 
                 mainApp->updateValues((int)floor(array[0]), _emotion, _height, _width, _startLength1, _startSlope1, _lengthMult1, _flattenY1, _emotion2, _height2, _width2, _r0, _g0, _b0, _r1, _g1, _b1, _r2, _g2, _b2);
