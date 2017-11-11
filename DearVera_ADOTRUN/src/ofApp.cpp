@@ -328,6 +328,8 @@ void ofApp::draw(){
 void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
     ofSeedRandom(0); // put this in to fix the emotional scale of response
     
+    printf("r0=%f", g0);
+    
     ofSetColor((int)(r0 * 255), (int)(g0 * 255), (int)(b0 * 255));
     
     float vertSpacer = 40;
@@ -738,8 +740,8 @@ void ofApp::reactToFaceValues() {
                 float _emotion = array[1] * 30.0;
                 float _height = (array[2] + 1) * 30.0;
                 float _width = 10.0 + array[3] * (200.0 - 10.0);
-                float _r0 = (array[11] * 5 + 1.0) / 2.0;
-                float _g0 = (array[12] * 5 + 1.0) / 2.0;
+                float _r0 = (array[12] * 5 + 1.0) / 2.0;
+                float _g0 = (array[42] * 5 + 1.0) / 2.0;
                 float _b0 = (array[13] * 5 + 1.0) / 2.0;
                 
                 if (_r0 < 0) { _r0 = 0; }
