@@ -750,9 +750,9 @@ void ofApp::reactToFaceValues() {
                 if (_b0 > 1) { _b0 = 1; }
                 
                 if (_r0 + _g0 + _b0 > 1.5) {
-                    _r0 = 1 - _r0;
-                    _g0 = 1 - _g0;
-                    _b0 = 1 - _b0;
+                    _r0 *= 1.5 / (_r0 + _g0 + _b0);
+                    _g0 *= 1.5 / (_r0 + _g0 + _b0);
+                    _b0 *= 1.5 / (_r0 + _g0 + _b0);
                 }
                 
                 float _startLength1 = 35 + array[4] * 10;
@@ -771,9 +771,9 @@ void ofApp::reactToFaceValues() {
                 if (_b1 > 1) { _b1 = 1; }
                 
                 if (_r1 + _g1 + _b1 > 1.5) {
-                    _r1 = 1 - _r1;
-                    _g1 = 1 - _g1;
-                    _b1 = 1 - _b1;
+                    _r1 *= 1.5 / (_r1 + _g1 + _b1);
+                    _g1 *= 1.5 / (_r1 + _g1 + _b1);
+                    _b1 *= 1.5 / (_r1 + _g1 + _b1);
                 }
                 
                 float _emotion2 = array[6] * 30.0;
@@ -790,10 +790,10 @@ void ofApp::reactToFaceValues() {
                 if (_g2 > 1) { _g2 = 1; }
                 if (_b2 > 1) { _b2 = 1; }
                 
-                if (_r1 + _g1 + _b1 > 1.5) {
-                    _r1 = 1 - _r1;
-                    _g1 = 1 - _g1;
-                    _b1 = 1 - _b1;
+                if (_r2 + _g2 + _b2 > 1.5) {
+                    _r2 *= 1.5 / (_r2 + _g2 + _b2);
+                    _g2 *= 1.5 / (_r2 + _g2 + _b2);
+                    _b2 *= 1.5 / (_r2 + _g2 + _b2);
                 }
                 
                 mainApp->updateValues((int)floor(array[0]), _emotion, _height, _width, _startLength1, _startSlope1, _lengthMult1, _flattenY1, _emotion2, _height2, _width2, _r0, _g0, _b0, _r1, _g1, _b1, _r2, _g2, _b2);
