@@ -33,7 +33,9 @@ class ofApp : public ofBaseApp{
         void draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight);
         void setWord(int i, const std::string& word);
         std::string getWord(int i);
+        void drawTextOrImageCentered(const std::string& text, float x, float y, float alpha);
         void drawTextCentered(const std::string& text, float x, float y);
+        void drawImageCentered(float x, float y, float alpha);
     
     // Drawing 0
     float emotion;
@@ -71,6 +73,7 @@ class ofApp : public ofBaseApp{
     std::string wordsSet[3];
     bool wordsTargetAlpha[3] {true, true, true};
     float wordsTime[3] {0, 0, 0};
+    ofImage centerImage;
     
     static constexpr float fadeTime = 0.5f;
 		

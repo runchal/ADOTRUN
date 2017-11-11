@@ -186,6 +186,8 @@ void ofApp::setup(){
     this->wordsSet[0] = "";
     this->wordsSet[1] = "";
     this->wordsSet[2] = "";
+    
+    this->centerImage.load("eye_small.png");
 
     //TODO: remove this word randomizer
     srand(time(nullptr));
@@ -312,12 +314,17 @@ void ofApp::draw(){
     canvas1X += -subtract + 25;
     canvas2X += -subtract + 75;
     
-    ofSetColor(0, 0, 0, (int)(wordsCurrentAlpha[0] * 255));
-    drawTextCentered(getWord(0), canvas0X + canvasWidth / 2, canvasHeight / 2);
-    ofSetColor(0, 0, 0, (int)(wordsCurrentAlpha[1] * 255));
-    drawTextCentered(getWord(1), canvas1X + canvasWidth / 2, canvasHeight / 2);
-    ofSetColor(0, 0, 0, (int)(wordsCurrentAlpha[2] * 255));
-    drawTextCentered(getWord(2), canvas2X + canvasWidth / 2, canvasHeight / 2);
+    auto w0 = getWord(0);
+    auto w1 = getWord(1);
+    auto w2 = getWord(2);
+    
+    auto alp0 = wordsCurrentAlpha[0];
+    auto alp1 = wordsCurrentAlpha[1];
+    auto alp2 = wordsCurrentAlpha[2];
+    
+    drawTextOrImageCentered(getWord(0), canvas0X + canvasWidth / 2, canvasY + canvasHeight / 2, alp0);
+    drawTextOrImageCentered(getWord(1), canvas1X + canvasWidth / 2, canvasY + canvasHeight / 2, alp1);
+    drawTextOrImageCentered(getWord(2), canvas2X + canvasWidth / 2, canvasY + canvasHeight / 2, alp2);
     
     // Placement
     ofApp::draw0(canvas0X, canvasY, canvasWidth, canvasHeight);
@@ -328,7 +335,7 @@ void ofApp::draw(){
 void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
     ofSeedRandom(0); // put this in to fix the emotional scale of response
     
-    printf("r0=%f", g0);
+//    printf("r0=%f", g0);
     
     ofSetColor((int)(r0 * 255), (int)(g0 * 255), (int)(b0 * 255));
     
@@ -536,9 +543,28 @@ std::string ofApp::getWord(int i) {
     return words[i];
 }
 
+void ofApp::drawTextOrImageCentered(const std::string& text, float x, float y, float alpha) {
+    if (text == "") {
+        this->drawImageCentered(x,y,alpha);
+    } else {
+        ofSetColor(0, 0, 0, (int)(alpha * 255));
+        this->drawTextCentered(text, x, y);
+    }
+}
+
 void ofApp::drawTextCentered(const std::string& text, float x, float y) {
     auto bbox = font.getStringBoundingBox(text, 0, 0);
     font.drawString(text, x - bbox.getCenter().x, y);
+}
+
+void ofApp::drawImageCentered(float x, float y, float alpha) {
+    float width = 60;
+    float height = 78;
+    ofSetColor(255,255,255,0);
+    ofEnableAlphaBlending();
+    ofSetColor(255,255,255,(int)(alpha * 255));
+    this->centerImage.draw(x - width / 2.0, y - height / 2.0, width, height);
+    ofDisableAlphaBlending();
 }
 
 void ofApp::exit(){
