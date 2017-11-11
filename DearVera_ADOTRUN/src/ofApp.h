@@ -26,7 +26,7 @@ class ofApp : public ofBaseApp{
     
     private:
         void setUpServer();
-        void updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float lengthMult1, float _startSlope1, float _flattenY1, float _emotion2, float _height2, float _width2);
+        void updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float lengthMult1, float _startSlope1, float _flattenY1, float _emotion2, float _height2, float _width2, float r0, float g0, float b0, float r1, float g1, float b1, float r2, float g2, float b2);
         void reactToFaceValues();
         void draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight);
         void draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight);
@@ -39,6 +39,7 @@ class ofApp : public ofBaseApp{
     float emotion;
     float height;
     float width;
+    float r0, g0, b0;
     
     // Drawing 1
     ofPoint origin1;
@@ -53,11 +54,13 @@ class ofApp : public ofBaseApp{
     float angle1;
     float margin1;
     float flattenY1;
+    float r1, g1, b1;
     
     // Drawing 2
     float emotion2;
     float height2;
     float width2;
+    float r2, g2, b2;
 
 //    ofxPanel gui;
     

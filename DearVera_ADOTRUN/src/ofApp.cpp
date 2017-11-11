@@ -93,15 +93,24 @@ ofApp *mainApp = NULL;
 InterValue __emotion(0.1, 0.4, 0.3);
 InterValue __height(0.2, 0.4, 0.3);
 InterValue __width(0.2, 0.4, 0.3);
+InterValue __r0(0.1, 0.4, 0.3);
+InterValue __g0(0.1, 0.4, 0.3);
+InterValue __b0(0.1, 0.4, 0.3);
 
 InterValue __startLength1(1, 0.4, 0.3);
 InterValue __startSlope1(0.1, 0.4, 0.3);
 InterValue __lengthMult1(0.1, 0.4, 0.3);
 InterValue __flattenY1(0.1, 0.4, 0.3);
+InterValue __r1(0.1, 0.4, 0.3);
+InterValue __g1(0.1, 0.4, 0.3);
+InterValue __b1(0.1, 0.4, 0.3);
 
 InterValue __emotion2(0.1, 0.4, 0.3);
 InterValue __height2(0.2, 0.4, 0.3);
 InterValue __width2(0.2, 0.4, 0.3);
+InterValue __r2(0.1, 0.4, 0.3);
+InterValue __g2(0.1, 0.4, 0.3);
+InterValue __b2(0.1, 0.4, 0.3);
 
 void ofApp::setup(){
     mainApp = this;
@@ -119,6 +128,9 @@ void ofApp::setup(){
 //    gui.add(emotion.setup("emotion", 0.5,0,20));
 //    gui.add(height.setup("height",5,1,20));
 //    gui.add(width.setup("width",20,10,200));
+    r0 = 0;
+    g0 = 0;
+    b0 = 0;
     
     // Drawing 1
     pen1.set(0,0);
@@ -132,11 +144,17 @@ void ofApp::setup(){
     margin1 = 0;
     origin1.set(margin1,margin1*3);
     flattenY1 = 0;
+    r1 = 0;
+    g1 = 0;
+    b1 = 0;
     
     // Drawing 2
     emotion2 = 0;
     height2 = 0;
     width2 = 0;
+    r2 = 0;
+    g2 = 0;
+    b2 = 0;
 //    gui.add(emotion2.setup("emotion2", 0.5,0,20));
 //    gui.add(height2.setup("height2",5,1,20));
 //    gui.add(width2.setup("width2",20,10,200));
@@ -144,15 +162,24 @@ void ofApp::setup(){
     __emotion.setTarget(emotion);
     __height.setTarget(height);
     __width.setTarget(width);
+    __r0.setTarget(r0);
+    __g0.setTarget(g0);
+    __b0.setTarget(b0);
     
     __startLength1.setTarget(startLength1);
     __startSlope1.setTarget(startSlope1);
     __lengthMult1.setTarget(lengthMult1);
     __flattenY1.setTarget(flattenY1);
+    __r1.setTarget(r1);
+    __g1.setTarget(g1);
+    __b1.setTarget(b1);
     
     __emotion2.setTarget(emotion2);
     __height2.setTarget(height2);
     __width2.setTarget(width2);
+    __r2.setTarget(r2);
+    __g2.setTarget(g2);
+    __b2.setTarget(b2);
     
     font.load("Lucida-Blackletter.ttf", 20, true, true);
     
@@ -196,19 +223,31 @@ void ofApp::update(){
     __emotion.approachTarget();
     __height.approachTarget();
     __width.approachTarget();
+    __r0.approachTarget();
+    __g0.approachTarget();
+    __b0.approachTarget();
     
     __startLength1.approachTarget();
     __startSlope1.approachTarget();
     __lengthMult1.approachTarget();
     __flattenY1.approachTarget();
+    __r1.approachTarget();
+    __g1.approachTarget();
+    __b1.approachTarget();
     
     __emotion2.approachTarget();
     __height2.approachTarget();
     __width2.approachTarget();
+    __r2.approachTarget();
+    __g2.approachTarget();
+    __b2.approachTarget();
     
     emotion = __emotion.current;
     height = __height.current;
     width = __width.current;
+    r0 = __r0.current;
+    g0 = __g0.current;
+    b0 = __b0.current;
 //    emotion.setup("emotion", __emotion.current,0,20);
 //    height.setup("height",__height.current,30,200);
 //    width.setup("width",__width.current,10,200);
@@ -217,10 +256,16 @@ void ofApp::update(){
     startSlope1 = __startSlope1.current;
     lengthMult1 = __lengthMult1.current;
     flattenY1 = __flattenY1.current;
+    r1 = __r1.current;
+    g1 = __g1.current;
+    b1 = __b1.current;
     
     emotion2 = __emotion2.current;
     height2 = __height2.current;
     width2 = __width2.current;
+    r2 = __r2.current;
+    g2 = __g2.current;
+    b2 = __b2.current;
 //    emotion2.setup("emotion2", __emotion2.current,0,20);
 //    height2.setup("height2",__height2.current,30,200);
 //    width2.setup("width2",__width2.current,10,200);
@@ -283,7 +328,7 @@ void ofApp::draw(){
 void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
     ofSeedRandom(0); // put this in to fix the emotional scale of response
     
-    ofSetColor(0);
+    ofSetColor((int)(r0 * 255), (int)(g0 * 255), (int)(b0 * 255));
     
     float vertSpacer = 40;
     float horStep = 20;
@@ -336,7 +381,7 @@ void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
     float centerEnd = (canvasHeight + centerSpace) / 2.0;
     float vertSpace = 80;
     
-    ofSetColor(0);
+    ofSetColor((int)(r1 * 255), (int)(g1 * 255), (int)(b1 * 255));
     ofSeedRandom(1);
     while (origin1.y < canvasHeight - margin1){
         if (origin1.y >= centerStart && origin1.y <= centerEnd) {
@@ -431,7 +476,8 @@ void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
     
     ofSeedRandom(0); // put this in to fix the emotional scale of response
     
-    ofSetColor(0);
+    printf("colors: %f, %f, %f", r1, g2, b2);
+    ofSetColor((int)(r2 * 255), (int)(g2 * 255), (int)(b2 * 255));
     float vertSpacer = 40;
     float horStep = 20;
     
@@ -683,7 +729,7 @@ void ofApp::reactToFaceValues() {
                 
                 if (n == 1) {
 //                    printf("No face!\n");
-                    mainApp->updateValues(-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+                    mainApp->updateValues(-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                     return;
                 }
                 
@@ -692,17 +738,65 @@ void ofApp::reactToFaceValues() {
                 float _emotion = array[1] * 30.0;
                 float _height = (array[2] + 1) * 30.0;
                 float _width = 10.0 + array[3] * (200.0 - 10.0);
+                float _r0 = (array[11] * 5 + 1.0) / 2.0;
+                float _g0 = (array[12] * 5 + 1.0) / 2.0;
+                float _b0 = (array[13] * 5 + 1.0) / 2.0;
+                
+                if (_r0 < 0) { _r0 = 0; }
+                if (_g0 < 0) { _g0 = 0; }
+                if (_b0 < 0) { _b0 = 0; }
+                if (_r0 > 1) { _r0 = 1; }
+                if (_g0 > 1) { _g0 = 1; }
+                if (_b0 > 1) { _b0 = 1; }
+                
+                if (_r0 + _g0 + _b0 > 1.5) {
+                    _r0 = 1 - _r0;
+                    _g0 = 1 - _g0;
+                    _b0 = 1 - _b0;
+                }
                 
                 float _startLength1 = 35 + array[4] * 10;
                 float _startSlope1 = 0.5 + array[5] * 0.5;
                 float _lengthMult1 = array[10];
                 float _flattenY1 = 3.0 + array[9];
+                float _r1 = (array[14] * 5 + 1.0) / 2.0;
+                float _g1 = (array[15] * 5 + 1.0) / 2.0;
+                float _b1 = (array[16] * 5 + 1.0) / 2.0;
+                
+                if (_r1 < 0) { _r1 = 0; }
+                if (_g1 < 0) { _g1 = 0; }
+                if (_b1 < 0) { _b1 = 0; }
+                if (_r1 > 1) { _r1 = 1; }
+                if (_g1 > 1) { _g1 = 1; }
+                if (_b1 > 1) { _b1 = 1; }
+                
+                if (_r1 + _g1 + _b1 > 1.5) {
+                    _r1 = 1 - _r1;
+                    _g1 = 1 - _g1;
+                    _b1 = 1 - _b1;
+                }
                 
                 float _emotion2 = array[6] * 30.0;
                 float _height2 = (array[7] - 1) * 30.0;
                 float _width2 = 10.0 + array[8] * (200.0 - 10.0);
+                float _r2 = (array[17] * 5 + 1.0) / 2.0;
+                float _g2 = (array[18] * 5 + 1.0) / 2.0;
+                float _b2 = (array[19] * 5 + 1.0) / 2.0;
                 
-                mainApp->updateValues((int)floor(array[0]), _emotion, _height, _width, _startLength1, _startSlope1, _lengthMult1, _flattenY1, _emotion2, _height2, _width2);
+                if (_r2 < 0) { _r2 = 0; }
+                if (_g2 < 0) { _g2 = 0; }
+                if (_b2 < 0) { _b2 = 0; }
+                if (_r2 > 1) { _r2 = 1; }
+                if (_g2 > 1) { _g2 = 1; }
+                if (_b2 > 1) { _b2 = 1; }
+                
+                if (_r1 + _g1 + _b1 > 1.5) {
+                    _r1 = 1 - _r1;
+                    _g1 = 1 - _g1;
+                    _b1 = 1 - _b1;
+                }
+                
+                mainApp->updateValues((int)floor(array[0]), _emotion, _height, _width, _startLength1, _startSlope1, _lengthMult1, _flattenY1, _emotion2, _height2, _width2, _r0, _g0, _b0, _r1, _g1, _b1, _r2, _g2, _b2);
             }
                 break;
             default:
@@ -715,19 +809,28 @@ void ofApp::reactToFaceValues() {
 
 bool wordsCanChange = true;
 
-void ofApp::updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _lengthMult1, float _flattenY1, float _emotion2, float _height2, float _width2) {
+void ofApp::updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _lengthMult1, float _flattenY1, float _emotion2, float _height2, float _width2, float _r0, float _g0, float _b0, float _r1, float _g1, float _b1, float _r2, float _g2, float _b2) {
     __emotion.setTarget(_emotion);
     __height.setTarget(_height);
     __width.setTarget(_width);
+    __r0.setTarget(_r0);
+    __g0.setTarget(_g0);
+    __b0.setTarget(_b0);
     
     __startLength1.setTarget(_startLength1);
     __startSlope1.setTarget(_startSlope1);
     __lengthMult1.setTarget(_lengthMult1);
     __flattenY1.setTarget(_flattenY1);
+    __r1.setTarget(_r1);
+    __g1.setTarget(_g1);
+    __b1.setTarget(_b1);
     
     __emotion2.setTarget(_emotion2);
     __height2.setTarget(_height2);
     __width2.setTarget(_width2);
+    __r2.setTarget(_r2);
+    __g2.setTarget(_g2);
+    __b2.setTarget(_b2);
     
     if (wordIndex < 0) {
         this->wordsSet[0] = "";
