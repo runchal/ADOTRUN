@@ -26,7 +26,7 @@ class ofApp : public ofBaseApp{
     
     private:
         void setUpServer();
-        void updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _flattenY1, float _emotion2, float _height2, float _width2);
+        void updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float lengthMult1, float _startSlope1, float _flattenY1, float _emotion2, float _height2, float _width2);
         void reactToFaceValues();
         void draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight);
         void draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight);
@@ -49,6 +49,7 @@ class ofApp : public ofBaseApp{
     float startLength1;
     float length1;
     float startSlope1;
+    float lengthMult1;
     float angle1;
     float margin1;
     float flattenY1;

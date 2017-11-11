@@ -96,6 +96,7 @@ InterValue __width(0.2, 0.4, 0.3);
 
 InterValue __startLength1(1, 0.4, 0.3);
 InterValue __startSlope1(0.1, 0.4, 0.3);
+InterValue __lengthMult1(0.1, 0.4, 0.3);
 InterValue __flattenY1(0.1, 0.4, 0.3);
 
 InterValue __emotion2(0.1, 0.4, 0.3);
@@ -126,6 +127,7 @@ void ofApp::setup(){
     emotion1 = 0;
     startLength1 = 0;
     startSlope1 = 0.0;
+    lengthMult1 = 0.0;
     angle1 = 0;
     margin1 = 0;
     origin1.set(margin1,margin1*3);
@@ -145,6 +147,7 @@ void ofApp::setup(){
     
     __startLength1.setTarget(startLength1);
     __startSlope1.setTarget(startSlope1);
+    __lengthMult1.setTarget(lengthMult1);
     __flattenY1.setTarget(flattenY1);
     
     __emotion2.setTarget(emotion2);
@@ -196,6 +199,7 @@ void ofApp::update(){
     
     __startLength1.approachTarget();
     __startSlope1.approachTarget();
+    __lengthMult1.approachTarget();
     __flattenY1.approachTarget();
     
     __emotion2.approachTarget();
@@ -211,6 +215,7 @@ void ofApp::update(){
     
     startLength1 = __startLength1.current;
     startSlope1 = __startSlope1.current;
+    lengthMult1 = __lengthMult1.current;
     flattenY1 = __flattenY1.current;
     
     emotion2 = __emotion2.current;
@@ -342,7 +347,9 @@ void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
         pen1.y = origin1.y;
         //  ofPolyline line;
         
+        penSwitch1 = true;
         while (origin1.x < canvasWidth - margin1){
+//        for (int i=0; i<6; i+=1) {
             float length;
             float slope;
             if (!penSwitch1){
@@ -355,23 +362,30 @@ void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
 //            printf("%f,", angle1);
             length = ofRandom(startLength1) + 5;
             
-            if ((origin1.y - pen1.y) > 10){
-                if (!penSwitch1){
-                    length *= 2;
-                }
-                else {
-                    length *=0.5;
-                }
+            if (!penSwitch1){
+                length *= 2 + lengthMult1 * 0.5;
+            }
+            else {
+                length *=0.5 + lengthMult1 * 0.2;
             }
             
-            if ((origin1.y - pen1.y) < -10) {
-                if (!penSwitch1){
-                    length *= 2;
-                }
-                else{
-                    length *=0.5;
-                }
-            }
+//            if ((origin1.y - pen1.y) > 10){
+//                if (!penSwitch1){
+//                    length *= 2;
+//                }
+//                else {
+//                    length *=0.5;
+//                }
+//            }
+//
+//            if ((origin1.y - pen1.y) < -10) {
+//                if (!penSwitch1){
+//                    length *= 2;
+//                }
+//                else{
+//                    length *=0.5;
+//                }
+//            }
             
             float xChange = 0;
             float yChange = 0;
@@ -669,25 +683,26 @@ void ofApp::reactToFaceValues() {
                 
                 if (n == 1) {
 //                    printf("No face!\n");
-                    mainApp->updateValues(-1, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+                    mainApp->updateValues(-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                     return;
                 }
                 
 //                printf("%f\n", array[0]);
                 
-                float _emotion = array[1] * 20.0;
-                float _height = 30.0 + array[2] * (200.0 - 30.0);
+                float _emotion = array[1] * 30.0;
+                float _height = (array[2] + 1) * 30.0;
                 float _width = 10.0 + array[3] * (200.0 - 10.0);
                 
                 float _startLength1 = 35 + array[4] * 10;
                 float _startSlope1 = 0.5 + array[5] * 0.5;
-                float _flattenY1 = 1.0 + array[9] * 0.3;
+                float _lengthMult1 = array[10];
+                float _flattenY1 = 3.0 + array[9];
                 
-                float _emotion2 = array[6] * 20.0;
-                float _height2 = 30.0 + array[7] * (200.0 - 30.0);
+                float _emotion2 = array[6] * 30.0;
+                float _height2 = (array[7] - 1) * 30.0;
                 float _width2 = 10.0 + array[8] * (200.0 - 10.0);
                 
-                mainApp->updateValues((int)floor(array[0]), _emotion, _height, _width, _startLength1, _startSlope1, _flattenY1, _emotion2, _height2, _width2);
+                mainApp->updateValues((int)floor(array[0]), _emotion, _height, _width, _startLength1, _startSlope1, _lengthMult1, _flattenY1, _emotion2, _height2, _width2);
             }
                 break;
             default:
@@ -700,13 +715,14 @@ void ofApp::reactToFaceValues() {
 
 bool wordsCanChange = true;
 
-void ofApp::updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _flattenY1, float _emotion2, float _height2, float _width2) {
+void ofApp::updateValues(int wordIndex, float _emotion, float _height, float _width, float _startLength1, float _startSlope1, float _lengthMult1, float _flattenY1, float _emotion2, float _height2, float _width2) {
     __emotion.setTarget(_emotion);
     __height.setTarget(_height);
     __width.setTarget(_width);
     
     __startLength1.setTarget(_startLength1);
     __startSlope1.setTarget(_startSlope1);
+    __lengthMult1.setTarget(_lengthMult1);
     __flattenY1.setTarget(_flattenY1);
     
     __emotion2.setTarget(_emotion2);
