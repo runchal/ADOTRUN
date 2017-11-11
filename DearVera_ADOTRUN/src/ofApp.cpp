@@ -476,7 +476,7 @@ void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
     
     ofSeedRandom(0); // put this in to fix the emotional scale of response
     
-    printf("colors: %f, %f, %f", r1, g2, b2);
+//    printf("colors: %f, %f, %f", r1, g2, b2);
     ofSetColor((int)(r2 * 255), (int)(g2 * 255), (int)(b2 * 255));
     float vertSpacer = 40;
     float horStep = 20;
