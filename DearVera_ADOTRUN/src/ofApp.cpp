@@ -720,8 +720,8 @@ void ofApp::updateValues(int wordIndex, float _emotion, float _height, float _wi
         wordsCanChange = true;
     } else if (wordsCanChange) {
         this->wordsSet[0] = words_list[wordIndex % words_list.size()];
-        this->wordsSet[1] = words_list[wordIndex + 323 % words_list.size()];
-        this->wordsSet[2] = words_list[wordIndex + 1428 % words_list.size()];
+        this->wordsSet[1] = words_list[(wordIndex + 323) % words_list.size()];
+        this->wordsSet[2] = words_list[(wordIndex + 1428) % words_list.size()];
         wordsCanChange = false;
     }
     
