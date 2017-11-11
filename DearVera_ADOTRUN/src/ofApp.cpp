@@ -761,9 +761,9 @@ void ofApp::reactToFaceValues() {
                 float _startSlope1 = 0.5 + array[5] * 0.5;
                 float _lengthMult1 = array[10];
                 float _flattenY1 = 3.0 + array[9];
-                float _r1 = (array[14] * 5 + 1.0) / 2.0;
-                float _g1 = (array[15] * 5 + 1.0) / 2.0;
-                float _b1 = (array[16] * 5 + 1.0) / 2.0;
+                float _r1 = (array[114] * 5 + 1.0) / 2.0;
+                float _g1 = (array[115] * 5 + 1.0) / 2.0;
+                float _b1 = (array[116] * 5 + 1.0) / 2.0;
                 
                 if (_r1 < 0) { _r1 = 0; }
                 if (_g1 < 0) { _g1 = 0; }
@@ -781,9 +781,9 @@ void ofApp::reactToFaceValues() {
                 float _emotion2 = array[6] * 30.0;
                 float _height2 = (array[7] - 1) * 30.0;
                 float _width2 = 10.0 + array[8] * (200.0 - 10.0);
-                float _r2 = (array[17] * 5 + 1.0) / 2.0;
-                float _g2 = (array[18] * 5 + 1.0) / 2.0;
-                float _b2 = (array[19] * 5 + 1.0) / 2.0;
+                float _r2 = (array[117] * 5 + 1.0) / 2.0;
+                float _g2 = (array[118] * 5 + 1.0) / 2.0;
+                float _b2 = (array[119] * 5 + 1.0) / 2.0;
                 
                 if (_r2 < 0) { _r2 = 0; }
                 if (_g2 < 0) { _g2 = 0; }
