@@ -257,6 +257,11 @@ void ofApp::draw(){
     int canvas0X = canvas1X - canvasWidth - spacing;
     int canvas2X = canvas1X + canvasWidth + spacing;
     
+    float subtract = 200;
+    canvas0X += -subtract;
+    canvas1X += -subtract + 25;
+    canvas2X += -subtract + 75;
+    
     ofSetColor(0, 0, 0, (int)(wordsCurrentAlpha[0] * 255));
     drawTextCentered(getWord(0), canvas0X + canvasWidth / 2, canvasHeight / 2);
     ofSetColor(0, 0, 0, (int)(wordsCurrentAlpha[1] * 255));
@@ -265,10 +270,9 @@ void ofApp::draw(){
     drawTextCentered(getWord(2), canvas2X + canvasWidth / 2, canvasHeight / 2);
     
     // Placement
-    float subtract = 200;
-    ofApp::draw0(canvas0X - subtract, canvasY, canvasWidth, canvasHeight);
-    ofApp::draw1(canvas1X - subtract+25, canvasY, canvasWidth, canvasHeight);
-    ofApp::draw2(canvas2X - subtract+75, canvasY, canvasWidth, canvasHeight);
+    ofApp::draw0(canvas0X, canvasY, canvasWidth, canvasHeight);
+    ofApp::draw1(canvas1X, canvasY, canvasWidth, canvasHeight);
+    ofApp::draw2(canvas2X, canvasY, canvasWidth, canvasHeight);
 }
 
 void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
