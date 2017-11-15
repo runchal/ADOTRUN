@@ -2,6 +2,8 @@
 # General
 .DS_Store
 EveryStop_ADOTRUN/bin/data
+EveryStopShort_ADOTRUN/bin/data
+TRUMPPAGE_ADOTRUN/bin/data
 
 # Xcode
 #

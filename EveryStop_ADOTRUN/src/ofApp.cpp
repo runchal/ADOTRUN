@@ -4,7 +4,7 @@
 void ofApp::setup(){
 
     imgWidth = 800;
-    imgHeight = 1500;
+    imgHeight = 1000;
     
     mix.allocate(imgWidth, imgHeight, OF_IMAGE_COLOR);
     ofDirectory dir;
@@ -65,7 +65,7 @@ void ofApp::setup(){
     }
     
     mix.update();
-    mix.save("resized_what.jpg", OF_IMAGE_QUALITY_BEST);
+    mix.save("test_debug.jpg", OF_IMAGE_QUALITY_BEST);
 
 }
 
