@@ -4,11 +4,11 @@
 void ofApp::setup(){
 
     imgWidth = 800;
-    imgHeight = 1000;
+    imgHeight = 1500;
     
     mix.allocate(imgWidth, imgHeight, OF_IMAGE_COLOR);
     ofDirectory dir;
-    string dirName = "resized";
+    string dirName = "resizedtest2";
     dir.listDir(dirName);
     
     int * pixelSum;
@@ -65,7 +65,7 @@ void ofApp::setup(){
     }
     
     mix.update();
-    mix.save("test_debug.jpg", OF_IMAGE_QUALITY_BEST);
+    mix.save("test_debug2.jpg", OF_IMAGE_QUALITY_BEST);
 
 }
 

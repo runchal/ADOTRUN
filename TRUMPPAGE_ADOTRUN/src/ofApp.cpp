@@ -12,11 +12,11 @@ void ofApp::setup(){
     */
     
     imgWidth = 800;
-    imgHeight = 1600;
+    imgHeight = 1400;
     
     mix.allocate(imgWidth, imgHeight, OF_IMAGE_COLOR);
     ofDirectory dir;
-    string dirName = "trumppage_pass01";
+    string dirName = "resizedtest4dot1";
     dir.listDir(dirName);
     
     int * pixelSum;
@@ -73,7 +73,7 @@ void ofApp::setup(){
     }
     
     mix.update();
-    mix.save("trumppage_pass01.jpg", OF_IMAGE_QUALITY_BEST);
+    mix.save("trumppage_pass03.jpg", OF_IMAGE_QUALITY_BEST);
 
 }
 
