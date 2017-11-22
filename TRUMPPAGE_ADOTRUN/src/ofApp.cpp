@@ -16,7 +16,7 @@ void ofApp::setup(){
     
     mix.allocate(imgWidth, imgHeight, OF_IMAGE_COLOR);
     ofDirectory dir;
-    string dirName = "resizedtest4dot1";
+    string dirName = "resizedtest4dot4-similarphoto";
     dir.listDir(dirName);
     
     int * pixelSum;
@@ -73,7 +73,7 @@ void ofApp::setup(){
     }
     
     mix.update();
-    mix.save("trumppage_pass03.jpg", OF_IMAGE_QUALITY_BEST);
+    mix.save("trumppage_pass06-similarphotoexperiment.jpg", OF_IMAGE_QUALITY_BEST);
 
 }
 
