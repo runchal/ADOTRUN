@@ -19,6 +19,12 @@
 
 #include "InterValue.h"
 
+#pragma mark - Constants
+
+static const std::vector<std::string> words_list = {"Optimism", "Action", "Inaction", "Abundance", "Structure", "Sexuality", "Movement", "Courage", "Meditation", "Cycles", "Fairness", "Surrender", "Endings", "Balance", "Destructive", "Collapse", "Hope", "Mystery", "Success", "Rebirth", "Completion", "Serious", "Intelligent", "Fierce", "Unstable", "Clarity", "Indecision", "Heartbreak", "Meditation", "Hostility", "Leaving", "Abandon", "Stuck", "Anxiety", "Sabotage", "Repression", "Intuitive", "Romantic", "Creative", "Joy", "Partnership", "Celebration", "Boredom", "Self-pity", "Kindness", "Indecision", "Abandon", "Indulgence", "Attainment", "Passionate", "Confidant", "Adventurous", "Inspired", "Fertile", "Contemplation", "Reward", "Celebration", "Competition", "Success", "Defensive", "Speedy", "Pessimism", "Exhaustion", "Secure", "Healthy", "Cautious", "Student", "Clarity", "Balance", "Work", "Hoarding", "Petty", "Charity", "Patience", "Focused", "Luxury", "Success"};
+
+#pragma mark - TCP Connection
+
 static std::string run_cmd(const std::string& cmd) {
     FILE* fd = popen(cmd.c_str(), "r");
     if (!fd) throw std::runtime_error("Failed to popen");
@@ -85,9 +91,7 @@ std::condition_variable rx_queue_nonempty;
 std::atomic<bool> run_randomizer;//TODO remove
 std::thread randomizer_thread;//TODO remove
 
-static const std::vector<std::string> words_list = {"Optimism", "Action", "Inaction", "Abundance", "Structure", "Sexuality", "Movement", "Courage", "Meditation", "Cycles", "Fairness", "Surrender", "Endings", "Balance", "Destructive", "Collapse", "Hope", "Mystery", "Success", "Rebirth", "Completion", "Serious", "Intelligent", "Fierce", "Unstable", "Clarity", "Indecision", "Heartbreak", "Meditation", "Hostility", "Leaving", "Abandon", "Stuck", "Anxiety", "Sabotage", "Repression", "Intuitive", "Romantic", "Creative", "Joy", "Partnership", "Celebration", "Boredom", "Self-pity", "Kindness", "Indecision", "Abandon", "Indulgence", "Attainment", "Passionate", "Confidant", "Adventurous", "Inspired", "Fertile", "Contemplation", "Reward", "Celebration", "Competition", "Success", "Defensive", "Speedy", "Pessimism", "Exhaustion", "Secure", "Healthy", "Cautious", "Student", "Clarity", "Balance", "Work", "Hoarding", "Petty", "Charity", "Patience", "Focused", "Luxury", "Success"};
-
-//--------------------------------------------------------------
+#pragma mark - Three column values
 
 ofApp *mainApp = NULL;
 InterValue __emotion(0.1, 0.4, 0.3);
@@ -112,6 +116,8 @@ InterValue __r2(0.1, 0.4, 0.3);
 InterValue __g2(0.1, 0.4, 0.3);
 InterValue __b2(0.1, 0.4, 0.3);
 
+#pragma mark - Setup and update
+
 void ofApp::setup(){
     mainApp = this;
     //it's in reproducing the art that I realize that I am about to get my ass kicked and that the work I need to focus on is my emotional state of being and how attempting to reproduce mastery makes me feel
@@ -120,14 +126,9 @@ void ofApp::setup(){
 
     // Drawing 0
     ofBackground(250);
-//    gui.setup();
-    
     emotion = 0;
     height = 0;
     width = 0;
-//    gui.add(emotion.setup("emotion", 0.5,0,20));
-//    gui.add(height.setup("height",5,1,20));
-//    gui.add(width.setup("width",20,10,200));
     r0 = 0;
     g0 = 0;
     b0 = 0;
@@ -155,10 +156,8 @@ void ofApp::setup(){
     r2 = 0;
     g2 = 0;
     b2 = 0;
-//    gui.add(emotion2.setup("emotion2", 0.5,0,20));
-//    gui.add(height2.setup("height2",5,1,20));
-//    gui.add(width2.setup("width2",20,10,200));
     
+    // Setting initial targets.
     __emotion.setTarget(emotion);
     __height.setTarget(height);
     __width.setTarget(width);
@@ -181,46 +180,32 @@ void ofApp::setup(){
     __g2.setTarget(g2);
     __b2.setTarget(b2);
     
+    // Words
     font.load("Lucida-Blackletter.ttf", 20, true, true);
-    
     this->wordsSet[0] = "";
     this->wordsSet[1] = "";
     this->wordsSet[2] = "";
-    
     this->centerImage.load("eye_small.png");
-
-    //TODO: remove this word randomizer
     srand(time(nullptr));
     ofApp& thiz = *this;
     run_randomizer = true;
     randomizer_thread = std::thread([&]{
         while (run_randomizer == true) {
-//            srand(time(NULL));
-//            int r0 = rand();
-//            int r1 = rand();
-//            int r2 = rand();
-            auto w0 = thiz.wordsSet[0];//words_list[r0 % words_list.size()];
-            auto w1 = thiz.wordsSet[1];//words_list[r1 % words_list.size()];
-            auto w2 = thiz.wordsSet[2];//words_list[r2 % words_list.size()];
+            auto w0 = thiz.wordsSet[0];
+            auto w1 = thiz.wordsSet[1];
+            auto w2 = thiz.wordsSet[2];
             thiz.setWord(0, w0);
             thiz.setWord(1, w1);
             thiz.setWord(2, w2);
             sleep(1);
         }
     });
-    ////////////
     
     setUpServer();
 }
 
-//--------------------------------------------------------------
 void ofApp::update(){
-//    printf("frame time %d\n", time(0));
-//    clock_t begin = clock();
     reactToFaceValues();
-//    clock_t end = clock();
-//    double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
-//    printf("reacted in %f seconds\n", elapsed_secs);
     
     __emotion.approachTarget();
     __height.approachTarget();
@@ -250,9 +235,6 @@ void ofApp::update(){
     r0 = __r0.current;
     g0 = __g0.current;
     b0 = __b0.current;
-//    emotion.setup("emotion", __emotion.current,0,20);
-//    height.setup("height",__height.current,30,200);
-//    width.setup("width",__width.current,10,200);
     
     startLength1 = __startLength1.current;
     startSlope1 = __startSlope1.current;
@@ -268,14 +250,13 @@ void ofApp::update(){
     r2 = __r2.current;
     g2 = __g2.current;
     b2 = __b2.current;
-//    emotion2.setup("emotion2", __emotion2.current,0,20);
-//    height2.setup("height2",__height2.current,30,200);
-//    width2.setup("width2",__width2.current,10,200);
 }
 
-//--------------------------------------------------------------
+#pragma mark - Drawing
+
 void ofApp::draw(){
     
+    // Words
     float wordsCurrentAlpha[3];
     {
         std::unique_lock<std::mutex> lock(wordsMtx);
@@ -293,6 +274,8 @@ void ofApp::draw(){
             }
         }
     }
+    
+    // Setting up canvas and columns.
     
     int fullWidth = ofGetWidth();
     int fullHeight = ofGetHeight();
@@ -332,10 +315,9 @@ void ofApp::draw(){
     ofApp::draw2(canvas2X, canvasY, canvasWidth, canvasHeight);
 }
 
+// Column 0
 void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
     ofSeedRandom(0); // put this in to fix the emotional scale of response
-    
-//    printf("r0=%f", g0);
     
     ofSetColor((int)(r0 * 255), (int)(g0 * 255), (int)(b0 * 255));
     
@@ -378,11 +360,10 @@ void ofApp::draw0(int canvasX, int canvasY, int canvasWidth, int canvasHeight) {
             myLine.draw();
         }
         
-//        gui.draw();
     }
-    //}
 }
 
+// Column 1
 void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
     
     float centerSpace = 100;
@@ -403,7 +384,6 @@ void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
         
         penSwitch1 = true;
         while (origin1.x < canvasWidth - margin1){
-//        for (int i=0; i<6; i+=1) {
             float length;
             float slope;
             if (!penSwitch1){
@@ -413,7 +393,6 @@ void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
                 slope = startSlope1 + ofRandom(10)/20;
             }
             angle1 = atan(slope);
-//            printf("%f,", angle1);
             length = ofRandom(startLength1) + 5;
             
             if (!penSwitch1){
@@ -422,24 +401,7 @@ void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
             else {
                 length *=0.5 + lengthMult1 * 0.2;
             }
-            
-//            if ((origin1.y - pen1.y) > 10){
-//                if (!penSwitch1){
-//                    length *= 2;
-//                }
-//                else {
-//                    length *=0.5;
-//                }
-//            }
-//
-//            if ((origin1.y - pen1.y) < -10) {
-//                if (!penSwitch1){
-//                    length *= 2;
-//                }
-//                else{
-//                    length *=0.5;
-//                }
-//            }
+        
             
             float xChange = 0;
             float yChange = 0;
@@ -460,8 +422,6 @@ void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
             nextPen1.x = pen1.x + xChange;
             nextPen1.y = pen1.y + yChange;
             ofDrawLine(canvasX + pen1.x, canvasY + pen1.y, canvasX + nextPen1.x, canvasY + nextPen1.y);
-            // line.addVertex(pen.x, pen.y);
-            //line.addVertex(nextPen.x, nextPen.y);
             
             pen1.x = nextPen1.x;
             pen1.y = nextPen1.y;
@@ -472,11 +432,11 @@ void ofApp::draw1(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
         }
         origin1.x = margin1;
         origin1.y += vertSpace;
-        // line.draw();
     }
     origin1.y = margin1*3;
 }
 
+// Column 1
 void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
     
     float centerSpace = 100;
@@ -485,7 +445,6 @@ void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
     
     ofSeedRandom(0); // put this in to fix the emotional scale of response
     
-//    printf("colors: %f, %f, %f", r1, g2, b2);
     ofSetColor((int)(r2 * 255), (int)(g2 * 255), (int)(b2 * 255));
     float vertSpacer = 40;
     float horStep = 20;
@@ -522,13 +481,11 @@ void ofApp::draw2(int canvasX, int canvasY, int canvasWidth, int canvasHeight){
             }
             myLine.draw();
         }
-        
-//        gui.draw();
     }
-    //}
-    
     
 }
+
+#pragma mark - Words
 
 void ofApp::setWord(int i, const std::string& word) {
     std::unique_lock<std::mutex> lock{wordsMtx};
@@ -566,6 +523,8 @@ void ofApp::drawImageCentered(float x, float y, float alpha) {
     this->centerImage.draw(x - width / 2.0, y - height / 2.0, width, height);
     ofDisableAlphaBlending();
 }
+
+#pragma mark - Other app events
 
 void ofApp::exit(){
     {
@@ -639,6 +598,8 @@ void ofApp::dragEvent(ofDragInfo dragInfo){
 }
 
 //------------------------------------------------
+
+#pragma mark - TCP Messages
 
 void ofApp::setUpServer() {
     server_thread = std::thread([] {
@@ -753,15 +714,10 @@ void ofApp::reactToFaceValues() {
                 int n = rx.len / sizeof(float);
                 float array[n];
                 memcpy(&array, rx.data, sizeof(float) * n);
-                //                std::cout << "Got face ID:" << array[0] << "," << array[1] << "," << array[2] << std::endl;
-                
                 if (n == 1) {
-//                    printf("No face!\n");
                     mainApp->updateValues(-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
                     return;
                 }
-                
-//                printf("%f\n", array[0]);
                 
                 float _emotion = array[1] * 30.0;
                 float _height = (array[2] + 1) * 30.0;
