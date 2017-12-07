@@ -309,10 +309,10 @@ void ofApp::draw(){
     int canvas0X = canvas1X - canvasWidth - spacing;
     int canvas2X = canvas1X + canvasWidth + spacing;
     
-    float subtract = 200;
-    canvas0X += -subtract;
-    canvas1X += -subtract + 25;
-    canvas2X += -subtract + 75;
+//    float subtract = 200;
+//    canvas0X += -subtract;
+//    canvas1X += -subtract + 25;
+//    canvas2X += -subtract + 75;
     
     auto w0 = getWord(0);
     auto w1 = getWord(1);

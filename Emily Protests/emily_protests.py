@@ -13,21 +13,19 @@ from random import choice
 first = ["Stop", "Oppose", "Support", "Arrested", "Strike", "Slips", "Arbitrate", "Perish"]
 joiner = ["The", "--", "Some", "A", "All", "Minor", "", "Horrid", "Sleek"]
 second = ["Troop", "Troops", "War", "Wars", "President", "Presidents", "Footmen", "Footman", "Marauder", "Marauders", "Abortion", "Abortions"]
+splitter = ["", ",", "--", ';']
 punct = [",", ".", "--", ";"]
 endpunct = [".", "!", ""]
-
-
-# In[6]:
-
+array_1 = ["-", "--"]
+array_2 = [".", "..", "...", "...."]
+join_array = [array_1,array_2]
 
 for items in range(10):
-    print(choice(first) or choice(joiner))
-
+    print(choice(choice(join_array)))
 
 # In[10]:
 
 
-for items in range(50):
-    print ("------------" + "\n" + choice(first) + "\n" + choice(joiner) + "\n" + choice(second) + choice(endpunct)  + "\n" + "------------"
-        + "\n"  )
-
+# for items in range(25):
+#     print ("------------" + "\n" + choice(first) + choice(splitter) + "\n" + choice(joiner) + "\n" + choice(second) + choice(endpunct)  + "\n" + "------------"
+#         + "\n"  )
