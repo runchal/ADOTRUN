@@ -9,14 +9,23 @@ void ofApp::setup(){
      2. Change imgHeight
      3. Change string dirName
      4. Change mix.save (this could be automated somehow but don't know how to combine strings in oF
+     
+     POTENTIAL PROBLEMS
+     * I've noticed that there is an issue with some JPGs which'll crash the system. I have to convert
+       them to pngs to make it work.
+     
+     TO-DO
+     1. Change the name of this app to be more generic.
+     2. Researh a way to automatically name the file based on the filename
+     
     */
     
-    imgWidth = 800;
-    imgHeight = 1400;
+    imgWidth = 960;
+    imgHeight = 1280;
     
     mix.allocate(imgWidth, imgHeight, OF_IMAGE_COLOR);
     ofDirectory dir;
-    string dirName = "resizedtest4dot4-similarphoto";
+    string dirName = "self_portrait_02";
     dir.listDir(dirName);
     
     int * pixelSum;
@@ -73,7 +82,7 @@ void ofApp::setup(){
     }
     
     mix.update();
-    mix.save("trumppage_pass06-similarphotoexperiment.jpg", OF_IMAGE_QUALITY_BEST);
+    mix.save("self_portrait_04.png", OF_IMAGE_QUALITY_BEST);
 
 }
 
